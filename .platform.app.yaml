@@ -4,7 +4,7 @@
 name: app
 
 # The type key specifies the language and version for your application.
-type: java:14
+type: java:11
 
 variables:
     env: 
@@ -23,7 +23,7 @@ hooks:
     # No services are available but the disk is writeable.
     build: |
         # set -e
-        mkdir -p "$PLATFORM_APP_DIR/metabase" "$PLATFORM_APP_DIR/bin"
+        mkdir -p "$PLATFORM_APP_DIR/metabase"
 
         # Download Metabase
         wget --no-cookies --no-check-certificate -q -O \
@@ -33,7 +33,7 @@ hooks:
 # The configuration of the application when it is exposed to the web.
 web:
     commands:
-        start: exec java -jar $PLATFORM_APP_DIR/metabase/metabase.jar
+        start: java -jar $PLATFORM_APP_DIR/metabase/metabase.jar
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048

@@ -1,0 +1,25 @@
+version: 1
+
+info:
+  id: platformsh/metabase
+  name: Metabase
+  description: |
+     <p>This template builds Metabase for Platform.sh.</p>
+     <p>Metabase is a simple and powerful analytics tool which lets anyone learn and make decisions from their company’s data.</p>
+  tags:
+  - Java
+  - Analytics
+  image: image: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='178' height='225'%3E%3Cstyle type='text/css'%3E.st0%7Bfill:%23509EE3;%7D.st1%7Bopacity:0.2;fill:%23509EE3;%7D%3C/style%3E%3Cellipse class='st0' cx='13.5' cy='57' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st0' cx='13.5' cy='95.4' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='51.3' cy='57' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st0' cx='51.3' cy='95.7' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='89' cy='57' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='89' cy='13.2' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='89' cy='95.7' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='126.7' cy='57' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st0' cx='164.5' cy='57' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st0' cx='126.7' cy='95.7' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st0' cx='164.5' cy='95.7' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st0' cx='13.5' cy='133.7' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='51.3' cy='134.1' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st0' cx='89' cy='134.1' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='126.7' cy='134.1' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st0' cx='164.5' cy='134.1' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st0' cx='13.5' cy='172.1' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='51.3' cy='172.4' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='89' cy='172.4' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='89' cy='210.8' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st1' cx='126.7' cy='172.4' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3Cellipse class='st0' cx='164.5' cy='172.4' rx='13.5' ry='13.7'%3E%3C/ellipse%3E%3C/svg%3E%0A
+  notes:
+    - heading: "Features"
+      content: |
+          Java 14<br />
+          PostgreSQL 13<br />
+          Automatic TLS certificates<br />
+          Automatic Java heap size configuration<br />
+
+initialize:
+  repository: git://github.com/platformsh-templates/metabase.git@master
+  config: null
+  files: []
+  profile: Metabase

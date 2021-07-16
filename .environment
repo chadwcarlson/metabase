@@ -19,4 +19,4 @@ export MB_EMAIL_SMTP_PASSWORD=""
 export MEM_AVAILABLE=$(jq .info.limits.memory /run/config.json)
 
 # Limit heap size
-export JAVA_TOOL_OPTIONS="-Xmx${MEM_AVAILABLE}m -XX:+ExitOnOutOfMemoryError -XX:+PrintGCDetails"
+export JAVA_TOOL_OPTIONS="-Xmx${MEM_AVAILABLE}m -XX:+ExitOnOutOfMemoryError -Xlog:gc*"

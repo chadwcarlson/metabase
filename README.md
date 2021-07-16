@@ -6,10 +6,12 @@ Metabase is a simple and powerful analytics tool which lets anyone learn and mak
 
 ## Features
 
-* Java 11
+* Java 14
 * PostgreSQL 13
 * Automatic TLS certificates
 * Automatic Java heap size configuration
+
+## Post-install
 
 ## References
 
