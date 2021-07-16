@@ -1,0 +1,48 @@
+# .platform.app.yaml
+
+# The name of this application, which must be unique within a project.
+name: app
+
+# The type key specifies the language and version for your application.
+type: java:11
+
+variables:
+    env: 
+        METABASE_VERSION: '0.40.0'
+
+# The relationships of the application with services or other applications.
+# The left-hand side is the name of the relationship as it will be exposed
+# to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
+# side is in the form `<service name>:<endpoint name>`.
+relationships:
+    database: "db:postgresql"
+
+# The hooks that will be triggered when the package is deployed.
+hooks:
+    # Build hooks can modify the application files on disk but not access any services like databases.
+    # No services are available but the disk is writeable.
+    build: |
+        # set -e
+        mkdir -p "$PLATFORM_APP_DIR/metabase" "$PLATFORM_APP_DIR}/bin"
+
+        # Download Metabase
+        wget --no-cookies --no-check-certificate -q -O \
+            "$PLATFORM_APP_DIR/metabase/metabase.jar" \
+            "http://downloads.metabase.com/v$METABASE_VERSION/metabase.jar"
+
+# The configuration of the application when it is exposed to the web.
+web:
+    commands:
+        start: exec java -jar $PLATFORM_APP_DIR/metabase/metabase.jar
+
+# The size of the persistent disk of the application (in MB).
+disk: 2048
+
+# The mounts that will be performed when the package is deployed.
+mounts:
+    temp:
+        source: local
+        source_path: temp
+    data:
+        source: local
+        source_path: data
