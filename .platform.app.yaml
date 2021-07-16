@@ -23,7 +23,7 @@ hooks:
     # No services are available but the disk is writeable.
     build: |
         # set -e
-        mkdir -p "$PLATFORM_APP_DIR/metabase" "$PLATFORM_APP_DIR}/bin"
+        mkdir -p "$PLATFORM_APP_DIR/metabase" "$PLATFORM_APP_DIR/bin"
 
         # Download Metabase
         wget --no-cookies --no-check-certificate -q -O \
