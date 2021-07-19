@@ -9,9 +9,10 @@ tunnel_to_db () {
 
 # Local.
 if [ -z ${PLATFORM_PROJECT_ENTROPY+x} ]; then 
-    export MB_JETTY_PORT=${PORT}
+    export MB_JETTY_PORT=8888
 
     # Database Conection Info
+    tunnel_to_db
     export MB_DB_TYPE=postgres
     export MB_DB_DBNAME=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".database[0].path")
     export MB_DB_HOST=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".database[0].host")
@@ -20,13 +21,10 @@ if [ -z ${PLATFORM_PROJECT_ENTROPY+x} ]; then
     export MB_DB_PASS=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".database[0].password")
 
     # Limit heap size
-    export MEM_AVAILABLE=500
-    export JAVA_TOOL_OPTIONS="-Xmx${MEM_AVAILABLE}m -XX:+ExitOnOutOfMemoryError -Xlog:gc*"
+    export JAVA_TOOL_OPTIONS="-Xmx500m -XX:+ExitOnOutOfMemoryError -Xlog:gc*"
     export JAR_FILE=$(pwd)/metabase/metabase.jar
 else 
     export JAR_FILE=$PLATFORM_APP_DIR/metabase/metabase.jar
 fi
-
-echo $JAR_FILE
 
 java -jar $JAR_FILE
