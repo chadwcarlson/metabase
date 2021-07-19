@@ -1,7 +1,7 @@
 # .platform.app.yaml
 
 # The name of this application, which must be unique within a project.
-name: app
+name: appb
 
 # The type key specifies the language and version for your application.
 type: java:11
@@ -15,7 +15,7 @@ variables:
 # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
 # side is in the form `<service name>:<endpoint name>`.
 relationships:
-    database: "db:postgresql"
+    database: "dbb:postgresql"
 
 # The hooks that will be triggered when the package is deployed.
 hooks:
