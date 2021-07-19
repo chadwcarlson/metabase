@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# tunnel_to_db () {
-#     # Open a local tunnel to the environment.
-#     platform tunnel:close -y
-#     platform tunnel:open -y
-#     export PLATFORM_RELATIONSHIPS="$(platform tunnel:info --encode)"
-# }
-
 download_metabase () {
     # Download Metabase.
     echo "Downloading Metabase ($METABASE_VERSION)"
@@ -17,7 +10,6 @@ download_metabase () {
 # Local.
 if [ -z ${PLATFORM_PROJECT_ENTROPY+x} ]; then 
     echo "Building Metabase locally"
-    # tunnel_to_db
     METABASE_VERSION=$(platform app:config-get -P variables.env.METABASE_VERSION)
     METABASE_HOME=$(pwd)/metabase/
 # Platform.sh.

@@ -3,6 +3,4 @@ metabase.db.mv.db
 metabase.db.trace.db
 metabase.jar
 
-build.sh
-deploy.sh
-header.inc
+old

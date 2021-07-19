@@ -22,20 +22,7 @@ hooks:
     # Build hooks can modify the application files on disk but not access any services like databases.
     build: !include
         type: string
-        path: local-build.sh
-
-# The hooks that will be triggered when the package is deployed.
-# hooks:
-#     # Build hooks can modify the application files on disk but not access any services like databases.
-#     # No services are available but the disk is writeable.
-#     build: |
-#         # set -e
-#         mkdir -p "$PLATFORM_APP_DIR/metabase"
-
-#         # Download Metabase
-#         wget --no-cookies --no-check-certificate -q -O \
-#             "metabase/metabase.jar" \
-#             "http://downloads.metabase.com/v$METABASE_VERSION/metabase.jar"
+        path: build.sh
 
 # The configuration of the application when it is exposed to the web.
 web:
@@ -43,6 +30,7 @@ web:
         start: !include
             type: string
             path: start.sh
+
 # The size of the persistent disk of the application (in MB).
 disk: 2048
 
