@@ -5,7 +5,7 @@ info:
   name: Metabase
   description: |
      <p>This template builds Metabase for Platform.sh.</p>
-     <p>Metabase is a simple and powerful analytics tool which lets anyone learn and make decisions from their company’s data.</p>
+     <p>Metabase is a simple and powerful analytics tool which lets anyone learn and make decisions from their company’s data.  The Metabase jar file is downloaded on the fly during the build hook based on the version provided in the application's configuration.</p>
   tags:
   - Java
   - Analytics
@@ -13,7 +13,7 @@ info:
   notes:
     - heading: "Features"
       content: |
-          Java 14<br />
+          Java 11<br />
           PostgreSQL 13<br />
           Automatic TLS certificates<br />
           Automatic Java heap size configuration<br />

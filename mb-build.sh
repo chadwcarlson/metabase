@@ -1,12 +1,5 @@
 #!/bin/bash
 
-download_metabase () {
-    # Download Metabase.
-    echo "Downloading Metabase ($METABASE_VERSION)"
-    wget --no-cookies --no-check-certificate -q -O \
-        "$METABASE_HOME/metabase.jar" "http://downloads.metabase.com/v$METABASE_VERSION/metabase.jar"
-}
-
 # Local.
 if [ -z ${PLATFORM_PROJECT_ENTROPY+x} ]; then 
     echo "Building Metabase locally"
@@ -18,4 +11,7 @@ else
     METABASE_HOME=${PLATFORM_APP_DIR}/metabase
 fi
 
-download_metabase
+# Download Metabase.
+echo "Downloading Metabase ($METABASE_VERSION)"
+wget --no-cookies --no-check-certificate -q -O \
+    "$METABASE_HOME/metabase.jar" "http://downloads.metabase.com/v$METABASE_VERSION/metabase.jar"
