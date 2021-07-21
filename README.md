@@ -163,21 +163,35 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculi
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
 
+<!-- ### Code of Conduct
+
+WIP
+
+### Community License Agreement
+
+WIP -->
+
 ## License
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+This template uses the [Open Source edition of Metabase](https://github.com/metabase/metabase), which is licensed under the [GNU Affero General Public License (AGPL)](https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt). 
 
 ## Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+This template is maintained primarily by the Platform.sh Developer Relations team, and they will be notified of all issues and pull requests you open here. 
+
+- **Community:** Share your question with the community, or see if it's already been asked on our [Community site](https://community.platform.sh).
+- **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions.
+<!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
 
 ## Resources
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
-
-## Acknowledgments
 
 * [Metabase.com](https://www.metabase.com/)
 * [Metabase Documentation](https://www.metabase.com/docs/latest/)
 * [Metabase Repository](https://github.com/metabase/metabase)
 * [Java on Platform.sh](https://docs.platform.sh/languages/java.html)
+
+## Thanks
+
+- [@rhubinak](https://github.com/rhubinak) for creating the original template.
+- [@hacktivist123](https://github.com/hacktivist123) for integrating into the Platform.sh template catalog.
+
