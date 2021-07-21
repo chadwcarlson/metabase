@@ -94,10 +94,10 @@
 
 The following files have been added in order to download Metabase during the build hook and to deploy the application on Platform.sh. If using this project as a reference for your own existing project, replicated the changes below.
 
-- The `.platform.app.yaml`, `.platform/services.yaml`, and `.platform/routes.yaml` files have been added. These provide Platform.sh-specific configuration and are present in all projects on Platform.sh. You may customize them as you see fit.
-- A `.environment` file has been added to define database credentials and other environment variables for Metabase at runtime. 
-- A `build.sh` script is included, which used the `METABASE_VERSION` environment variable set in `.platform.app.yaml` to download a version of the Metabase jar file. This script grabs the `METABASE_VERSION` environment variable via the Platform.sh CLI locally.
-- A `start.sh` script has been added. This file actually runs the Metabase jar run the site. Locally, the Platform.sh CLI opens a tunnel to the PostgreSQL database and mocks connection credentials before starting. 
+- The [`.platform.app.yaml`](.platform.app.yaml), [`.platform/services.yaml`](.platform/services.yaml), and [`.platform/routes.yaml`](.platform/routes.yaml) files have been added. These provide Platform.sh-specific configuration and are present in all projects on Platform.sh. You may customize them as you see fit.
+- A [`.environment`](.environment) file has been added to define database credentials and other environment variables for Metabase at runtime. 
+- A [`build.sh`](scripts/build.sh) script is included, which used the `METABASE_VERSION` environment variable set in `.platform.app.yaml` to download a version of the Metabase jar file. This script grabs the `METABASE_VERSION` environment variable via the Platform.sh CLI locally.
+- A [`start.sh`](scripts/start.sh) script has been added. This file actually runs the Metabase jar run the site. Locally, the Platform.sh CLI opens a tunnel to the PostgreSQL database and mocks connection credentials before starting. 
 
 ## Getting started
 
