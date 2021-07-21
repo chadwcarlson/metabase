@@ -27,19 +27,19 @@
     <a href="https://github.com/platformsh-templates/pulls">
         <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
     </a>
-    <br />
+    <!-- <br /> -->
     <!-- <a href="https://github.com/platformsh-templates/metabase/network/members">
   <img src="https://img.shields.io/github/license/metabase/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh"/>
   </a> -->
     <a href="https://github.com/platformsh-templates/metabase/graphs/contributors">
         <img src="https://img.shields.io/github/contributors/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
     </a>
-    <a href="https://github.com/platformsh-templates/metabase/network/members">
+    <!-- <a href="https://github.com/platformsh-templates/metabase/network/members">
         <img src="https://img.shields.io/github/forks/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
     </a>
     <a href="https://github.com/platformsh-templates/metabase/stargazers">
         <img src="https://img.shields.io/github/stars/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
-    </a>
+    </a> -->
     <br /><br />
     <a href="https://docs.platform.sh">Platform.sh</a> ◦
     <a href="https://github.com/platformsh-templates/metabase/issues">Documentation</a> ◦
