@@ -7,10 +7,10 @@
 <br />
 <p align="center">
     <a href="https://github.com/metabase/metabase">
-        <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="80" height="80">
+        <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="120" height="120">
     </a>
     <br /><br />
-    <h2 align="center">Metabase<br /><br /></h2>
+    <h2 align="center">Metabase<br /></h2>
 </p>
 
 <p align="center">
