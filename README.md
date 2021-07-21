@@ -51,10 +51,7 @@
 </p>
 </p>
 
-<br />
-<br />
 <hr>
-<br />
 
 - [About](#about)
     - [Features](#features)
