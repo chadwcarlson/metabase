@@ -9,14 +9,14 @@ export MB_DB_PORT=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".dat
 export MB_DB_USER=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".database[0].username")
 export MB_DB_PASS=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".database[0].password")
 
+# Grab memory limits
+export MEM_AVAILABLE=$(jq .info.limits.memory /run/config.json)
+
+# Limit heap size
+export JAVA_TOOL_OPTIONS="-Xmx${MEM_AVAILABLE}m -XX:+ExitOnOutOfMemoryError -Xlog:gc*"
+
 # Email
 export MB_EMAIL_SMTP_HOST=$PLATFORM_SMTP_HOST
 export MB_EMAIL_SMTP_PORT=25
 export MB_EMAIL_SMTP_USERNAME=""
 export MB_EMAIL_SMTP_PASSWORD=""
-
-# Grab memory limits
-export MEM_AVAILABLE=$(jq .info.limits.memory /run/config.json)
-
-# Limit heap size
-export JAVA_TOOL_OPTIONS="-Xmx${MEM_AVAILABLE}m -XX:+ExitOnOutOfMemoryError -XX:+PrintGCDetails"

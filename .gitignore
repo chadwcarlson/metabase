@@ -1,9 +1,6 @@
-plugins/*
+plugins
 metabase.db.mv.db
 metabase.db.trace.db
 metabase.jar
 
-build.sh
-deploy.sh
-start.sh
-header.inc
+old
