@@ -1,7 +1,7 @@
 <br />
 <p align="right">
     <a href="https://platform.sh">
-        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="100px">
+        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="150px">
     </a>
         <br />
     <a href="https://platform.sh">About</a> ◦
@@ -28,6 +28,7 @@
     <a href="https://github.com/platformsh-templates/pulls">
         <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
     </a>
+    <br />
     <!-- <a href="https://github.com/platformsh-templates/metabase/network/members">
   <img src="https://img.shields.io/github/license/metabase/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh"/>
   </a> -->
