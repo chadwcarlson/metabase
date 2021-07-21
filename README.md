@@ -4,7 +4,6 @@
         <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="150px">
     </a>
         <br />
-    <a href="https://platform.sh">About</a> ◦
     <a href="https://platform.sh/blog">Blog</a> ◦
     <a href="https://docs.platform.sh">Docs</a> ◦
     <a href="https://community.platform.sh">Join our community</a>
@@ -45,7 +44,7 @@
     <a href="https://docs.platform.sh">Read the docs</a> ◦
     <a href="https://github.com/platformsh-templates/metabase/issues">Report a bug</a> ◦
     <a href="https://github.com/platformsh-templates/metabase/issues">Request a feature</a>
-    <br /><br /><br />
+    <br /><br />
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
         <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
     </a>
