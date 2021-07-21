@@ -1,12 +1,8 @@
 <br />
 <p align="right">
     <a href="https://platform.sh">
-        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="150px">
+        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="100px">
     </a>
-        <br />
-    <a href="https://platform.sh/blog">Blog</a> ◦
-    <a href="https://docs.platform.sh">Docs</a> ◦
-    <a href="https://community.platform.sh">Join our community</a>
 </p>
 <br />
 <p align="center">
