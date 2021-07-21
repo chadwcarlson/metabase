@@ -1,7 +1,7 @@
 <br />
 <p align="right">
     <a href="https://platform.sh">
-        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="100px">
+        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="120px">
     </a>
 </p>
 <br />
@@ -39,12 +39,12 @@
     <br /><br />
     <a href="https://docs.platform.sh">Platform.sh</a> ◦
     <a href="https://github.com/platformsh-templates/metabase/issues">Documentation</a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues">Blog</a>
+    <a href="https://github.com/platformsh-templates/metabase/issues">Blog</a> ◦ 
     <a href="https://docs.platform.sh">API</a> ◦
     <a href="https://docs.platform.sh">Status</a> ◦
     <a href="https://docs.platform.sh">Join our community</a><br />
-    <a href="https://github.com/platformsh-templates/metabase/issues">Report a bug</a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues">Request a feature</a>
+    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a> ◦
+    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
     <br /><br />
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
         <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
