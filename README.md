@@ -1,7 +1,7 @@
 <br />
 <p align="right">
     <a href="https://platform.sh">
-        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="200px">
+        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="100px">
     </a>
         <br />
     <a href="https://platform.sh">About</a> ◦
@@ -12,7 +12,7 @@
 <br />
 <p align="center">
     <a href="https://github.com/metabase/metabase">
-        <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="200" height="200">
+        <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="80" height="80">
     </a>
     <br /><br />
     <h2 align="center">Metabase<br /><br /></h2>
@@ -41,9 +41,9 @@
         <img src="https://img.shields.io/github/stars/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
     </a>
     <br /><br />
-    <a href="https://docs.platform.sh"><strong>Read the docs</strong></a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
+    <a href="https://docs.platform.sh">Read the docs</a> ◦
+    <a href="https://github.com/platformsh-templates/metabase/issues">Report a bug</a> ◦
+    <a href="https://github.com/platformsh-templates/metabase/issues">Request a feature</a>
     <br /><br /><br />
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
         <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
