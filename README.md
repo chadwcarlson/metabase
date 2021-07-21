@@ -41,7 +41,12 @@
         <img src="https://img.shields.io/github/stars/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
     </a>
     <br /><br />
-    <a href="https://docs.platform.sh">Read the docs</a> ◦
+    <a href="https://docs.platform.sh">Platform.sh</a> ◦
+    <a href="https://github.com/platformsh-templates/metabase/issues">Documentation</a> ◦
+    <a href="https://github.com/platformsh-templates/metabase/issues">Blog</a>
+    <a href="https://docs.platform.sh">API</a> ◦
+    <a href="https://docs.platform.sh">Status</a> ◦
+    <a href="https://docs.platform.sh">Join our community</a><br />
     <a href="https://github.com/platformsh-templates/metabase/issues">Report a bug</a> ◦
     <a href="https://github.com/platformsh-templates/metabase/issues">Request a feature</a>
     <br /><br />
