@@ -22,14 +22,14 @@ hooks:
     # Build hooks can modify the application files on disk but not access any services like databases.
     build: !include
         type: string
-        path: mb-build.sh
+        path: scripts/build.sh
 
 # The configuration of the application when it is exposed to the web.
 web:
     commands:
         start: !include
             type: string
-            path: mb-start.sh
+            path: scripts/start.sh
 
 # The size of the persistent disk of the application (in MB).
 disk: 1024
