@@ -94,10 +94,10 @@
 
 The following files have been added in order to download Metabase during the build hook and to deploy the application on Platform.sh. If using this project as a reference for your own existing project, replicated the changes below.
 
-- The `.platform.app.yaml`, `.platform/services.yaml`, and `.platform/routes.yaml` files have been added. These provide Platform.sh-specific configuration and are present in all projects on Platform.sh. You may customize them as you see fit.
-- A `.environment` file has been added to define database credentials and other environment variables for Metabase at runtime. 
-- A `build.sh` script is included, which used the `METABASE_VERSION` environment variable set in `.platform.app.yaml` to download a version of the Metabase jar file. This script grabs the `METABASE_VERSION` environment variable via the Platform.sh CLI locally.
-- A `start.sh` script has been added. This file actually runs the Metabase jar run the site. Locally, the Platform.sh CLI opens a tunnel to the PostgreSQL database and mocks connection credentials before starting. 
+- The [`.platform.app.yaml`](.platform.app.yaml), [`.platform/services.yaml`](.platform/services.yaml), and [`.platform/routes.yaml`](.platform/routes.yaml) files have been added. These provide Platform.sh-specific configuration and are present in all projects on Platform.sh. You may customize them as you see fit.
+- A [`.environment`](.environment) file has been added to define database credentials and other environment variables for Metabase at runtime. 
+- A [`build.sh`](scripts/build.sh) script is included, which used the `METABASE_VERSION` environment variable set in `.platform.app.yaml` to download a version of the Metabase jar file. This script grabs the `METABASE_VERSION` environment variable via the Platform.sh CLI locally.
+- A [`start.sh`](scripts/start.sh) script has been added. This file actually runs the Metabase jar run the site. Locally, the Platform.sh CLI opens a tunnel to the PostgreSQL database and mocks connection credentials before starting. 
 
 ## Getting started
 
@@ -163,21 +163,35 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculi
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
 
+<!-- ### Code of Conduct
+
+WIP
+
+### Community License Agreement
+
+WIP -->
+
 ## License
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+This template uses the [Open Source edition of Metabase](https://github.com/metabase/metabase), which is licensed under the [GNU Affero General Public License (AGPL)](https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt). 
 
 ## Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+This template is maintained primarily by the Platform.sh Developer Relations team, and they will be notified of all issues and pull requests you open here. 
+
+- **Community:** Share your question with the community, or see if it's already been asked on our [Community site](https://community.platform.sh).
+- **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions.
+<!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
 
 ## Resources
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
-
-## Acknowledgments
 
 * [Metabase.com](https://www.metabase.com/)
 * [Metabase Documentation](https://www.metabase.com/docs/latest/)
 * [Metabase Repository](https://github.com/metabase/metabase)
 * [Java on Platform.sh](https://docs.platform.sh/languages/java.html)
+
+## Thanks
+
+- [@rhubinak](https://github.com/rhubinak) for creating the original template.
+- [@hacktivist123](https://github.com/hacktivist123) for integrating into the Platform.sh template catalog.
+
