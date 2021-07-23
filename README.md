@@ -39,7 +39,7 @@
     <br /><br />
     <a href="https://docs.platform.sh">Platform.sh</a> ◦
     <a href="https://github.com/platformsh-templates/metabase/issues">Documentation</a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues">Blog</a> ◦ 
+    <a href="https://github.com/platformsh-templates/metabase/issues">Blog</a> ◦
     <a href="https://docs.platform.sh">API</a> ◦
     <a href="https://docs.platform.sh">Status</a> ◦
     <a href="https://docs.platform.sh">Join our community</a><br />
@@ -55,19 +55,20 @@
 <hr>
 
 - [About](#about)
-    - [Features](#features)
-    - [Platform.sh customizations](#platformsh-customizations)
-        - [Configuration](#configuration)
-        - [Builds and deploys](#builds-and-deploys)
-        - [Upstream modifications](#upstream-modifications)
+  - [Features](#features)
+  - [Platform.sh customizations](#platformsh-customizations)
+    - [Configuration](#configuration)
+    - [Builds and deploys](#builds-and-deploys)
+    - [Upstream modifications](#upstream-modifications)
 - [Getting started](#getting-started)
-    - [Post-install](#post-install)
-    - [Data](#data)
+  - [Platform.sh customizations](#platformsh-customizations)
+  - [Post-install](#post-install)
+  - [Data](#data)
 - [Usage](#usage)
-    - [Local development](#local-development)
-    - [Updates](#updates)
-    - [Customization](#customization)
-    - [Performance](#performance)
+  - [Local development](#local-development)
+  - [Updates](#updates)
+  - [Customization](#customization)
+  - [Performance](#performance)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -88,11 +89,29 @@
 
 ### Features
 
-* Java 11
-* PostgreSQL 13
-* Automatic TLS certificates
-* Automatic Java heap size configuration
-* Automatic upstream updates via Source Operations
+- Java 11
+- PostgreSQL 13
+- Automatic TLS certificates
+- Automatic Java heap size configuration
+- Automatic upstream updates via Source Operations
+
+## Getting started
+
+To use this template for your metabase project, you need to go through the following steps:
+
+- Go through the README 😉
+
+- Clone the repo
+
+- Make the neccessary edits and customizations to suite your needs.
+
+- Create a new project with the [Platform.sh CLI](https://docs.platform.sh/development/cli.html)
+
+- Configure your project remote.
+
+- Git commit your changes
+
+- Push to Platform.sh 🚀
 
 ### Platform.sh customizations
 
@@ -102,14 +121,14 @@ The following files have been added in order to download Metabase during the bui
 
 Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment. Within an environment there are three types of containers, each of which are managed by three required files that have been included in this repository:
 
-- [The **Router** container](https://docs.platform.sh/configuration/services.html): 
+- [The **Router** container](https://docs.platform.sh/configuration/services.html):
 
-    For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage. 
+  For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
 
-- [**Service** containers](https://docs.platform.sh/configuration/services.html): 
+- [**Service** containers](https://docs.platform.sh/configuration/services.html):
 
-    Each virtual cluster can have zero or more Service containers, but the file which configures them [**`.platform/services.yaml`**](.platform/services.yaml) is still required in your repository. Each top level key in that file will correspond to a separate Service container, with the kind of service determined by its `type`. 
-    
+  Each virtual cluster can have zero or more Service containers, but the file which configures them [**`.platform/services.yaml`**](.platform/services.yaml) is still required in your repository. Each top level key in that file will correspond to a separate Service container, with the kind of service determined by its `type`.
+
 - [**Application** containers](https://docs.platform.sh/configuration/app.html) | [**`.platform.app.yaml`**](.platform.app.yaml):
 
 #### Builds and deploys
@@ -120,21 +139,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculi
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
 
-
-- Deploying on Platform.sh requires a set of configuration files to instruct the platform how to build and deploy your applications, as well as the topology of your infrastructure. 
-    - The [`.platform.app.yaml`](.platform.app.yaml) file 
+- Deploying on Platform.sh requires a set of configuration files to instruct the platform how to build and deploy your applications, as well as the topology of your infrastructure.
+  - The [`.platform.app.yaml`](.platform.app.yaml) file
 - The [`.platform.app.yaml`](.platform.app.yaml), [`.platform/services.yaml`](.platform/services.yaml), and [`.platform/routes.yaml`](.platform/routes.yaml) files have been added. These provide Platform.sh-specific configuration and are present in all projects on Platform.sh. You may customize them as you see fit.
-- A [`.environment`](.environment) file has been added to define database credentials and other environment variables for Metabase at runtime. 
+- A [`.environment`](.environment) file has been added to define database credentials and other environment variables for Metabase at runtime.
 - A [`build.sh`](scripts/build.sh) script is included, which used the `METABASE_VERSION` environment variable set in `.platform.app.yaml` to download a version of the Metabase jar file. This script grabs the `METABASE_VERSION` environment variable via the Platform.sh CLI locally.
-- A [`start.sh`](scripts/start.sh) script has been added. This file actually runs the Metabase jar run the site. Locally, the Platform.sh CLI opens a tunnel to the PostgreSQL database and mocks connection credentials before starting. 
-
-## Getting started
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+- A [`start.sh`](scripts/start.sh) script has been added. This file actually runs the Metabase jar run the site. Locally, the Platform.sh CLI opens a tunnel to the PostgreSQL database and mocks connection credentials before starting.
 
 ### Post-install
 
-After the first deployment, give the JVM a minute to finish completing it's initialization tasks (until it does, you will see a 502 error page.) which take only a minute or so. Run through the Metabase installer as normal. You will not be asked for database credentials, as those are already provided via the [`.environment`](.environment) that is sourced during the deploy hook. With the installer you will be able to create admin credentials and choose your language. 
+After the first deployment, give the JVM a minute to finish completing it's initialization tasks (until it does, you will see a 502 error page.) which take only a minute or so. Run through the Metabase installer as normal. You will not be asked for database credentials, as those are already provided via the [`.environment`](.environment) that is sourced during the deploy hook. With the installer you will be able to create admin credentials and choose your language.
 
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
@@ -146,11 +160,11 @@ Proin pretium et tellus sit amet sollicitudin. Aenean hendrerit risus risus. Viv
 
 ## Usage
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus posuere eu leo sit amet ultrices. Donec nec feugiat est. Ut ut sem quis velit convallis pretium. Pellentesque sodales, quam quis blandit suscipit, nunc justo scelerisque enim, nec lobortis justo eros nec lacus. Curabitur quis mollis turpis, sed venenatis nibh.
+There are a few ways to make use this of this template, the following ways are as follows:
 
 ### Local development
 
-Proin pretium et tellus sit amet sollicitudin. Aenean hendrerit risus risus. Vivamus quis nunc faucibus quam lacinia posuere et in massa. Morbi facilisis leo felis, scelerisque convallis libero hendrerit et. Nulla non sodales ante. Pellentesque cursus hendrerit dui id facilisis. Aenean faucibus tortor et nibh eleifend, a dictum orci facilisis. Pellentesque eget posuere elit.
+You are able to test out or build this template on your local machine by following the steps below:
 
 #### Requirements
 
@@ -158,7 +172,7 @@ Proin pretium et tellus sit amet sollicitudin. Aenean hendrerit risus risus. Viv
 
 #### Steps
 
-You are able to run the `build.sh` and `start.sh` `scripts` just as they're defined in `.platform.app.yaml` to run Metabase locally. 
+You are able to run the `build.sh` and `start.sh` `scripts` just as they're defined in `.platform.app.yaml` to run Metabase locally.
 
 Download the project's current live committed version of Metabase (`variables.env.METABASE_VERSION` in `.platform.app.yaml`):
 
@@ -172,25 +186,25 @@ Then start the application for the downloaded jar file:
 ./scripts/start.sh
 ```
 
-The script will automatically open a tunnel to the PostgreSQL instance on the current environment, so be sure to create a new one before making any changes. 
+The script will automatically open a tunnel to the PostgreSQL instance on the current environment, so be sure to create a new one before making any changes.
 
 ### Updating
 
-This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository. The `update.sh` script can be run at any time to see if there is a [new release](https://github.com/metabase/metabase/releases) of Metabase available, updating `metabase.version` with the new version. 
+This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository. The `update.sh` script can be run at any time to see if there is a [new release](https://github.com/metabase/metabase/releases) of Metabase available, updating `metabase.version` with the new version.
 
 #### Scheduled updates
 
-It is possible to schedule the update described above using [source operations](https://docs.platform.sh/configuration/app/source-operations.html), which are a set of commands that can be triggered to make changes to your project's code base. 
+It is possible to schedule the update described above using [source operations](https://docs.platform.sh/configuration/app/source-operations.html), which are a set of commands that can be triggered to make changes to your project's code base.
 
 A source operation has been defined for this template that is scheduled to run regularly with a cron job:
 
 ```yaml
 source:
-    operations:
-        updates:
-            command: !include
-                type: string
-                path: scripts/update.sh
+  operations:
+    updates:
+      command: !include
+        type: string
+        path: scripts/update.sh
 ```
 
 The [`update.sh` script](scripts/update.sh) - when a new version of Metabase has been released - will write the latest version to `metabase.version`. That change will be staged and committed in an isolated build container source operations run on, ultimately causing a full rebuild of the environment (but not using that latest version).
@@ -204,22 +218,22 @@ platform source-operation:run update
 Ideally we would like:
 
 1. For this update to occur automatically.
-2. To only occur in an isolated environment, rather than to production. 
+2. To only occur in an isolated environment, rather than to production.
 
 The [cron job](https://docs.platform.sh/configuration/app/cron.html) defined in [`.platform.app.yaml`](.platform.app.yaml) does exactly this:
 
 ```yaml
 crons:
-    auto-updates:
-        spec: '0 1 * * *'
-        cmd: |
-            if [ "$PLATFORM_BRANCH" = updates ]; then
-                platform environment:sync code data --no-wait --yes
-                platform source-operation:run update --no-wait --yes
-            fi
+  auto-updates:
+    spec: '0 1 * * *'
+    cmd: |
+      if [ "$PLATFORM_BRANCH" = updates ]; then
+          platform environment:sync code data --no-wait --yes
+          platform source-operation:run update --no-wait --yes
+      fi
 ```
 
-With this definition, the `update` source operation will check to see if a new version of Metabase is available every day at 1:00 am UTC, but *only* on the `updates` environment. If that environment does not exist on your project it will never run.
+With this definition, the `update` source operation will check to see if a new version of Metabase is available every day at 1:00 am UTC, but _only_ on the `updates` environment. If that environment does not exist on your project it will never run.
 
 ### Customizing Metabase
 
@@ -229,11 +243,16 @@ Proin pretium et tellus sit amet sollicitudin. Aenean hendrerit risus risus. Viv
 
 <!-- ## Roadmap
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna. -->
+This template will be actively updated and maintained. Moving forward we would be improving this template with more features like:
+
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 
 ## Contributing
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+Before sending a PR please see the [Contributing Guide](/CONTRIBUTING.md)
 
 <!-- ### Code of Conduct
 
@@ -245,11 +264,11 @@ WIP -->
 
 ## License
 
-This template uses the [Open Source edition of Metabase](https://github.com/metabase/metabase), which is licensed under the [GNU Affero General Public License (AGPL)](https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt). 
+This template uses the [Open Source edition of Metabase](https://github.com/metabase/metabase), which is licensed under the [GNU Affero General Public License (AGPL)](https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt).
 
 ## Contact
 
-This template is maintained primarily by the Platform.sh Developer Relations team, and they will be notified of all issues and pull requests you open here. 
+This template is maintained primarily by the Platform.sh Developer Relations team, and they will be notified of all issues and pull requests you open here.
 
 - **Community:** Share your question with the community, or see if it's already been asked on our [Community site](https://community.platform.sh).
 - **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions.
@@ -257,13 +276,12 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 ## Resources
 
-* [Metabase.com](https://www.metabase.com/)
-* [Metabase Documentation](https://www.metabase.com/docs/latest/)
-* [Metabase Repository](https://github.com/metabase/metabase)
-* [Java on Platform.sh](https://docs.platform.sh/languages/java.html)
+- [Metabase.com](https://www.metabase.com/)
+- [Metabase Documentation](https://www.metabase.com/docs/latest/)
+- [Metabase Repository](https://github.com/metabase/metabase)
+- [Java on Platform.sh](https://docs.platform.sh/languages/java.html)
 
 ## Thanks
 
 - [@rhubinak](https://github.com/rhubinak) for creating the original template.
 - [@hacktivist123](https://github.com/hacktivist123) for integrating into the Platform.sh template catalog.
-
