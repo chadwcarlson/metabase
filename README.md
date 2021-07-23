@@ -275,7 +275,7 @@ This template will be actively updated and maintained. Moving forward we would b
 
 ## Contributing
 
-Before sending a PR please see the [Contributing Guide](/CONTRIBUTING.md)
+Before sending a PR, please see the [Contributing Guide](/CONTRIBUTING.md)
 
 <!-- ### Code of Conduct
 
