@@ -65,13 +65,11 @@
   - [Post-install](#post-install)
   - [Data](#data)
 - [Usage](#usage)
-
   - [Local development](#local-development)
-  - [Updates](#updates)
-  - [Customization](#customization)
+  - [Updating](#updating)
   - [Migrating](#migrating)
+  - [Customization](#customization)
   - [Performance](#performance)
-
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -235,6 +233,7 @@ With this definition, the `update` source operation will check to see if a new v
 ### Migrating
 
 **Dumping your Database**
+
 Moving from using Metabase Cloud to a Self hosted version means you also would need to migrate your data yourself. For the migration to happen, you'll need to obtain your database dump from metabase, you can do that by refering to this [guide](https://www.metabase.com/docs/latest/operations-guide/migrating-from-h2.html) in the Metabase documentation.
 
 **_Note: It is advised you backup your database before proceeding with the dump_**
@@ -252,6 +251,7 @@ $ platform sql -e master < database.sql
 The above command will connect to the database service on the master environment, through an SSH tunnel, and run the SQL import.
 
 **Adding Previous Data Sources**
+
 If you need to add your previous data sources, all you need to do is to build and deploy your metabase site, visit the generated route to see the metabase site live.
 
 Next thing is to follow this [guide](https://www.metabase.com/docs/latest/administration-guide/01-managing-databases.html) in the Metabase official documentation to learn how to add various data sources.
