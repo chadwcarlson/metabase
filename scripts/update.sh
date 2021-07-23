@@ -15,7 +15,7 @@ else
 fi
 
 # Stage changes (on Platform.sh source operation), committing only when updates are available.
-if [ -z ${PLATFORM_PROJECT_ENTROPY+x} ]; then 
+if [ ! -z ${PLATFORM_PROJECT_ENTROPY+x} ]; then 
     git add .
     STAGED_UPDATES=$(git diff --cached)
     if [ ${#STAGED_UPDATES} -gt 0 ]; then

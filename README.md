@@ -155,12 +155,50 @@ The script will automatically open a tunnel to the PostgreSQL instance on the cu
 
 ### Updating
 
-This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the `variables.env.METABASE_VERSION` defined in `.platform.app.yaml`. 
+This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository. The `update.sh` script can be run at any time to see if there is a [new release](https://github.com/metabase/metabase/releases) of Metabase available, updating `metabase.version` with the new version. 
 
 #### Scheduled updates
 
-- [Source operations](https://docs.platform.sh/configuration/app/source-operations.html)
-- Commented out cron with branch dependence (`updates` branch)
+It is possible to schedule the update described above using [source operations](https://docs.platform.sh/configuration/app/source-operations.html), which are a set of commands that can be triggered to make changes to your project's code base. 
+
+A source operation has been defined for this template that is scheduled to run regularly with a cron job:
+
+```yaml
+source:
+    operations:
+        updates:
+            command: !include
+                type: string
+                path: scripts/update.sh
+```
+
+The [`update.sh` script](scripts/update.sh) - when a new version of Metabase has been released - will write the latest version to `metabase.version`. That change will be staged and committed in an isolated build container source operations run on, ultimately causing a full rebuild of the environment (but not using that latest version).
+
+This command can be triggered at any time for any environment with the CLI command:
+
+```bash
+platform source-operation:run update
+```
+
+Ideally we would like:
+
+1. For this update to occur automatically.
+2. To only occur in an isolated environment, rather than to production. 
+
+The [cron job](https://docs.platform.sh/configuration/app/cron.html) defined in [`.platform.app.yaml`](.platform.app.yaml) does exactly this:
+
+```yaml
+crons:
+    auto-updates:
+        spec: '0 1 * * *'
+        cmd: |
+            if [ "$PLATFORM_BRANCH" = updates ]; then
+                platform environment:sync code data --no-wait --yes
+                platform source-operation:run update --no-wait --yes
+            fi
+```
+
+With this definition, the `update` source operation will check to see if a new version of Metabase is available every day at 1:00 am UTC, but *only* on the `updates` environment. If that environment does not exist on your project it will never run.
 
 ### Customizing Metabase
 
@@ -168,9 +206,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculi
 
 Proin pretium et tellus sit amet sollicitudin. Aenean hendrerit risus risus. Vivamus quis nunc faucibus quam lacinia posuere et in massa. Morbi facilisis leo felis, scelerisque convallis libero hendrerit et. Nulla non sodales ante. Pellentesque cursus hendrerit dui id facilisis. Aenean faucibus tortor et nibh eleifend, a dictum orci facilisis. Pellentesque eget posuere elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus posuere eu leo sit amet ultrices. Donec nec feugiat est. Ut ut sem quis velit convallis pretium. Pellentesque sodales, quam quis blandit suscipit, nunc justo scelerisque enim, nec lobortis justo eros nec lacus. Curabitur quis mollis turpis, sed venenatis nibh.
 
-## Roadmap
+<!-- ## Roadmap
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna. -->
 
 ## Contributing
 
