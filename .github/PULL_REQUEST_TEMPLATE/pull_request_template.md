@@ -1,5 +1,3 @@
-<!--- Provide a general summary of your changes in the Title above -->
-
 ## Description
 Please describe your changes in detail according to the information below
 
@@ -27,7 +25,7 @@ What types of changes does your code introduce? Put an `x` in all the boxes that
 - [ ] Breaking change (fix or feature that would cause existing functionality to change)
 
 ## Checklist:
- Go over all the following points, and put an `x` in all the boxes that apply. If you're unsure about any of these, don't hesitate to ask. We're here to help!
+ Go over all the following list, and put an `x` in all the boxes that apply. If you're unsure about what any of these mean, don't hesitate to ask. We're here to help!
 
 - [ ] I have read the contribution guide
 - [ ] I have created an issue following the issue guide
