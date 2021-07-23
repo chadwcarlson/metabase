@@ -65,10 +65,13 @@
   - [Post-install](#post-install)
   - [Data](#data)
 - [Usage](#usage)
+
   - [Local development](#local-development)
   - [Updates](#updates)
   - [Customization](#customization)
+  - [Migrating](#migrating)
   - [Performance](#performance)
+
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -152,12 +155,6 @@ After the first deployment, give the JVM a minute to finish completing it's init
 
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
-### Migrating
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
-
-Proin pretium et tellus sit amet sollicitudin. Aenean hendrerit risus risus. Vivamus quis nunc faucibus quam lacinia posuere et in massa. Morbi facilisis leo felis, scelerisque convallis libero hendrerit et. Nulla non sodales ante. Pellentesque cursus hendrerit dui id facilisis. Aenean faucibus tortor et nibh eleifend, a dictum orci facilisis. Pellentesque eget posuere elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus posuere eu leo sit amet ultrices. Donec nec feugiat est. Ut ut sem quis velit convallis pretium. Pellentesque sodales, quam quis blandit suscipit, nunc justo scelerisque enim, nec lobortis justo eros nec lacus. Curabitur quis mollis turpis, sed venenatis nibh.
-
 ## Usage
 
 There are a few ways to make use this of this template, the following ways are as follows:
@@ -234,6 +231,32 @@ crons:
 ```
 
 With this definition, the `update` source operation will check to see if a new version of Metabase is available every day at 1:00 am UTC, but _only_ on the `updates` environment. If that environment does not exist on your project it will never run.
+
+### Migrating
+
+**Dumping your Database**
+Moving from using Metabase Cloud to a Self hosted version means you also would need to migrate your data yourself. For the migration to happen, you'll need to obtain your database dump from metabase, you can do that by refering to this [guide](https://www.metabase.com/docs/latest/operations-guide/migrating-from-h2.html) in the Metabase documentation.
+
+**_Note: It is advised you backup your database before proceeding with the dump_**
+
+When you have successfully obtained a dump of your data(MySQL, MariaDB or PostgreSQL) from Metabase, you'll need to populate the postgresql database service that this template uses. You can change the default database type of this template by altering the `services.yaml` file in the `.platfrom` folder if needed.
+
+Next, you'll need to save your as database.sql. (Or any name, really, as long as it’s the same as you use below.)
+
+Next, import the database into your Platform.sh site. The easiest way to do so is with the Platform.sh CLI by running the following command:
+
+```bash
+$ platform sql -e master < database.sql
+```
+
+The above command will connect to the database service on the master environment, through an SSH tunnel, and run the SQL import.
+
+**Adding Previous Data Sources**
+If you need to add your previous data sources, all you need to do is to build and deploy your metabase site, visit the generated route to see the metabase site live.
+
+Next thing is to follow this [guide](https://www.metabase.com/docs/latest/administration-guide/01-managing-databases.html) in the Metabase official documentation to learn how to add various data sources.
+
+**_Note: If you have a CSV file containing your data you'll need to upload the csv files to a database, then connect metabase to the database._**
 
 ### Customizing Metabase
 
