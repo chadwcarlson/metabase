@@ -38,7 +38,7 @@ crons:
 
 source:
     operations:
-        updates:
+        update:
             command: !include
                 type: string
                 path: scripts/update.sh
