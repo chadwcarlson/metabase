@@ -92,8 +92,16 @@
 
 ### Platform.sh customizations
 
-The following files have been added in order to download Metabase during the build hook and to deploy the application on Platform.sh. If using this project as a reference for your own existing project, replicated the changes below.
+The following files have been added in order to download Metabase during the build hook and to deploy the application on Platform.sh. If using this template as a reference for your own project, replicate the changes below.
 
+Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment. Within an environment there are three types of containers, each of which are managed by three required files in the repository. 
+
+- [The Router container](https://docs.platform.sh/configuration/services.html) | [`.platform/routes.yaml`](.platform/routes.yaml): For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file (`.platform/routes.yaml`) 
+- [Service containers](https://docs.platform.sh/configuration/services.html) | [`.platform/services.yaml`](.platform/services.yaml):
+- [Application containers](https://docs.platform.sh/configuration/app.html) | [`.platform.app.yaml`](.platform.app.yaml):
+
+- Deploying on Platform.sh requires a set of configuration files to instruct the platform how to build and deploy your applications, as well as the topology of your infrastructure. 
+    - The [`.platform.app.yaml`](.platform.app.yaml) file 
 - The [`.platform.app.yaml`](.platform.app.yaml), [`.platform/services.yaml`](.platform/services.yaml), and [`.platform/routes.yaml`](.platform/routes.yaml) files have been added. These provide Platform.sh-specific configuration and are present in all projects on Platform.sh. You may customize them as you see fit.
 - A [`.environment`](.environment) file has been added to define database credentials and other environment variables for Metabase at runtime. 
 - A [`build.sh`](scripts/build.sh) script is included, which used the `METABASE_VERSION` environment variable set in `.platform.app.yaml` to download a version of the Metabase jar file. This script grabs the `METABASE_VERSION` environment variable via the Platform.sh CLI locally.
@@ -148,6 +156,11 @@ The script will automatically open a tunnel to the PostgreSQL instance on the cu
 ### Updating
 
 This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the `variables.env.METABASE_VERSION` defined in `.platform.app.yaml`. 
+
+#### Scheduled updates
+
+- [Source operations](https://docs.platform.sh/configuration/app/source-operations.html)
+- Commented out cron with branch dependence (`updates` branch)
 
 ### Customizing Metabase
 
