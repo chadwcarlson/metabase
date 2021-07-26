@@ -77,7 +77,7 @@ We are very passionate about our community and we are actively seeking for more 
   <br>
 - Workshop materials
 
-To submit any type of content, you can reach out to the DevRel team via any of the channels in the [contact](#) section
+To submit any type of content, you can reach out to the DevRel team via any of the channels in the [help](#where-can-i-go-for-help) section
 
 ## Code of Conduct
 
