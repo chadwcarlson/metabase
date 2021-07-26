@@ -79,7 +79,7 @@ To submit any type of content, you can reach out to the DevRel team via any of t
 
 ## Code of Conduct
 
-It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our Code of Conduct exists so that we all know how to treat each other in the community the right way. Please see our [Code of Conduct]()
+It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our code of conduct exists so that we all know how to treat each other in the community with kindness. Please see our [Code of Conduct]()
 
 ## Code of Conduct
 
