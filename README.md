@@ -57,6 +57,9 @@
 - [About](#about)
     - [Features](#features)
     - [Platform.sh customizations](#platformsh-customizations)
+        - [Configuration](#configuration)
+        - [Builds and deploys](#builds-and-deploys)
+        - [Upstream modifications](#upstream-modifications)
 - [Getting started](#getting-started)
     - [Post-install](#post-install)
     - [Data](#data)
@@ -94,7 +97,7 @@
 
 The following files have been added in order to download Metabase during the build hook and to deploy the application on Platform.sh. If using this template as a reference for your own project, replicate the changes below.
 
-#### Platform.sh configuration
+#### Configuration
 
 Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment. Within an environment there are three types of containers, each of which are managed by three required files that have been included in this repository:
 
@@ -102,11 +105,13 @@ Every application you deploy on Platform.sh is built as a **virtual cluster** co
 - [**Service** containers](https://docs.platform.sh/configuration/services.html): Each virtual cluster can have zero or more Service containers, but the file which configures them [**`.platform/services.yaml`**](.platform/services.yaml) is still required in your repository. Each top level key in that file will correspond to a separate Service container, with the kind of service determined by its `type`. 
 - [**Application** containers](https://docs.platform.sh/configuration/app.html) | [**`.platform.app.yaml`**](.platform.app.yaml):
 
-#### Build and deploys
+#### Builds and deploys
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
 
 #### Upstream modifications
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
 
 
 - Deploying on Platform.sh requires a set of configuration files to instruct the platform how to build and deploy your applications, as well as the topology of your infrastructure. 
