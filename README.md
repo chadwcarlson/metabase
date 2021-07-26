@@ -126,9 +126,13 @@ Every application you deploy on Platform.sh is built as a **virtual cluster** co
 
 For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
 
-For this Metabase template, two routes have been defined. One `upstream` route directs requests directly to the Metabase application container at the `www` subdomain, which defined by the `upstream` value `"app:http"`. Notice that the application container name `app` is matched in the `name` attribute in [`.platform.app.yaml`](.platform.app.yaml). There is also a `redirect` route configured, which automatically redirects all request to the `www` subdomain upstream route.
+**Metabase**
 
-A `{default}` placeholder is included on both defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
+For Metabase, two routes have been defined. One `upstream` route directs requests directly to the Metabase application container at the `www` subdomain, which defined by the `upstream` value `"app:http"`. Notice that the application container name `app` is matched in the `name` attribute in [`.platform.app.yaml`](.platform.app.yaml). There is also a `redirect` route configured, which automatically redirects all request to the `www` subdomain upstream route.
+
+<!-- **Some second application** -->
+
+A `{default}` placeholder is included on all defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
 
 <hr></details>
 
@@ -155,9 +159,15 @@ With this relationship defined, the database will now be made accessible to the 
 
 There must always be one Application container in your cluster, but there [may be more](https://docs.platform.sh/configuration/app/multi-app.html). It is from this file that you are able to define the container's runtime language and version, it's relationships to other containers, and how it is [built and deployed](#builds-and-deploys). 
 
-Every project you deploy on Platform.sh exists on a writable file system at build time, but it will become read-only once it enters the deploy phase (see [Builds and deploys](#builds-and-deploys)) for more information. Because of this, any directories that require write access to the file system at runtime must be declared as `mounts`, and must include the `disk` attribute that defines the available disk space for the data in these directories. For this templates, the `temp` and `data` directories are required in order to load the example dataset that comes with Metabase. Since the upstream jar file is unpacked during the start command, which includes writing a number of plugins to the filesystem, `plugins` will also be a mounted directory. 
+Every project you deploy on Platform.sh exists on a writable file system at build time, but it will become read-only once it enters the deploy phase (see [Builds and deploys](#builds-and-deploys)) for more information. Because of this, any directories that require write access to the file system at runtime must be declared as `mounts`, and must include the `disk` attribute that defines the available disk space for the data in these directories. 
 
-In all of your configuration, the `.platform.app.yaml` file gives you the most control over your projects and therefore comes with a great deal more features than described here. Visit the [**Configure your application**](https://docs.platform.sh/configuration/app.html) section of the documentation for more details.
+**Metabase**
+
+For Metabase, the `temp` and `data` directories are required in order to load the example dataset that comes with Metabase. Since the upstream jar file is unpacked during the start command, which includes writing a number of plugins to the filesystem, `plugins` will also be a mounted directory. 
+
+<!-- **Some second application** -->
+
+The `.platform.app.yaml` file comes with many more features than are described here, so visit the [**Configure your application**](https://docs.platform.sh/configuration/app.html) section of the documentation for more details.
 
 <hr></details>
 
