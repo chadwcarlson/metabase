@@ -146,7 +146,11 @@ Every application you deploy on Platform.sh is built as a **virtual cluster** co
 
 - [**Application** containers](https://docs.platform.sh/configuration/app.html):
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+    There must always be one Application container in your cluster, but there [may be more](https://docs.platform.sh/configuration/app/multi-app.html). It is from this file that you are able to define the container's runtime language and version, it's relationships to other containers, and how it is [built and deployed](#builds-and-deploys). 
+
+    Every project you deploy on Platform.sh exists on a writable file system at build time, but it will become read-only once it enters the deploy phase (see [Builds and deploys]((#builds-and-deploys))) for more information. Because of this, any directories that require write access to the file system at runtime must be declared as `mounts`, and must include the `disk` attribute that defines the available disk space for the data in these directories. For this templates, the `temp` and `data` directories are required in order to load the example dataset that comes with Metabase. Since the upstream jar file is unpacked during the start command, which includes writing a number of plugins to the filesystem, `plugins` will also be a mounted directory. 
+
+    In all of your configuration, the `.platform.app.yaml` file gives you the most control over your projects and therefore comes with a great deal more features than described here. Visit the [**Configure your application**](https://docs.platform.sh/configuration/app.html) section of the documentation for more details.
 
 #### Builds and deploys
 
