@@ -7,7 +7,7 @@
 - [How do I Contribute?](#how-do-i-contribute-)
   - [Contributing to a Template](#contributing-to-a-template)
   - [Contributing Content](#contributing-content)
-- [Code of Conduct](#code-of-content)
+- [Code of Conduct](#code-of-conduct)
 - [Where Can I Go For Help?](#where-can-i-go-for-help)
 
 ---
