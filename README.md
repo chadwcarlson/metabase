@@ -55,26 +55,35 @@
 <hr>
 
 - [About](#about)
-  - [Features](#features)
-  - [Platform.sh customizations](#platformsh-customizations)
+    - [Features](#features) 
+- [Getting started](#getting-started)
+    - [Deploying](#deploying)
+    - [Post-install](#post-install)
+- [Platform.sh customizations](#platformsh-customizations)
     - [Configuration](#configuration)
     - [Builds and deploys](#builds-and-deploys)
     - [Upstream modifications](#upstream-modifications)
-- [Getting started](#getting-started)
-  - [Post-install](#post-install)
-  - [Data](#data)
 - [Usage](#usage)
-  - [Local development](#local-development)
-  - [Updating](#updating)
-  - [Migrating](#migrating)
-  - [Customization](#customization)
-  - [Performance](#performance)
+    - [SSH and accessing logs](#ssh-and-accessing-logs)
+    - [Local development](#local-development)
+    - [Updating](#updating)
+    - [Customization](#customization)
+    - [Performance](#performance)
+- [Migrating](#migrating)
+    - [Data](#data)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 - [Resources](#resources)
 - [Acknowledegments](#acknowledgements)
+
+
+  - [Data](#data)
+  - [Platform.sh customizations](#platformsh-customizations)
+    - [Configuration](#configuration)
+    - [Builds and deploys](#builds-and-deploys)
+    - [Upstream modifications](#upstream-modifications)
 
 <hr>
 
@@ -103,13 +112,15 @@ This template contains all of the files needed to deploy on Platform.sh, but you
 
 #### Quick method
 
-The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you. If you do not already have a Platform.sh account, you will be asked to fill out some basic information, after which you will be given a 30-day free trial to experiment with our platform. 
+The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you. 
 
 <p align="center">
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
         <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
     </a>
 </p>
+
+If you do not already have a Platform.sh account, you will be asked to fill out some basic information, after which you will be given a 30-day free trial to experiment with our platform. 
 
 #### Manual method
 
@@ -137,7 +148,7 @@ If you would instead to deploy this template from your command line, you can do 
     cd metabase && platform project:create
     ```
 
-4. Set the project as a remote for the repository (prompt)
+4. Set the project as a remote for the repository (prompt):
 
     ```bash
     Set the new project Metabase as the remote for this repository? [Y/n]   Y
@@ -155,15 +166,15 @@ If you would instead to deploy this template from your command line, you can do 
          ▀▀ ▀▀   
 
     The project is now ready!
-    mdcs54fkpb72c
+    <PROJECT ID>
 
-    Region: us-3.platform.sh
-    Project ID: mdcs54fkpb72c
+    Region: <PROJECT REGION>.platform.sh
+    Project ID: <PROJECT ID>
     Project title: Metabase
-    URL: https://console.platform.sh/chad-carlson/mdcs54fkpb72c
-    Git URL: mdcs54fkpb72c@git.us-3.platform.sh:mdcs54fkpb72c.git
+    URL: https://console.platform.sh/chad-carlson/<PROJECT ID>
+    Git URL: <PROJECT ID>@git.<PROJECT REGION>.platform.sh:<PROJECT ID>.git
 
-    Setting the remote project for this repository to: Metabase (mdcs54fkpb72c)
+    Setting the remote project for this repository to: Metabase (<PROJECT ID>)
     ```
 
 5. Push to Platform.sh: 
@@ -216,7 +227,7 @@ relationships:
     database: "db:postgresql"
 ```
 
-With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal` with its credentials visible within the [`PLATFORM_RELATIONSHIPS`](https://docs.platform.sh/configuration/services/postgresql.html#relationship) environment variable, which is a base64-encoded JSON object. Along with a number of other Metabase-specific environment variables, those credentials are set within the [`.environment`](.environment) file, which is sourced in the application root when the environment starts as well as when logging into that environment over SSH. You will notice that this file leverages [jq](https://stedolan.github.io/jq/), a lightweight command-line JSON processor that comes pre-installed on all application containers.
+With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal` with its credentials visible within the [`PLATFORM_RELATIONSHIPS`](https://docs.platform.sh/configuration/services/postgresql.html#relationship) environment variable, which is a base64-encoded JSON object. Along with a number of other Metabase-specific environment variables, service credentials are set within the [`.environment`](.environment) file, which is sourced in the application root when the environment starts as well as when logging into that environment over SSH. You will notice that this file leverages [jq](https://stedolan.github.io/jq/), a lightweight command-line JSON processor that comes pre-installed on all application containers.
 
 <hr></details>
 
@@ -254,15 +265,11 @@ Every time you push to a live branch (a git branch with an active environment at
 
 At this time, Platform.sh's Metabase template does not include any of the upstream code in this repository. The Metabase `jar` file is installed during the build hook according to the version defined in a [`metabase.version`](metabase.version) file.
 
-### Post-install
-
-After the first deployment, give the JVM a minute to finish completing it's initialization tasks (until it does, you will see a 502 error page.) which take only a minute or so. Run through the Metabase installer as normal. You will not be asked for database credentials, as those are already provided via the [`.environment`](.environment) that is sourced during the deploy hook. With the installer you will be able to create admin credentials and choose your language.
-
-The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
-
 ## Usage
 
 There are a few ways to make use this of this template, the following ways are as follows:
+
+### Accessing logs
 
 ### Local development
 
