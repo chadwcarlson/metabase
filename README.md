@@ -144,18 +144,25 @@ A `{default}` placeholder is included on both defined routes. This placeholder w
 <hr></details>
 
 <details>
-<summary><strong>The Router container (<code>.platform/routes.yaml</code>)</strong></summary><br />
+<summary><strong><strong>Service containers (<code>.platform/services.yaml</code>)</strong></summary><br />
 
-For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
+Each virtual cluster can have zero or more Service containers, but the file which configures them [**`.platform/services.yaml`**](.platform/services.yaml) is still required in your repository. Each top level key in that file will correspond to a separate Service container, with the kind of service determined by its `type`. 
 
-For this Metabase template, two routes have been defined. One `upstream` route directs requests directly to the Metabase application container at the `www` subdomain, which defined by the `upstream` value `"app:http"`. Notice that the application container name `app` is matched in the `name` attribute in [`.platform.app.yaml`](.platform.app.yaml). There is also a `redirect` route configured, which automatically redirects all request to the `www` subdomain upstream route.
+For Metabase's primary database, a single PostgreSQL service container has been added, identifiable by the service name `db`. Notice that in order for the application container to be granted access to this service it's necessary that a [**relationship**](https://docs.platform.sh/configuration/app/relationships.html) is defined in [`.platform.app.yaml`](.platform.app.yaml). 
 
-A `{default}` placeholder is included on both defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
+```yaml
+# .platform.app.yaml
+
+relationships:
+    database: "db:postgresql"
+```
+
+With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal` with its credentials visible within the [`PLATFORM_RELATIONSHIPS`](https://docs.platform.sh/configuration/services/postgresql.html#relationship) environment variable, which is a base64-encoded JSON object. Along with a number of other Metabase-specific environment variables, those credentials are set within the [`.environment`](.environment) file, which is sourced in the application root when the environment starts as well as when logging into that environment over SSH. You will notice that this file leverages [jq](https://stedolan.github.io/jq/), a lightweight command-line JSON processor that comes pre-installed on all application containers.
 
 <hr></details>
 
 <details>
-  <summary><strong>Service containers (<code>.platform/services.yaml</code>)</strong></summary><br />
+<summary><strong>Service containers (<code>.platform/services.yaml</code>)</strong></summary><br />
 
   For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
 
@@ -163,51 +170,18 @@ A `{default}` placeholder is included on both defined routes. This placeholder w
 
   A `{default}` placeholder is included on both defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
 
-</details>
+<hr></details>
 
 <details>
-  <summary><strong><a href="https://docs.platform.sh/configuration/routes.html">The Router container</a></strong></summary>
+<summary><strong>Application containers (<code>.platform.app.yaml</code>)</strong></summary><br />
 
-  For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
+There must always be one Application container in your cluster, but there [may be more](https://docs.platform.sh/configuration/app/multi-app.html). It is from this file that you are able to define the container's runtime language and version, it's relationships to other containers, and how it is [built and deployed](#builds-and-deploys). 
 
-  For this Metabase template, two routes have been defined. One `upstream` route directs requests directly to the Metabase application container at the `www` subdomain, which defined by the `upstream` value `"app:http"`. Notice that the application container name `app` is matched in the `name` attribute in [`.platform.app.yaml`](.platform.app.yaml). There is also a `redirect` route configured, which automatically redirects all request to the `www` subdomain upstream route.
+Every project you deploy on Platform.sh exists on a writable file system at build time, but it will become read-only once it enters the deploy phase (see [Builds and deploys](#builds-and-deploys)) for more information. Because of this, any directories that require write access to the file system at runtime must be declared as `mounts`, and must include the `disk` attribute that defines the available disk space for the data in these directories. For this templates, the `temp` and `data` directories are required in order to load the example dataset that comes with Metabase. Since the upstream jar file is unpacked during the start command, which includes writing a number of plugins to the filesystem, `plugins` will also be a mounted directory. 
 
-  A `{default}` placeholder is included on both defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
+In all of your configuration, the `.platform.app.yaml` file gives you the most control over your projects and therefore comes with a great deal more features than described here. Visit the [**Configure your application**](https://docs.platform.sh/configuration/app.html) section of the documentation for more details.
 
-</details>
-
---- 
-
-- [The **Router** container](https://docs.platform.sh/configuration/services.html):
-
-  For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
-
-  For this Metabase template, two routes have been defined. One `upstream` route directs requests directly to the Metabase application container at the `www` subdomain, which defined by the `upstream` value `"app:http"`. Notice that the application container name `app` is matched in the `name` attribute in [`.platform.app.yaml`](.platform.app.yaml). There is also a `redirect` route configured, which automatically redirects all request to the `www` subdomain upstream route.
-
-  A `{default}` placeholder is included on both defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
-
-- [**Service** containers](https://docs.platform.sh/configuration/services.html): 
-
-    Each virtual cluster can have zero or more Service containers, but the file which configures them [**`.platform/services.yaml`**](.platform/services.yaml) is still required in your repository. Each top level key in that file will correspond to a separate Service container, with the kind of service determined by its `type`. 
-
-    For Metabase's primary database, a single PostgreSQL service container has been added, identifiable by the service name `db`. Notice that in order for the application container to be granted access to this service it's necessary that a [**relationship**](https://docs.platform.sh/configuration/app/relationships.html) is defined in [`.platform.app.yaml`](.platform.app.yaml). 
-
-    ```yaml
-    # .platform.app.yaml
-
-    relationships:
-        database: "db:postgresql"
-    ```
-
-    With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal` with its credentials visible within the [`PLATFORM_RELATIONSHIPS`](https://docs.platform.sh/configuration/services/postgresql.html#relationship) environment variable, which is a base64-encoded JSON object. Along with a number of other Metabase-specific environment variables, those credentials are set within the [`.environment`](.environment) file, which is sourced in the application root when the environment starts as well as when logging into that environment over SSH. You will notice that this file leverages [jq](https://stedolan.github.io/jq/), a lightweight command-line JSON processor that comes pre-installed on all application containers.
-
-- [**Application** containers](https://docs.platform.sh/configuration/app.html):
-
-    There must always be one Application container in your cluster, but there [may be more](https://docs.platform.sh/configuration/app/multi-app.html). It is from this file that you are able to define the container's runtime language and version, it's relationships to other containers, and how it is [built and deployed](#builds-and-deploys). 
-
-    Every project you deploy on Platform.sh exists on a writable file system at build time, but it will become read-only once it enters the deploy phase (see [Builds and deploys](#builds-and-deploys)) for more information. Because of this, any directories that require write access to the file system at runtime must be declared as `mounts`, and must include the `disk` attribute that defines the available disk space for the data in these directories. For this templates, the `temp` and `data` directories are required in order to load the example dataset that comes with Metabase. Since the upstream jar file is unpacked during the start command, which includes writing a number of plugins to the filesystem, `plugins` will also be a mounted directory. 
-
-    In all of your configuration, the `.platform.app.yaml` file gives you the most control over your projects and therefore comes with a great deal more features than described here. Visit the [**Configure your application**](https://docs.platform.sh/configuration/app.html) section of the documentation for more details.
+<hr></details>
 
 #### Builds and deploys
 
