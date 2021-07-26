@@ -113,11 +113,17 @@ To use this template for your metabase project, you need to go through the follo
 
 - Push to Platform.sh 🚀
 
-### Platform.sh customizations
+### Post-install
+
+After the first deployment, give the JVM a minute to finish completing it's initialization tasks (until it does, you will see a 502 error page.) which take only a minute or so. Run through the Metabase installer as normal. You will not be asked for database credentials, as those are already provided via the [`.environment`](.environment) that is sourced during the deploy hook. With the installer you will be able to create admin credentials and choose your language.
+
+The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
+
+## Platform.sh customizations
 
 The following files have been added in order to download Metabase during the build hook and to deploy the application on Platform.sh. If using this template as a reference for your own project, replicate the changes below.
 
-#### Configuration
+### Configuration
 
 Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment. 
 Within an environment there are three types of containers, each of which are managed by three required files that have been included in this repository:
@@ -134,17 +140,6 @@ For Metabase, two routes have been defined. One `upstream` route directs request
 <!-- **Some second application** -->
 
 A `{default}` placeholder is included on all defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
-
-<table width="100%">
-  <tr><th>Resources</th></tr>
-  <tr><td>
-  
-- something
-- something else
-- something else still
-  
-  </td></tr>
-</table>
 
 <hr></details>
 
@@ -183,7 +178,7 @@ The `.platform.app.yaml` file comes with many more features than are described h
 
 <hr></details>
 
-#### Builds and deploys
+### Builds and deploys
 
 Every time you push to a live branch (a git branch with an active environment attached to it) or activate an [environment](https://docs.platform.sh/administration/web/environments.html) for a branch, there are two main processes that happen: Build and Deploy.
 
@@ -196,7 +191,7 @@ Every time you push to a live branch (a git branch with an active environment at
     </a>
 </p>
 
-#### Upstream modifications
+### Upstream modifications
 
 At this time, Platform.sh's Metabase template does not include any of the upstream code in this repository. The Metabase `jar` file is installed during the build hook according to the version defined in a [`metabase.version`](metabase.version) file.
 
