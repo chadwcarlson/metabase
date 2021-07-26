@@ -135,7 +135,18 @@ For Metabase, two routes have been defined. One `upstream` route directs request
 
 A `{default}` placeholder is included on all defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
 
-</details>
+<table>
+  <tr><th>Resources</th></tr>
+  <tr><td>
+  
+- something
+- something else
+- something else still
+  
+  </td></tr>
+</table>
+
+<hr></details>
 
 <details>
 <summary><strong>Service containers (<code>.platform/services.yaml</code>)</strong></summary><br />
