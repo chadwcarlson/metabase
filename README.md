@@ -122,8 +122,8 @@ The following files have been added in order to download Metabase during the bui
 Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment. 
 Within an environment there are three types of containers, each of which are managed by three required files that have been included in this repository:
 
-<table><tr><td><details>
-<summary><strong>The Router container (<code>.platform/routes.yaml</code>)</strong></summary><br />
+<details>
+<summary><strong>The Router container (<code>.platform/routes.yaml</code>)</strong></summary><br /><table><tr><td>
 
 For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
 
@@ -135,7 +135,7 @@ For Metabase, two routes have been defined. One `upstream` route directs request
 
 A `{default}` placeholder is included on all defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
 
-</details></td></tr></table>
+</td></tr></table></details>
 
 <details>
 <summary><strong>Service containers (<code>.platform/services.yaml</code>)</strong></summary><br />
