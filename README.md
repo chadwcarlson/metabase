@@ -70,9 +70,8 @@
   - [Customization](#customization)
   - [Performance](#performance)
 - [Migrating](#migrating)
-  - [Data](#data)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
+<!-- - [Roadmap](#roadmap)
+- [Contributing](#contributing) -->
 - [License](#license)
 - [Contact](#contact)
 - [Resources](#resources)
@@ -311,14 +310,18 @@ This template downloads the Metabase jar file during the build hook using the `b
 
 #### Scheduled updates
 
-It is possible to schedule the update described above using [source operations](https://docs.platform.sh/configuration/app/source-operations.html), which are a set of commands that can be triggered to make changes to your project's code base.
+> **Note:**
+>
+> This section describes features only available to Elite and Enterprise customers. [Compare the Platform.sh tiers](https://platform.sh/pricing/#compare) on our pricing page, or [contact our sales team](https://platform.sh/pricing/#compare) for more information.
+
+It is possible to schedule the updates described above using [source operations](https://docs.platform.sh/configuration/app/source-operations.html), which are a set of commands that can be triggered to make changes to your project's code base.
 
 A source operation has been defined for this template that is scheduled to run regularly with a cron job:
 
 ```yaml
 source:
     operations:
-        updates:
+        update:
             command: !include
                 type: string
                 path: scripts/update.sh
@@ -354,31 +357,35 @@ With this definition, the `update` source operation will check to see if a new v
 
 ### Migrating
 
-**Dumping your Database**
+#### Data
 
 Moving from using Metabase Cloud to a Self hosted version means you also would need to migrate your data yourself. For the migration to happen, you'll need to obtain your database dump from metabase, you can do that by refering to this [guide](https://www.metabase.com/docs/latest/operations-guide/migrating-from-h2.html) in the Metabase documentation.
 
-**_Note: It is advised you backup your database before proceeding with the dump_**
+> **Note:**
+>
+> It is advised you backup your database before proceeding with the dump.
 
-When you have successfully obtained a dump of your data(MySQL, MariaDB or PostgreSQL) from Metabase, you'll need to populate the postgresql database service that this template uses. You can change the default database type of this template by altering the `services.yaml` file in the `.platfrom` folder if needed.
+When you have successfully obtained a dump of your data (MySQL, MariaDB or PostgreSQL) from Metabase, you'll need to populate the postgresql database service that this template uses. You can change the default database type of this template by altering the `.platform/services.yaml` file in the `.platform` folder if needed.
 
-Next, you'll need to save your as database.sql. (Or any name, really, as long as it’s the same as you use below.)
+Next, you'll need to save your as `database.sql`. (Or any name, really, as long as it’s the same as you use below.)
 
 Next, import the database into your Platform.sh site. The easiest way to do so is with the Platform.sh CLI by running the following command:
 
 ```bash
-$ platform sql -e master < database.sql
+platform sql -e master < database.sql
 ```
 
-The above command will connect to the database service on the master environment, through an SSH tunnel, and run the SQL import.
+The above command will connect to the database service on the `master` environment, through an SSH tunnel, and run the SQL import.
 
-**Adding Previous Data Sources**
+#### Adding data sources
 
 If you need to add your previous data sources, all you need to do is to build and deploy your metabase site, visit the generated route to see the metabase site live.
 
 Next thing is to follow this [guide](https://www.metabase.com/docs/latest/administration-guide/01-managing-databases.html) in the Metabase official documentation to learn how to add various data sources.
 
-**_Note: If you have a CSV file containing your data you'll need to upload the csv files to a database, then connect metabase to the database._**
+> **Note:**
+>
+> If you have a CSV file containing your data you'll need to upload the csv files to a database, then connect Metabase to the database.
 
 ### Customizing Metabase
 
