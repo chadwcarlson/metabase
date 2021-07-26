@@ -121,15 +121,21 @@ If you would instead to deploy this template from your command line, you can do 
 
 1. Clone this repository: 
 
-    `git clone https://github.com/platformsh-templates/metabase`
+    ```bash
+    git clone https://github.com/platformsh-templates/metabase
+    ```
 
 2. Install the Platform.sh CLI: 
 
-    `curl -sS https://platform.sh/cli/installer | php`
+    ```bash
+    curl -sS https://platform.sh/cli/installer | php
+    ```
 
 3. Create a new project: 
 
-    `cd metabase && platform project:create`
+    ```bash
+    cd metabase && platform project:create
+    ```
 
 4. Set the project as a remote for the repository (prompt)
 
@@ -162,9 +168,9 @@ If you would instead to deploy this template from your command line, you can do 
 
 5. Push to Platform.sh: 
 
-    `git push platform master`
-
-
+    ```bash
+    git push platform master
+    ```
 
 ### Post-install
 
