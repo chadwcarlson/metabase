@@ -135,7 +135,7 @@ For Metabase, two routes have been defined. One `upstream` route directs request
 
 A `{default}` placeholder is included on all defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
 
-<table>
+<table width="100%">
   <tr><th>Resources</th></tr>
   <tr><td>
   
