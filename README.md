@@ -164,7 +164,7 @@ If you would instead to deploy this template from your command line, you can do 
     Region: <PROJECT REGION>.platform.sh
     Project ID: <PROJECT ID>
     Project title: Metabase
-    URL: https://console.platform.sh/chad-carlson/<PROJECT ID>
+    URL: https://console.platform.sh/<USERNAME>/<PROJECT ID>
     Git URL: <PROJECT ID>@git.<PROJECT REGION>.platform.sh:<PROJECT ID>.git
 
     Setting the remote project for this repository to: Metabase (<PROJECT ID>)
@@ -183,6 +183,8 @@ After the first deployment, give the JVM a minute to finish completing it's init
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
 ## Platform.sh customizations
+
+**Some more general explanation of why these files are necessary additions to replicate**
 
 The following files have been added in order to download Metabase during the build hook and to deploy the application on Platform.sh. If using this template as a reference for your own project, replicate the changes below.
 
@@ -260,11 +262,23 @@ At this time, Platform.sh's Metabase template does not include any of the upstre
 
 ## Usage
 
-There are a few ways to make use this of this template, the following ways are as follows:
+Once you have deployed this template, there are a number of next steps you can take to interact with and customize the project. 
+
+### Environments
+
+**Basics of environments, data inheritance, etc. Recommendation to branch and activate env before doing any of the below**
 
 ### Accessing logs
 
+Once you have deployed to an active environment, you will be able to SSH into your application containers, which can be useful for many things including accessing logs. A temporary SSH token will be generated for you (once you have logged in through the browser) by running the command `platform login`. After that from your project's root, simply run the command `platform ssh` to gain access. Everything in your repository plus any artifacts of your build will exist here in `/app`. 
+
+All logs are available in the subdirectory `/var/log`, and you can find more information about the available logs [in the Development documentation](https://docs.platform.sh/development/logs.html).
+
+<!-- Wishlist: forwarding logs -->
+
 ### Local development
+
+<!-- Note, this assumes the project has been deployed, not someone using their own local PostgreSQL database -->
 
 You are able to test out or build this template on your local machine by following the steps below:
 
@@ -279,13 +293,13 @@ You are able to run the `build.sh` and `start.sh` `scripts` just as they're defi
 
 Download the project's current live committed version of Metabase (defined in the [`metabase.version`](metabase.version) file):
 
-```
+```bash
 ./scripts/build.sh
 ```
 
 Then start the application for the downloaded jar file:
 
-```
+```bash
 ./scripts/start.sh
 ```
 
