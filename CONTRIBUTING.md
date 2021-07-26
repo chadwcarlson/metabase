@@ -2,12 +2,12 @@
 
 - [Welcome](#welcome-)
 - [What do I need to know](#what-do-i-need-to-know-)
+  - [Code of Conduct](#code-of-conduct)
   - [Issue Labels](#issue-labels)
   - [PR Labels](#pr-labels)
 - [How do I Contribute?](#how-do-i-contribute-)
   - [Contributing to a Template](#contributing-to-a-template)
   - [Contributing Content](#contributing-content)
-- [Code of Conduct](#code-of-conduct)
 - [Where Can I Go For Help?](#where-can-i-go-for-help)
 
 ---
@@ -20,7 +20,11 @@ Thank you for choosing to contribute to the community. We do all the development
 
 If you're looking to help with contributions to any of the templates, our templates use the technology mentioned in the repository name, so you have to know a bit of the language to make code contributions.
 
-If you don't feel like making code contributions, that is fine, you can read through the [issues list ](/issues) to see if there's any documentation related issue you can fix 😉.
+If you don't feel like making code contributions, that is fine, you can read through the [issues list ](/issues) to see if there's any documentation related issue you can fix 😉
+
+#### Code of Conduct
+
+It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our code of conduct exists so that we all know how to treat each other in the community with kindness. Please see our [Code of Conduct]()
 
 #### Issue Labels
 
@@ -79,9 +83,6 @@ We are very passionate about our community and we are actively seeking for more 
 
 To submit any type of content, you can reach out to the DevRel team via any of the channels in the [help](#where-can-i-go-for-help) section
 
-## Code of Conduct
-
-It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our code of conduct exists so that we all know how to treat each other in the community with kindness. Please see our [Code of Conduct]()
 
 ## Where Can I Go For Help?
 
