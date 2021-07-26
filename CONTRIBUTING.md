@@ -1,14 +1,14 @@
 # Table of Content
 
-- [Welcome](#Welcome)
-- [What do I need to know]()
-  - [Issue Labels]()
-  - [PR Labels]()
-- [How do I Contribute?]()
-  - [Contributing to a Template]()
-  - [Contributing Content]()
-- [Code of Conduct]()
-- [Where Can I Go For Help?](#)
+- [Welcome](#welcome-)
+- [What do I need to know](#what-do-i-need-to-know-)
+  - [Issue Labels](#issue-labels)
+  - [PR Labels](#pr-labels)
+- [How do I Contribute?](#how-do-i-contribute-)
+  - [Contributing to a Template](#contributing-to-a-template)
+  - [Contributing Content](#contributing-content)
+- [Code of Conduct](#code-of-content)
+- [Where Can I Go For Help?](#where-can-i-go-for-help)
 
 ---
 
@@ -78,6 +78,10 @@ We are very passionate about our community and we are actively seeking for more 
 - Workshop materials
 
 To submit any type of content, you can reach out to the DevRel team via any of the channels in the [contact](#) section
+
+## Code of Conduct
+
+Integer eu felis suscipit, consectetur purus a, tristique nisl. Praesent nec turpis ut eros semper consequat. Praesent pulvinar quam ante, rhoncus tristique odio venenatis non. Quisque sollicitudin erat et lectus pulvinar faucibus. Quisque feugiat quam in sollicitudin convallis. Aenean pretium, neque eu facilisis dictum, lectus tortor semper lectus, nec facilisis metus ipsum a ante. Aenean tempus suscipit ultrices. Ut sed libero eget tortor tincidunt ullamcorper. Phasellus dignissim diam vel suscipit luctus.
 
 ## Where Can I Go For Help?
 
