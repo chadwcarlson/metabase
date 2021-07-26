@@ -81,9 +81,6 @@ We are very passionate about our community and we are actively seeking for more 
 
 To submit any type of content, you can reach out to the DevRel team via any of the channels in the [help](#where-can-i-go-for-help) section
 
-## Code of Conduct
-
-It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our code of conduct exists so that we all know how to treat each other in the community with kindness. Please see our [Code of Conduct]()
 
 ## Where Can I Go For Help?
 
