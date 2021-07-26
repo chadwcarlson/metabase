@@ -79,7 +79,7 @@ To submit any type of content, you can reach out to the DevRel team via any of t
 
 ## Code of Conduct
 
-Integer eu felis suscipit, consectetur purus a, tristique nisl. Praesent nec turpis ut eros semper consequat. Praesent pulvinar quam ante, rhoncus tristique odio venenatis non. Quisque sollicitudin erat et lectus pulvinar faucibus. Quisque feugiat quam in sollicitudin convallis. Aenean pretium, neque eu facilisis dictum, lectus tortor semper lectus, nec facilisis metus ipsum a ante. Aenean tempus suscipit ultrices. Ut sed libero eget tortor tincidunt ullamcorper. Phasellus dignissim diam vel suscipit luctus.
+It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our Code of Conduct exists so that we all know how to treat each other in the community the right way. Please see our [Code of Conduct]()
 
 ## Code of Conduct
 
