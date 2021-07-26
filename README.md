@@ -61,7 +61,6 @@
     - [Builds and deploys](#builds-and-deploys)
     - [Upstream modifications](#upstream-modifications)
 - [Getting started](#getting-started)
-  - [Platform.sh customizations](#platformsh-customizations)
   - [Post-install](#post-install)
   - [Data](#data)
 - [Usage](#usage)
