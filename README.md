@@ -133,7 +133,7 @@ Every application you deploy on Platform.sh is built as a **virtual cluster** co
 </details>
 
 <details>
-  <summary><strong><a href="https://docs.platform.sh/configuration/routes.html">The Router container</a></strong></summary>
+  <summary><strong><a href="https://docs.platform.sh/configuration/routes.html">The Router container</a></strong></summary><br /><br />
 
   For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
 
