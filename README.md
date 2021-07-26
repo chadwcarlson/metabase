@@ -97,9 +97,11 @@
 
 ## Getting started
 
-This template contains all of the files needed to deploy on Platform.sh, but you have a few options for doing so.
+This template contains all of the files needed to deploy on Platform.sh, but you have a few options for doing so. Whichever method you choose, be sure to make note of all of the information included in this README, as it will be a great deal of help once your project has been deployed. 
 
-### Quick deploy
+### Deploying
+
+#### Quick method
 
 The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you. If you do not already have a Platform.sh account, you will be asked to fill out some basic information, after which you will be given a 30-day free trial to experiment with our platform. 
 
@@ -109,24 +111,60 @@ The quickest method to deploy Metabase on Platform.sh is by clicking the button 
     </a>
 </p>
 
+#### Manual method
 
-### Manual deploy
+If you would instead to deploy this template from your command line, you can do so through the following steps. 
 
-To use this template for your metabase project, you need to go through the following steps:
+> **Note:**
+>
+> If you do not already have a Platform.sh account, you will need to [start a free trial](https://accounts.platform.sh/platform/trial/general/setup) before creating a new project. 
 
-- Go through the README 😉
+1. Clone this repository: 
 
-- Clone the repo
+    `git clone https://github.com/platformsh-templates/metabase`
 
-- Make the neccessary edits and customizations to suite your needs.
+2. Install the Platform.sh CLI: 
 
-- Create a new project with the [Platform.sh CLI](https://docs.platform.sh/development/cli.html)
+    `curl -sS https://platform.sh/cli/installer | php`
 
-- Configure your project remote.
+3. Create a new project: 
 
-- Git commit your changes
+    `cd metabase && platform project:create`
 
-- Push to Platform.sh 🚀
+4. Set the project as a remote for the repository (prompt)
+
+    ```bash
+    Set the new project Metabase as the remote for this repository? [Y/n]   Y
+    ```
+
+    Once you have verified the project creation steps, you will receive some additional information about the project.
+
+    ```text
+    The Platform.sh Bot is activating your project
+
+        ▄     ▄  
+        ▄█▄▄▄█▄  
+      ▄██▄███▄██▄
+      █ █▀▀▀▀▀█ █
+         ▀▀ ▀▀   
+
+    The project is now ready!
+    mdcs54fkpb72c
+
+    Region: us-3.platform.sh
+    Project ID: mdcs54fkpb72c
+    Project title: Metabase
+    URL: https://console.platform.sh/chad-carlson/mdcs54fkpb72c
+    Git URL: mdcs54fkpb72c@git.us-3.platform.sh:mdcs54fkpb72c.git
+
+    Setting the remote project for this repository to: Metabase (mdcs54fkpb72c)
+    ```
+
+5. Push to Platform.sh: 
+
+    `git push platform master`
+
+
 
 ### Post-install
 
