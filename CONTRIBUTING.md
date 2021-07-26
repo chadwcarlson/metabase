@@ -2,8 +2,8 @@
 
 - [Welcome](#Welcome)
 - [What do I need to know]()
-   - [Issue Labels]()
-   - [PR Labels]()
+  - [Issue Labels]()
+  - [PR Labels]()
 - [How do I Contribute?]()
   - [Contributing to a Template]()
   - [Contributing Content]()
@@ -24,10 +24,7 @@ If you don't feel like making code contributions, that is fine, you can read thr
 
 #### Issue Labels
 
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in pharetra purus, at laoreet arcu. Nulla convallis malesuada dui, eget vulputate lacus accumsan in. Sed suscipit, massa non sodales sodales, dolor leo congue metus, ut tristique velit risus vel orci. Phasellus maximus eleifend odio, ut ullamcorper libero eleifend et. Donec egestas volutpat purus id varius. Vestibulum laoreet tortor libero, porttitor condimentum leo eleifend eget. Vivamus accumsan sed justo ac maximus. Nunc laoreet magna a tincidunt condimentum.
-
-
 
 #### PR Labels
 
