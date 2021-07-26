@@ -123,7 +123,7 @@ Every application you deploy on Platform.sh is built as a **virtual cluster** co
         database: "db:postgresql"
     ```
 
-    With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal`. 
+    With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal` with its credentials visible within the [`PLATFORM_RELATIONSHIPS`](https://docs.platform.sh/configuration/services/postgresql.html#relationship) environment variable, which is a base64-encoded JSON object. Along with a number of other Metabase-specific environment variables, those credentials are cleaned up and renamed within the [`.environment`](.environment) file, which is sourced in the application root when the environment starts as well as when logging into that environment over SSH. 
 
 - [**Application** containers](https://docs.platform.sh/configuration/app.html) | [**`.platform.app.yaml`**](.platform.app.yaml):
 
