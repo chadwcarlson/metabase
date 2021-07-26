@@ -94,11 +94,20 @@
 
 The following files have been added in order to download Metabase during the build hook and to deploy the application on Platform.sh. If using this template as a reference for your own project, replicate the changes below.
 
-Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment. Within an environment there are three types of containers, each of which are managed by three required files in the repository. 
+#### Platform.sh configuration
 
-- [The Router container](https://docs.platform.sh/configuration/services.html) | [`.platform/routes.yaml`](.platform/routes.yaml): For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file (`.platform/routes.yaml`) 
-- [Service containers](https://docs.platform.sh/configuration/services.html) | [`.platform/services.yaml`](.platform/services.yaml):
-- [Application containers](https://docs.platform.sh/configuration/app.html) | [`.platform.app.yaml`](.platform.app.yaml):
+Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment. Within an environment there are three types of containers, each of which are managed by three required files that have been included in this repository:
+
+- [The **Router** container](https://docs.platform.sh/configuration/services.html): For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage. 
+- [**Service** containers](https://docs.platform.sh/configuration/services.html): Each virtual cluster can have zero or more Service containers, but the file which configures them [**`.platform/services.yaml`**](.platform/services.yaml) is still required in your repository. Each top level key in that file will correspond to a separate Service container, with the kind of service determined by its `type`. 
+- [**Application** containers](https://docs.platform.sh/configuration/app.html) | [**`.platform.app.yaml`**](.platform.app.yaml):
+
+#### Build and deploys
+
+
+#### Upstream modifications
+
+
 
 - Deploying on Platform.sh requires a set of configuration files to instruct the platform how to build and deploy your applications, as well as the topology of your infrastructure. 
     - The [`.platform.app.yaml`](.platform.app.yaml) file 
