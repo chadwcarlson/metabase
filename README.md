@@ -130,7 +130,7 @@ For this Metabase template, two routes have been defined. One `upstream` route d
 
 A `{default}` placeholder is included on both defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
 
-<br /></details>
+<hr></details>
 
 <details>
 <summary><strong>The Router container (<code>.platform/routes.yaml</code>)</strong></summary><br />
@@ -141,7 +141,7 @@ For this Metabase template, two routes have been defined. One `upstream` route d
 
 A `{default}` placeholder is included on both defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
 
-<br /></details>
+<hr></details>
 
 <details>
 <summary><strong>The Router container (<code>.platform/routes.yaml</code>)</strong></summary><br />
@@ -152,7 +152,7 @@ For this Metabase template, two routes have been defined. One `upstream` route d
 
 A `{default}` placeholder is included on both defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
 
-<br /></details>
+<hr></details>
 
 <details>
   <summary><strong>Service containers (<code>.platform/services.yaml</code>)</strong></summary><br />
