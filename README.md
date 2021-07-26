@@ -142,13 +142,19 @@ Every application you deploy on Platform.sh is built as a **virtual cluster** co
         database: "db:postgresql"
     ```
 
-    With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal` with its credentials visible within the [`PLATFORM_RELATIONSHIPS`](https://docs.platform.sh/configuration/services/postgresql.html#relationship) environment variable, which is a base64-encoded JSON object. Along with a number of other Metabase-specific environment variables, those credentials are cleaned up and renamed within the [`.environment`](.environment) file, which is sourced in the application root when the environment starts as well as when logging into that environment over SSH. 
+    With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal` with its credentials visible within the [`PLATFORM_RELATIONSHIPS`](https://docs.platform.sh/configuration/services/postgresql.html#relationship) environment variable, which is a base64-encoded JSON object. Along with a number of other Metabase-specific environment variables, those credentials are set within the [`.environment`](.environment) file, which is sourced in the application root when the environment starts as well as when logging into that environment over SSH. You will notice that this file leverages [jq](https://stedolan.github.io/jq/), a lightweight command-line JSON processor that comes pre-installed on all application containers.
 
 - [**Application** containers](https://docs.platform.sh/configuration/app.html) | [**`.platform.app.yaml`**](.platform.app.yaml):
 
 #### Builds and deploys
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+
+<p align="center">
+    <a href="https://docs.platform.sh/overview/build-deploy.html">
+        <img src="https://docs.platform.sh/images/workflow/build-pipeline.svg" alt="Build & deploy">
+    </a>
+</p>
 
 #### Upstream modifications
 
