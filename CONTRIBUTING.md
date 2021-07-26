@@ -92,7 +92,7 @@ Integer eu felis suscipit, consectetur purus a, tristique nisl. Praesent nec tur
 
 ## Code of Conduct
 
-It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our Code of Conduct exists so that we all know how to treat each other in the community the right way. Please see our [Code of Conduct]()
+It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our code of conduct exists so that we all know how to treat each other in the community with kindness. Please see our [Code of Conduct]()
 
 ## Where Can I Go For Help?
 
