@@ -97,6 +97,21 @@
 
 ## Getting started
 
+This template contains all of the files needed to deploy on Platform.sh, but you have a few options for doing so.
+
+### Quick deploy
+
+The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you. If you do not already have a Platform.sh account, you will be asked to fill out some basic information, after which you will be given a 30-day free trial to experiment with our platform. 
+
+<p align="center">
+    <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
+    </a>
+</p>
+
+
+### Manual deploy
+
 To use this template for your metabase project, you need to go through the following steps:
 
 - Go through the README 😉
