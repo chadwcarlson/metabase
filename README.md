@@ -37,12 +37,12 @@
         <img src="https://img.shields.io/github/stars/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
     </a> -->
     <br /><br />
-    <a href="https://docs.platform.sh">Platform.sh</a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues">Documentation</a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues">Blog</a> ◦
-    <a href="https://docs.platform.sh">API</a> ◦
-    <a href="https://docs.platform.sh">Status</a> ◦
-    <a href="https://docs.platform.sh">Join our community</a><br />
+    <a href="https://platform.sh">Platform.sh</a> ◦
+    <a href="https://docs.platform.sh">Documentation</a> ◦
+    <a href="https://platform.sh/blog">Blog</a> ◦
+    <a href="https://api.platform.sh/blog">API</a> ◦
+    <a href="https://status.platform.sh">Status</a> ◦
+    <a href="https://community.platform.sh">Join our community</a><br />
     <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a> ◦
     <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
     <br /><br />
@@ -199,7 +199,19 @@ For each cluster/environment there will always be exactly one Router container, 
 
 **Metabase**
 
-For Metabase, two routes have been defined. One `upstream` route directs requests directly to the Metabase application container at the `www` subdomain, which defined by the `upstream` value `"app:http"`. Notice that the application container name `app` is matched in the `name` attribute in [`.platform.app.yaml`](.platform.app.yaml). There is also a `redirect` route configured, which automatically redirects all request to the `www` subdomain upstream route.
+For Metabase, two routes have been defined. One `upstream` route directs requests directly to the Metabase application container at the `www` subdomain, which defined by the `upstream` value `"app:http"`. Notice that the application container name `app` is matched in the `name` attribute in [`.platform.app.yaml`](.platform.app.yaml). 
+
+```yaml
+"https://www.{default}/":
+    type: upstream
+    upstream: "app:http"
+
+"https://{default}/":
+    type: redirect
+    to: "https://www.{default}/"
+```
+
+There is also a `redirect` route configured, which automatically redirects all request to the `www` subdomain upstream route.
 
 <!-- **Some second application** -->
 
@@ -235,6 +247,16 @@ Every project you deploy on Platform.sh exists on a writable file system at buil
 **Metabase**
 
 For Metabase, the `temp` and `data` directories are required in order to load the example dataset that comes with Metabase. Since the upstream jar file is unpacked during the start command, which includes writing a number of plugins to the filesystem, `plugins` will also be a mounted directory. 
+
+```yaml
+# The name of this application, which must be unique within a project.
+name: app
+
+# The type key specifies the language and version for your application.
+type: java:11
+```
+
+Metabase's `.platform.app.yaml` file has a `type` specified such that Java 11 will be the container's primary runtime language. This container is accessible to the rest of the cluster by the name `app`, which you will notice is also the name used in defining Metabase's `upstream` route in `.platform/routes.yaml`.
 
 <!-- **Some second application** -->
 
