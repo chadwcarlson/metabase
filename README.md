@@ -40,7 +40,7 @@
     <a href="https://platform.sh">Platform.sh</a> ◦
     <a href="https://docs.platform.sh">Documentation</a> ◦
     <a href="https://platform.sh/blog">Blog</a> ◦
-    <a href="https://api.platform.sh/blog">API</a> ◦
+    <a href="https://api.platform.sh">API</a> ◦
     <a href="https://status.platform.sh">Status</a> ◦
     <a href="https://community.platform.sh">Join our community</a><br />
     <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a> ◦
@@ -291,11 +291,15 @@ Once you have deployed this template, there are a number of next steps you can t
 
 ### Accessing logs
 
-Once you have deployed to an active environment, you will be able to SSH into your application containers, which can be useful for many things including accessing logs. A temporary SSH token will be generated for you (once you have logged in through the browser) by running the command `platform login`. After that from your project's root, simply run the command `platform ssh` to gain access. Everything in your repository plus any artifacts of your build will exist here in `/app`. 
+Once you have deployed to an active environment, you will be able to SSH into your application containers, which can be useful for many things including accessing logs. A temporary SSH token will be generated for you (once you have logged in through the browser) by running the command `platform login`. After that from your project's root, simply run the command 
 
-All logs are available in the subdirectory `/var/log`, and you can find more information about the available logs [in the Development documentation](https://docs.platform.sh/development/logs.html).
+```bash
+platform ssh
+``` 
 
-<!-- Wishlist: forwarding logs -->
+to gain access. Everything in your repository plus any artifacts of your build will exist here in `/app`. All logs are available in the subdirectory `/var/log`, and you can find more information about the available logs [in the Development documentation](https://docs.platform.sh/development/logs.html).
+
+<!-- Wishlist: forwarding logs to Logz.io/Splunk -->
 
 ### Local development
 
