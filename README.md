@@ -514,7 +514,7 @@ Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisq
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
-</details><br />
+</details>
 
 <details>
 <summary>Adding a domain</summary><br />
@@ -528,7 +528,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Int
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
-</details><br />
+</details>
 
 <!-- ## Roadmap
 
