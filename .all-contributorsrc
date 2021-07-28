@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "hacktivist123",
+      "name": "Shedrack akintayo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26572907?v=4",
+      "profile": "https://sheddy.xyz",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "metabase",
+  "projectOwner": "chadwcarlson",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
