@@ -55,7 +55,7 @@
 <hr>
 
 - [About](#about)
-  - [Features](#features) 
+  - [Features](#features)
 - [Getting started](#getting-started)
   - [Deploying](#deploying)
   - [Post-install](#post-install)
@@ -99,13 +99,13 @@
 
 ## Getting started
 
-If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**. 
+If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**.
 
-This template contains all of the files needed to deploy on Platform.sh, but you have a few options for doing so. Whichever method you choose, be sure to make note of all of the information included in this README, as it will be a great deal of help once your project has been deployed. 
+This template contains all of the files needed to deploy on Platform.sh, but you have a few options for doing so. Whichever method you choose, be sure to make note of all of the information included in this README, as it will be a great deal of help once your project has been deployed.
 
 ### Deploying
 
-The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you. 
+The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you.
 
 <p align="center">
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
@@ -113,69 +113,69 @@ The quickest method to deploy Metabase on Platform.sh is by clicking the button 
     </a>
 </p>
 
-If you do not already have a Platform.sh account, you will be asked to fill out some basic information, after which you will be given a 30-day free trial to experiment with our platform. 
+If you do not already have a Platform.sh account, you will be asked to fill out some basic information, after which you will be given a 30-day free trial to experiment with our platform.
 
 <details>
 <summary><strong>Deploy manually</strong></summary><br />
 
-If you would instead to deploy this template from your command line, you can do so through the following steps. 
+If you would instead to deploy this template from your command line, you can do so through the following steps.
 
 > **Note:**
 >
-> If you do not already have a Platform.sh account, you will need to [start a free trial](https://accounts.platform.sh/platform/trial/general/setup) before creating a new project. 
+> If you do not already have a Platform.sh account, you will need to [start a free trial](https://accounts.platform.sh/platform/trial/general/setup) before creating a new project.
 
-1. Clone this repository: 
+1. Clone this repository:
 
-    ```bash
-    git clone https://github.com/platformsh-templates/metabase
-    ```
+   ```bash
+   git clone https://github.com/platformsh-templates/metabase
+   ```
 
-2. Install the Platform.sh CLI: 
+2. Install the Platform.sh CLI:
 
-    ```bash
-    curl -sS https://platform.sh/cli/installer | php
-    ```
+   ```bash
+   curl -sS https://platform.sh/cli/installer | php
+   ```
 
-3. Create a new project: 
+3. Create a new project:
 
-    ```bash
-    cd metabase && platform project:create
-    ```
+   ```bash
+   cd metabase && platform project:create
+   ```
 
 4. Set the project as a remote for the repository (prompt):
 
-    ```bash
-    Set the new project Metabase as the remote for this repository? [Y/n]   Y
-    ```
+   ```bash
+   Set the new project Metabase as the remote for this repository? [Y/n]   Y
+   ```
 
-    Once you have verified the project creation steps, you will receive some additional information about the project.
+   Once you have verified the project creation steps, you will receive some additional information about the project.
 
-    ```text
-    The Platform.sh Bot is activating your project
+   ```text
+   The Platform.sh Bot is activating your project
 
-        ▄     ▄  
-        ▄█▄▄▄█▄  
-      ▄██▄███▄██▄
-      █ █▀▀▀▀▀█ █
-         ▀▀ ▀▀   
+       ▄     ▄
+       ▄█▄▄▄█▄
+     ▄██▄███▄██▄
+     █ █▀▀▀▀▀█ █
+        ▀▀ ▀▀
 
-    The project is now ready!
-    <PROJECT ID>
+   The project is now ready!
+   <PROJECT ID>
 
-    Region: <PROJECT REGION>.platform.sh
-    Project ID: <PROJECT ID>
-    Project title: Metabase
-    URL: https://console.platform.sh/<USERNAME>/<PROJECT ID>
-    Git URL: <PROJECT ID>@git.<PROJECT REGION>.platform.sh:<PROJECT ID>.git
+   Region: <PROJECT REGION>.platform.sh
+   Project ID: <PROJECT ID>
+   Project title: Metabase
+   URL: https://console.platform.sh/<USERNAME>/<PROJECT ID>
+   Git URL: <PROJECT ID>@git.<PROJECT REGION>.platform.sh:<PROJECT ID>.git
 
-    Setting the remote project for this repository to: Metabase (<PROJECT ID>)
-    ```
+   Setting the remote project for this repository to: Metabase (<PROJECT ID>)
+   ```
 
-5. Push to Platform.sh: 
+5. Push to Platform.sh:
 
-    ```bash
-    git push platform master
-    ```
+   ```bash
+   git push platform master
+   ```
 
 </details>
 
@@ -187,12 +187,12 @@ The installer will allow you to add databases. Configure the database you are tr
 
 ### Platform.sh basics
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula.
 
 <details>
 <summary><strong>Overview</strong></summary><br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
 
@@ -201,7 +201,7 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 <details>
 <summary><strong>Projects</strong></summary><br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
 
@@ -210,8 +210,7 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 <details>
 <summary><strong>Builds</strong></summary><br />
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
 
@@ -220,7 +219,7 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 <details>
 <summary><strong>Deploys</strong></summary><br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
 
@@ -229,7 +228,7 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 <details>
 <summary><strong>Environments</strong></summary><br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
 
@@ -243,7 +242,7 @@ The following files have been added in order to download Metabase during the bui
 
 ### Configuration
 
-Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment. 
+Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment.
 Within an environment there are three types of containers, each of which are managed by three required files that have been included in this repository:
 
 <details>
@@ -253,16 +252,16 @@ For each cluster/environment there will always be exactly one Router container, 
 
 **Metabase**
 
-For Metabase, two routes have been defined. One `upstream` route directs requests directly to the Metabase application container at the `www` subdomain, which defined by the `upstream` value `"app:http"`. Notice that the application container name `app` is matched in the `name` attribute in [`.platform.app.yaml`](.platform.app.yaml). 
+For Metabase, two routes have been defined. One `upstream` route directs requests directly to the Metabase application container at the `www` subdomain, which defined by the `upstream` value `"app:http"`. Notice that the application container name `app` is matched in the `name` attribute in [`.platform.app.yaml`](.platform.app.yaml).
 
 ```yaml
-"https://www.{default}/":
-    type: upstream
-    upstream: "app:http"
+'https://www.{default}/':
+  type: upstream
+  upstream: 'app:http'
 
-"https://{default}/":
-    type: redirect
-    to: "https://www.{default}/"
+'https://{default}/':
+  type: redirect
+  to: 'https://www.{default}/'
 ```
 
 There is also a `redirect` route configured, which automatically redirects all request to the `www` subdomain upstream route.
@@ -276,15 +275,15 @@ A `{default}` placeholder is included on all defined routes. This placeholder wi
 <details>
 <summary><strong>Service containers (<code>.platform/services.yaml</code>)</strong></summary><br />
 
-Each virtual cluster can have zero or more Service containers, but the file which configures them [**`.platform/services.yaml`**](.platform/services.yaml) is still required in your repository. Each top level key in that file will correspond to a separate Service container, with the kind of service determined by its `type`. 
+Each virtual cluster can have zero or more Service containers, but the file which configures them [**`.platform/services.yaml`**](.platform/services.yaml) is still required in your repository. Each top level key in that file will correspond to a separate Service container, with the kind of service determined by its `type`.
 
-For Metabase's primary database, a single PostgreSQL service container has been added, identifiable by the service name `db`. Notice that in order for the application container to be granted access to this service it's necessary that a [**relationship**](https://docs.platform.sh/configuration/app/relationships.html) is defined in [`.platform.app.yaml`](.platform.app.yaml). 
+For Metabase's primary database, a single PostgreSQL service container has been added, identifiable by the service name `db`. Notice that in order for the application container to be granted access to this service it's necessary that a [**relationship**](https://docs.platform.sh/configuration/app/relationships.html) is defined in [`.platform.app.yaml`](.platform.app.yaml).
 
 ```yaml
 # .platform.app.yaml
 
 relationships:
-    database: "db:postgresql"
+  database: 'db:postgresql'
 ```
 
 With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal` with its credentials visible within the [`PLATFORM_RELATIONSHIPS`](https://docs.platform.sh/configuration/services/postgresql.html#relationship) environment variable, which is a base64-encoded JSON object. Along with a number of other Metabase-specific environment variables, service credentials are set within the [`.environment`](.environment) file, which is sourced in the application root when the environment starts as well as when logging into that environment over SSH. You will notice that this file leverages [jq](https://stedolan.github.io/jq/), a lightweight command-line JSON processor that comes pre-installed on all application containers.
@@ -294,13 +293,13 @@ With this relationship defined, the database will now be made accessible to the 
 <details>
 <summary><strong>Application containers (<code>.platform.app.yaml</code>)</strong></summary><br />
 
-There must always be one Application container in your cluster, but there [may be more](https://docs.platform.sh/configuration/app/multi-app.html). It is from this file that you are able to define the container's runtime language and version, it's relationships to other containers, and how it is [built and deployed](#builds-and-deploys). 
+There must always be one Application container in your cluster, but there [may be more](https://docs.platform.sh/configuration/app/multi-app.html). It is from this file that you are able to define the container's runtime language and version, it's relationships to other containers, and how it is [built and deployed](#builds-and-deploys).
 
-Every project you deploy on Platform.sh exists on a writable file system at build time, but it will become read-only once it enters the deploy phase (see [Builds and deploys](#builds-and-deploys)) for more information. Because of this, any directories that require write access to the file system at runtime must be declared as `mounts`, and must include the `disk` attribute that defines the available disk space for the data in these directories. 
+Every project you deploy on Platform.sh exists on a writable file system at build time, but it will become read-only once it enters the deploy phase (see [Builds and deploys](#builds-and-deploys)) for more information. Because of this, any directories that require write access to the file system at runtime must be declared as `mounts`, and must include the `disk` attribute that defines the available disk space for the data in these directories.
 
 **Metabase**
 
-For Metabase, the `temp` and `data` directories are required in order to load the example dataset that comes with Metabase. Since the upstream jar file is unpacked during the start command, which includes writing a number of plugins to the filesystem, `plugins` will also be a mounted directory. 
+For Metabase, the `temp` and `data` directories are required in order to load the example dataset that comes with Metabase. Since the upstream jar file is unpacked during the start command, which includes writing a number of plugins to the filesystem, `plugins` will also be a mounted directory.
 
 ```yaml
 # The name of this application, which must be unique within a project.
@@ -337,15 +336,15 @@ At this time, Platform.sh's Metabase template does not include any of the upstre
 
 ## Usage
 
-Once you have deployed this template, there are a number of next steps you can take to interact with and customize the project. 
+Once you have deployed this template, there are a number of next steps you can take to interact with and customize the project.
 
 ### Accessing logs
 
-Once you have deployed to an active environment, you will be able to SSH into your application containers, which can be useful for many things including accessing logs. A temporary SSH token will be generated for you (once you have logged in through the browser) by running the command `platform login`. After that from your project's root, simply run the command 
+Once you have deployed to an active environment, you will be able to SSH into your application containers, which can be useful for many things including accessing logs. A temporary SSH token will be generated for you (once you have logged in through the browser) by running the command `platform login`. After that from your project's root, simply run the command
 
 ```bash
 platform ssh
-``` 
+```
 
 to gain access. Everything in your repository plus any artifacts of your build will exist here in `/app`. All logs are available in the subdirectory `/var/log`, and you can find more information about the available logs [in the Development documentation](https://docs.platform.sh/development/logs.html).
 
@@ -358,21 +357,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Int
 <hr><details>
 <summary><strong>Lando:</strong> <em>Use the Platform.sh recommended local development tool</em></summary><br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 </details>
 
 <details>
 <summary><strong>Docksal:</strong> <em>Docker-based local development</em></summary><br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 </details>
 
 <details>
 <summary><strong>DDEV:</strong> <em>PHP local development</em></summary><br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 </details>
 
@@ -409,20 +408,20 @@ The script will automatically open a tunnel to the PostgreSQL instance on the cu
 <details>
 <summary><strong>Untethered:</strong> <em>Using local services</em></summary><br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 </details>
 
 
 ### Updating
 
-This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository. 
+This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository.
 
 ```bash
 ./scripts/update.sh
 ```
 
-An `update.sh` script has been included in this repository, which checks to see if a [new version of Metabase is available]((https://github.com/metabase/metabase/releases)), and if so updates the contents of `metabase.version` that will used on subsequent builds. 
+An `update.sh` script has been included in this repository, which checks to see if a [new version of Metabase is available](<(https://github.com/metabase/metabase/releases)>), and if so updates the contents of `metabase.version` that will used on subsequent builds.
 
 <br /><details>
 <summary><strong>Scheduled updates:</strong> <em>automating upstream updates with source operations</em></summary><br />
@@ -437,11 +436,11 @@ A source operation has been defined for this template that is scheduled to run r
 
 ```yaml
 source:
-    operations:
-        update:
-            command: !include
-                type: string
-                path: scripts/update.sh
+  operations:
+    update:
+      command: !include
+        type: string
+        path: scripts/update.sh
 ```
 
 The [`update.sh` script](scripts/update.sh) - when a new version of Metabase has been released - will write the latest version to `metabase.version`. That change will be staged and committed in an isolated build container source operations run on, ultimately causing a full rebuild of the environment (but not using that latest version).
@@ -508,19 +507,28 @@ Next thing is to follow this [guide](https://www.metabase.com/docs/latest/admini
 
 ### Customizing Metabase
 
+<<<<<<< HEAD
 Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+=======
+<details>
+<summary>Adding a datasource</summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
+
+</details><br />
+>>>>>>> 626430e (update readme)
 
 <details>
 <summary>Adding a domain</summary><br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 </details>
 
 <details>
 <summary>Authentication</summary><br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 </details>
 
@@ -570,7 +578,7 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 - Any related blog posts
 
-### Community 
+### Community
 
 - Community questions -->
 
@@ -578,7 +586,7 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
 
-If you'd like to [contribute](#contributing), feel free to [report a bug](), [request a new feature](), or bring up a topic on [our community site](https://community.platform.sh). 
+If you'd like to [contribute](/CONTRIBUTING.MD), feel free to [report a bug](), [request a new feature](), or bring up a topic on [our community site](https://community.platform.sh).
 
 <p align="center">
 
