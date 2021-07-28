@@ -475,4 +475,10 @@ Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original tem
 
 If you'd like to [contribute](#contributing), feel free to [report a bug](), [request a new feature](), or bring up a topic on [our community site](https://community.platform.sh). 
 
+<p align="center">
+
+_**Thanks to all of our wonderful contributors!**_
+
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=chadwcarlson/metabase)
+
+<p>
