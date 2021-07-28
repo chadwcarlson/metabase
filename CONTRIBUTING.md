@@ -86,6 +86,10 @@ To submit any type of content, you can reach out to the DevRel team via any of t
 
 Integer eu felis suscipit, consectetur purus a, tristique nisl. Praesent nec turpis ut eros semper consequat. Praesent pulvinar quam ante, rhoncus tristique odio venenatis non. Quisque sollicitudin erat et lectus pulvinar faucibus. Quisque feugiat quam in sollicitudin convallis. Aenean pretium, neque eu facilisis dictum, lectus tortor semper lectus, nec facilisis metus ipsum a ante. Aenean tempus suscipit ultrices. Ut sed libero eget tortor tincidunt ullamcorper. Phasellus dignissim diam vel suscipit luctus.
 
+## Code of Conduct
+
+Integer eu felis suscipit, consectetur purus a, tristique nisl. Praesent nec turpis ut eros semper consequat. Praesent pulvinar quam ante, rhoncus tristique odio venenatis non. Quisque sollicitudin erat et lectus pulvinar faucibus. Quisque feugiat quam in sollicitudin convallis. Aenean pretium, neque eu facilisis dictum, lectus tortor semper lectus, nec facilisis metus ipsum a ante. Aenean tempus suscipit ultrices. Ut sed libero eget tortor tincidunt ullamcorper. Phasellus dignissim diam vel suscipit luctus.
+
 ## Where Can I Go For Help?
 
 Templates and content, in general, are maintained primarily by the Platform.sh Developer Relations team and they will be notified of all issues and pull requests you open.
