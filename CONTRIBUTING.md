@@ -1,4 +1,3 @@
-
 # Table of Content
 
 - [Welcome](#welcome-)
@@ -23,16 +22,8 @@ If you don't feel like making code contributions, that is fine, you can read thr
 
 #### Issue Labels
 
-<<<<<<< HEAD
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in pharetra purus, at laoreet arcu. Nulla convallis malesuada dui, eget vulputate lacus accumsan in. Sed suscipit, massa non sodales sodales, dolor leo congue metus, ut tristique velit risus vel orci. Phasellus maximus eleifend odio, ut ullamcorper libero eleifend et. Donec egestas volutpat purus id varius. Vestibulum laoreet tortor libero, porttitor condimentum leo eleifend eget. Vivamus accumsan sed justo ac maximus. Nunc laoreet magna a tincidunt condimentum.
 
-=======
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in pharetra purus, at laoreet arcu. Nulla convallis malesuada dui, eget vulputate lacus accumsan in. Sed suscipit, massa non sodales sodales, dolor leo congue metus, ut tristique velit risus vel orci. Phasellus maximus eleifend odio, ut ullamcorper libero eleifend et. Donec egestas volutpat purus id varius. Vestibulum laoreet tortor libero, porttitor condimentum leo eleifend eget. Vivamus accumsan sed justo ac maximus. Nunc laoreet magna a tincidunt condimentum.
-
-
-
->>>>>>> c5e1acd (first draft of contribution guide)
 #### PR Labels
 
 Quisque enim augue, pretium in semper quis, ornare id nulla. Praesent sed diam sed massa ornare iaculis. Phasellus blandit ornare libero, in gravida ante cursus nec. Nulla posuere quam turpis, a porta enim placerat ut. Praesent porta turpis nec neque aliquam vestibulum. Donec rutrum ac tortor quis mattis. Nulla suscipit nibh justo, ut condimentum nisi semper nec. Mauris ut odio arcu. Sed sit amet purus convallis, pretium nulla mollis, ornare dui. Donec mattis efficitur sapien. Integer cursus imperdiet augue, et varius augue vulputate at. Phasellus nunc est, egestas vitae neque nec, cursus ornare mauris. Nam facilisis mi at fringilla sagittis. Ut sodales ligula ac ligula suscipit, at pretium nibh efficitur. Vivamus egestas eros eget ante pulvinar, id efficitur nibh rutrum.
@@ -90,14 +81,14 @@ To submit any type of content, you can reach out to the DevRel team via any of t
 
 Integer eu felis suscipit, consectetur purus a, tristique nisl. Praesent nec turpis ut eros semper consequat. Praesent pulvinar quam ante, rhoncus tristique odio venenatis non. Quisque sollicitudin erat et lectus pulvinar faucibus. Quisque feugiat quam in sollicitudin convallis. Aenean pretium, neque eu facilisis dictum, lectus tortor semper lectus, nec facilisis metus ipsum a ante. Aenean tempus suscipit ultrices. Ut sed libero eget tortor tincidunt ullamcorper. Phasellus dignissim diam vel suscipit luctus.
 
+## Code of Conduct
+
+Integer eu felis suscipit, consectetur purus a, tristique nisl. Praesent nec turpis ut eros semper consequat. Praesent pulvinar quam ante, rhoncus tristique odio venenatis non. Quisque sollicitudin erat et lectus pulvinar faucibus. Quisque feugiat quam in sollicitudin convallis. Aenean pretium, neque eu facilisis dictum, lectus tortor semper lectus, nec facilisis metus ipsum a ante. Aenean tempus suscipit ultrices. Ut sed libero eget tortor tincidunt ullamcorper. Phasellus dignissim diam vel suscipit luctus.
+
 ## Where Can I Go For Help?
 
 Templates and content, in general, are maintained primarily by the Platform.sh Developer Relations team and they will be notified of all issues and pull requests you open.
 
 - **Community:** Share your question with the community, or see if it's already been asked on our [Community site](https://community.platform.sh).
 - **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions or content ideas you'd like to share or work on.
-<!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
-=======
-# Welcome 👋
-Thank you for choosing to contribute to the community. We do all of our development of our templates on GitHub. If you are not familiar with GitHub or pull requests, here is an [excellent guide](https://guides.github.com/activities/hello-world/) to get started.
->>>>>>> a18f31e (start contribution guide)
+  # <!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
