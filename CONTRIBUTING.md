@@ -26,7 +26,7 @@ It is of utmost importance that every memeber of the community is treated rightl
 
 #### Issue Labels
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in pharetra purus, at laoreet arcu. Nulla convallis malesuada dui, eget vulputate lacus accumsan in. Sed suscipit, massa non sodales sodales, dolor leo congue metus, ut tristique velit risus vel orci. Phasellus maximus eleifend odio, ut ullamcorper libero eleifend et. Donec egestas volutpat purus id varius. Vestibulum laoreet tortor libero, porttitor condimentum leo eleifend eget. Vivamus accumsan sed justo ac maximus. Nunc laoreet magna a tincidunt condimentum.
+
 
 #### PR Labels
 

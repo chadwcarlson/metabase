@@ -412,7 +412,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Int
 
 </details>
 
-
 ### Updating
 
 This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository.
@@ -424,6 +423,7 @@ This template downloads the Metabase jar file during the build hook using the `b
 An `update.sh` script has been included in this repository, which checks to see if a [new version of Metabase is available](<(https://github.com/metabase/metabase/releases)>), and if so updates the contents of `metabase.version` that will used on subsequent builds.
 
 <br /><details>
+
 <summary><strong>Scheduled updates:</strong> <em>automating upstream updates with source operations</em></summary><br />
 
 > **Note:**
@@ -507,16 +507,12 @@ Next thing is to follow this [guide](https://www.metabase.com/docs/latest/admini
 
 ### Customizing Metabase
 
-<<<<<<< HEAD
-Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
-=======
 <details>
 <summary>Adding a datasource</summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
 
 </details><br />
->>>>>>> 626430e (update readme)
 
 <details>
 <summary>Adding a domain</summary><br />
@@ -552,6 +548,8 @@ WIP
 ### Community License Agreement
 
 WIP -->
+
+<br>
 
 ## License
 
