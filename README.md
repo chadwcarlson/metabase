@@ -349,22 +349,24 @@ to gain access. Everything in your repository plus any artifacts of your build w
 
 ### Local development
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum.
+
 <details>
-<summary><strong>Lando:</strong> <em>Use the Platform.sh recommended local development tool</summary><br />
+<summary><strong>Lando:</strong> <em>Use the Platform.sh recommended local development tool<em></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
 <hr></details>
 
 <details>
-<summary><strong>Docksal:</strong> <em>Docker-based local development</summary><br />
+<summary><strong>Docksal:</strong> <em>Docker-based local development<em></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
 <hr></details>
 
 <details>
-<summary><strong>DDEV:</strong> <em>PHP local development</summary><br />
+<summary><strong>DDEV:</strong> <em>PHP local development<em></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
@@ -372,19 +374,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Int
 
 <details>
 <summary><strong>Tethered:</strong> <em>Running locally, connected to Platform.sh services over SSH tunnel<em></summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
-
-<hr></details>
-
-<details>
-<summary><strong>Untethered:</strong> <em>Using local services</summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
-
-<hr></details>
-
-<!-- Note, this assumes the project has been deployed, not someone using their own local PostgreSQL database -->
 
 You are able to test out or build this template on your local machine by following the steps below:
 
@@ -411,11 +400,21 @@ Then start the application for the downloaded jar file:
 
 The script will automatically open a tunnel to the PostgreSQL instance on the current environment, so be sure to create a new one before making any changes.
 
+<hr></details>
+
+<details>
+<summary><strong>Untethered:</strong> <em>Using local services<em></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+<hr></details>
+
 ### Updating
 
 This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository. The `update.sh` script can be run at any time to see if there is a [new release](https://github.com/metabase/metabase/releases) of Metabase available, updating `metabase.version` with the new version.
 
-#### Scheduled updates
+<details>
+<summary><strong>Scheduled updates:</strong> <em>automating upstream updates with source operations<em></summary><br />
 
 > **Note:**
 >
@@ -461,6 +460,8 @@ crons:
 ```
 
 With this definition, the `update` source operation will check to see if a new version of Metabase is available every day at 1:00 am UTC, but _only_ on the `updates` environment. If that environment does not exist on your project it will never run.
+
+<hr></details>
 
 ### Migrating
 
