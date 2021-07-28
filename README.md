@@ -471,8 +471,8 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 ## Contributors ✨
 
+Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
+
+If you'd like to [contribute](#contributing), feel free to [report a bug](), [request a new feature](), or bring up a topic on [our community site](https://community.platform.sh). 
+
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=chadwcarlson/metabase)
-
-## Thanks
-
-- [@rhubinak](https://github.com/rhubinak) for creating the original template.
