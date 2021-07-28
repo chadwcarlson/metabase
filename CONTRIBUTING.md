@@ -92,4 +92,4 @@ Templates and content, in general, are maintained primarily by the Platform.sh D
 
 - **Community:** Share your question with the community, or see if it's already been asked on our [Community site](https://community.platform.sh).
 - **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions or content ideas you'd like to share or work on.
-  # <!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
+<!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
