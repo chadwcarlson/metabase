@@ -184,6 +184,8 @@ The installer will allow you to add databases. Configure the database you are tr
 
 ### Platform.sh basics
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. 
+
 <details>
 <summary><strong>Overview</strong></summary><br />
 
@@ -333,10 +335,6 @@ At this time, Platform.sh's Metabase template does not include any of the upstre
 
 Once you have deployed this template, there are a number of next steps you can take to interact with and customize the project. 
 
-### Environments
-
-**Basics of environments, data inheritance, etc. Recommendation to branch and activate env before doing any of the below**
-
 ### Accessing logs
 
 Once you have deployed to an active environment, you will be able to SSH into your application containers, which can be useful for many things including accessing logs. A temporary SSH token will be generated for you (once you have logged in through the browser) by running the command `platform login`. After that from your project's root, simply run the command 
@@ -350,6 +348,41 @@ to gain access. Everything in your repository plus any artifacts of your build w
 <!-- Wishlist: forwarding logs to Logz.io/Splunk -->
 
 ### Local development
+
+<details>
+<summary><strong>Lando:</strong> <em>Use the Platform.sh recommended local development tool</summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+<hr></details>
+
+<details>
+<summary><strong>Docksal:</strong> <em>Docker-based local development</summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+<hr></details>
+
+<details>
+<summary><strong>DDEV:</strong> <em>PHP local development</summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+<hr></details>
+
+<details>
+<summary><strong>Tethered:</strong> <em>Running locally, connected to Platform.sh services over SSH tunnel<em></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+<hr></details>
+
+<details>
+<summary><strong>Untethered:</strong> <em>Using local services</summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+<hr></details>
 
 <!-- Note, this assumes the project has been deployed, not someone using their own local PostgreSQL database -->
 
