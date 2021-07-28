@@ -411,7 +411,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Int
 
 ### Updating
 
-This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository. The `update.sh` script can be run at any time to see if there is a [new release](https://github.com/metabase/metabase/releases) of Metabase available, updating `metabase.version` with the new version.
+This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository. 
+
+```bash
+./scripts/update.sh
+```
+
+An `update.sh` script has been included in this repository, which checks to see if a [new version of Metabase is available]((https://github.com/metabase/metabase/releases)), and if so updates the contents of `metabase.version` that will used on subsequent builds. 
 
 <details>
 <summary><strong>Scheduled updates:</strong> <em>automating upstream updates with source operations</em></summary><br />
