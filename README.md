@@ -469,7 +469,10 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 - Community questions -->
 
+## Contributors ✨
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=chadwcarlson/metabase)
+
 ## Thanks
 
 - [@rhubinak](https://github.com/rhubinak) for creating the original template.
-- [@hacktivist123](https://github.com/hacktivist123) for integrating into the Platform.sh template catalog.
