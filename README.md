@@ -581,7 +581,7 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
 
-If you'd like to [contribute](/CONTRIBUTING.MD), feel free to [report a bug](), [request a new feature](), or bring up a topic on [our community site](https://community.platform.sh).
+If you'd like to [contribute](https://github.com/chadwcarlson/metabase/blob/chore/readme-updates/CONTRIBUTING.md), feel free to [report a bug](), [request a new feature](), or bring up a topic on [our community site](https://community.platform.sh).
 
 <p align="center">
 
