@@ -59,6 +59,7 @@
 - [Getting started](#getting-started)
   - [Deploying](#deploying)
   - [Post-install](#post-install)
+  - [Platform.sh basics]
 - [Platform.sh customizations](#platformsh-customizations)
   - [Configuration](#configuration)
   - [Builds and deploys](#builds-and-deploys)
@@ -180,6 +181,53 @@ If you would instead to deploy this template from your command line, you can do 
 After the first deployment, give the JVM a minute to finish completing it's initialization tasks (until it does, you will see a 502 error page.) which take only a minute or so. Run through the Metabase installer as normal. You will not be asked for database credentials, as those are already provided via the [`.environment`](.environment) that is sourced during the deploy hook. With the installer you will be able to create admin credentials and choose your language.
 
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
+
+### Platform.sh basics
+
+<details>
+<summary><strong>Overview</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+<hr></details>
+
+<details>
+<summary><strong>Projects</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+<hr></details>
+
+<details>
+<summary><strong>Builds</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+<hr></details>
+
+<details>
+<summary><strong>Deploys</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+<hr></details>
+
+<details>
+<summary><strong>Environments</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+<hr></details>
 
 ## Platform.sh customizations
 
