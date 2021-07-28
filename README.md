@@ -109,8 +109,6 @@ This template contains all of the files needed to deploy on Platform.sh, but you
 
 ### Deploying
 
-<hr></details>
-
 <details>
 <summary><strong>Instant deploy</strong></summary><br />
 
@@ -123,8 +121,6 @@ The quickest method to deploy Metabase on Platform.sh is by clicking the button 
 </p>
 
 If you do not already have a Platform.sh account, you will be asked to fill out some basic information, after which you will be given a 30-day free trial to experiment with our platform. 
-
-<hr></details>
 
 <hr></details>
 
