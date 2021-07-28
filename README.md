@@ -507,9 +507,26 @@ Next thing is to follow this [guide](https://www.metabase.com/docs/latest/admini
 
 ### Customizing Metabase
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+<details>
+<summary>Adding a datasource</summary><br />
 
-Proin pretium et tellus sit amet sollicitudin. Aenean hendrerit risus risus. Vivamus quis nunc faucibus quam lacinia posuere et in massa. Morbi facilisis leo felis, scelerisque convallis libero hendrerit et. Nulla non sodales ante. Pellentesque cursus hendrerit dui id facilisis. Aenean faucibus tortor et nibh eleifend, a dictum orci facilisis. Pellentesque eget posuere elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus posuere eu leo sit amet ultrices. Donec nec feugiat est. Ut ut sem quis velit convallis pretium. Pellentesque sodales, quam quis blandit suscipit, nunc justo scelerisque enim, nec lobortis justo eros nec lacus. Curabitur quis mollis turpis, sed venenatis nibh.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+</details><br /><br />
+
+<details>
+<summary>Adding a domain</summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+</details><br /><br />
+
+<details>
+<summary>Authentication</summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+</details><br /><br />
 
 <!-- ## Roadmap
 
