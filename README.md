@@ -454,10 +454,20 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 ## Resources
 
+<!-- ### General -->
+
 - [Metabase.com](https://www.metabase.com/)
 - [Metabase Documentation](https://www.metabase.com/docs/latest/)
 - [Metabase Repository](https://github.com/metabase/metabase)
 - [Java on Platform.sh](https://docs.platform.sh/languages/java.html)
+
+<!-- ### Blog posts
+
+- Any related blog posts
+
+### Community 
+
+- Community questions -->
 
 ## Thanks
 
