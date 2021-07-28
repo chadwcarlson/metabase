@@ -1,5 +1,6 @@
 # Table of Content
 
+<<<<<<< HEAD
 - [Welcome](#welcome-)
 - [What do I need to know](#what-do-i-need-to-know-)
   - [Issue Labels](#issue-labels)
@@ -9,6 +10,17 @@
   - [Contributing Content](#contributing-content)
 - [Code of Conduct](#code-of-content)
 - [Where Can I Go For Help?](#where-can-i-go-for-help)
+=======
+- [Welcome](#Welcome)
+- [What do I need to know]()
+   - [Issue Labels]()
+   - [PR Labels]()
+- [How do I Contribute?]()
+  - [Contributing to a Template]()
+  - [Contributing Content]()
+- [Code of Conduct]()
+- [Where Can I Go For Help?](#)
+>>>>>>> c5e1acd (first draft of contribution guide)
 
 ---
 
@@ -24,8 +36,16 @@ If you don't feel like making code contributions, that is fine, you can read thr
 
 #### Issue Labels
 
+<<<<<<< HEAD
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in pharetra purus, at laoreet arcu. Nulla convallis malesuada dui, eget vulputate lacus accumsan in. Sed suscipit, massa non sodales sodales, dolor leo congue metus, ut tristique velit risus vel orci. Phasellus maximus eleifend odio, ut ullamcorper libero eleifend et. Donec egestas volutpat purus id varius. Vestibulum laoreet tortor libero, porttitor condimentum leo eleifend eget. Vivamus accumsan sed justo ac maximus. Nunc laoreet magna a tincidunt condimentum.
 
+=======
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in pharetra purus, at laoreet arcu. Nulla convallis malesuada dui, eget vulputate lacus accumsan in. Sed suscipit, massa non sodales sodales, dolor leo congue metus, ut tristique velit risus vel orci. Phasellus maximus eleifend odio, ut ullamcorper libero eleifend et. Donec egestas volutpat purus id varius. Vestibulum laoreet tortor libero, porttitor condimentum leo eleifend eget. Vivamus accumsan sed justo ac maximus. Nunc laoreet magna a tincidunt condimentum.
+
+
+
+>>>>>>> c5e1acd (first draft of contribution guide)
 #### PR Labels
 
 Quisque enim augue, pretium in semper quis, ornare id nulla. Praesent sed diam sed massa ornare iaculis. Phasellus blandit ornare libero, in gravida ante cursus nec. Nulla posuere quam turpis, a porta enim placerat ut. Praesent porta turpis nec neque aliquam vestibulum. Donec rutrum ac tortor quis mattis. Nulla suscipit nibh justo, ut condimentum nisi semper nec. Mauris ut odio arcu. Sed sit amet purus convallis, pretium nulla mollis, ornare dui. Donec mattis efficitur sapien. Integer cursus imperdiet augue, et varius augue vulputate at. Phasellus nunc est, egestas vitae neque nec, cursus ornare mauris. Nam facilisis mi at fringilla sagittis. Ut sodales ligula ac ligula suscipit, at pretium nibh efficitur. Vivamus egestas eros eget ante pulvinar, id efficitur nibh rutrum.
