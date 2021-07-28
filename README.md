@@ -99,11 +99,7 @@
 
 ## Getting started
 
-If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**. There are a number of resources meant to get you started with using Metabase on Platform.sh. 
-
-- [Deploying Metabase to Platform.sh](#deploying)
-- [Post-install intructions](#post-install)
-- [Platform.sh basics](#platform-sh-basics)
+If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**. 
 
 This template contains all of the files needed to deploy on Platform.sh, but you have a few options for doing so. Whichever method you choose, be sure to make note of all of the information included in this README, as it will be a great deal of help once your project has been deployed. 
 
@@ -250,7 +246,7 @@ The following files have been added in order to download Metabase during the bui
 Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment. 
 Within an environment there are three types of containers, each of which are managed by three required files that have been included in this repository:
 
-<details>
+<hr><details>
 <summary><strong>The Router container (<code>.platform/routes.yaml</code>)</strong></summary><br />
 
 For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
@@ -275,7 +271,7 @@ There is also a `redirect` route configured, which automatically redirects all r
 
 A `{default}` placeholder is included on all defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
 
-<hr></details>
+</details><hr>
 
 <details>
 <summary><strong>Service containers (<code>.platform/services.yaml</code>)</strong></summary><br />
@@ -293,7 +289,7 @@ relationships:
 
 With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal` with its credentials visible within the [`PLATFORM_RELATIONSHIPS`](https://docs.platform.sh/configuration/services/postgresql.html#relationship) environment variable, which is a base64-encoded JSON object. Along with a number of other Metabase-specific environment variables, service credentials are set within the [`.environment`](.environment) file, which is sourced in the application root when the environment starts as well as when logging into that environment over SSH. You will notice that this file leverages [jq](https://stedolan.github.io/jq/), a lightweight command-line JSON processor that comes pre-installed on all application containers.
 
-<hr></details>
+</details><hr>
 
 <details>
 <summary><strong>Application containers (<code>.platform.app.yaml</code>)</strong></summary><br />
@@ -320,7 +316,7 @@ Metabase's `.platform.app.yaml` file has a `type` specified such that Java 11 wi
 
 The `.platform.app.yaml` file comes with many more features than are described here, so visit the [**Configure your application**](https://docs.platform.sh/configuration/app.html) section of the documentation for more details.
 
-<hr></details>
+</details><hr>
 
 ### Builds and deploys
 
@@ -359,26 +355,26 @@ to gain access. Everything in your repository plus any artifacts of your build w
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum.
 
-<details>
+<hr><details>
 <summary><strong>Lando:</strong> <em>Use the Platform.sh recommended local development tool</em></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
-<hr></details>
+</details><hr>
 
 <details>
 <summary><strong>Docksal:</strong> <em>Docker-based local development</em></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
-<hr></details>
+</details><hr>
 
 <details>
 <summary><strong>DDEV:</strong> <em>PHP local development</em></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
-<hr></details>
+</details><hr>
 
 <details>
 <summary><strong>Tethered:</strong> <em>Connect directly to your Platform.sh services over an SSH tunnel</em></summary><br />
@@ -415,7 +411,7 @@ The script will automatically open a tunnel to the PostgreSQL instance on the cu
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
-<hr></details>
+</details><hr>
 
 ### Updating
 
