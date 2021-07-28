@@ -1,6 +1,6 @@
+
 # Table of Content
 
-<<<<<<< HEAD
 - [Welcome](#welcome-)
 - [What do I need to know](#what-do-i-need-to-know-)
   - [Issue Labels](#issue-labels)
@@ -10,19 +10,6 @@
   - [Contributing Content](#contributing-content)
 - [Code of Conduct](#code-of-content)
 - [Where Can I Go For Help?](#where-can-i-go-for-help)
-=======
-- [Welcome](#Welcome)
-- [What do I need to know]()
-   - [Issue Labels]()
-   - [PR Labels]()
-- [How do I Contribute?]()
-  - [Contributing to a Template]()
-  - [Contributing Content]()
-- [Code of Conduct]()
-- [Where Can I Go For Help?](#)
->>>>>>> c5e1acd (first draft of contribution guide)
-
----
 
 ## Welcome 👋
 
@@ -110,3 +97,7 @@ Templates and content, in general, are maintained primarily by the Platform.sh D
 - **Community:** Share your question with the community, or see if it's already been asked on our [Community site](https://community.platform.sh).
 - **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions or content ideas you'd like to share or work on.
 <!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
+=======
+# Welcome 👋
+Thank you for choosing to contribute to the community. We do all of our development of our templates on GitHub. If you are not familiar with GitHub or pull requests, here is an [excellent guide](https://guides.github.com/activities/hello-world/) to get started.
+>>>>>>> a18f31e (start contribution guide)
