@@ -355,7 +355,7 @@ to gain access. Everything in your repository plus any artifacts of your build w
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum.
 
-<hr><details>
+<details>
 <summary><strong>Lando:</strong> <em>Use the Platform.sh recommended local development tool</em></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
@@ -424,8 +424,8 @@ This template downloads the Metabase jar file during the build hook using the `b
 
 An `update.sh` script has been included in this repository, which checks to see if a [new version of Metabase is available]((https://github.com/metabase/metabase/releases)), and if so updates the contents of `metabase.version` that will used on subsequent builds. 
 
-<br /><details>
-<summary><strong>Scheduled updates:</strong> <em>automating upstream updates with source operations</em></summary><br />
+<details>
+<summary><strong>Scheduling automatic updates:</strong> <em>automating upstream updates with source operations</em></summary><br />
 
 > **Note:**
 >
@@ -574,7 +574,8 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 - Community questions -->
 
-## Contributors ✨
+
+<h2>Contributors&nbsp;&nbsp;<img src="https://platform.sh/images/spots/concepts/deploy.svg" alt="Deploy on Platform.sh" width="35px" /></h2>
 
 Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
 
@@ -582,7 +583,7 @@ If you'd like to [contribute](#contributing), feel free to [report a bug](), [re
 
 <p align="center">
 
-_**Thanks to all of our wonderful contributors!**_
+_**Thanks to all of our amazing contributors!**_
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=chadwcarlson/metabase)
 
