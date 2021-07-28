@@ -99,11 +99,20 @@
 
 ## Getting started
 
+If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**. There are a number of resources meant to get you started with using Metabase on Platform.sh. 
+
+- [Deploying Metabase to Platform.sh](#deploying)
+- [Post-install intructions](#post-install)
+- [Platform.sh basics](#platform-sh-basics)
+
 This template contains all of the files needed to deploy on Platform.sh, but you have a few options for doing so. Whichever method you choose, be sure to make note of all of the information included in this README, as it will be a great deal of help once your project has been deployed. 
 
 ### Deploying
 
-#### Quick method
+<hr></details>
+
+<details>
+<summary><strong>Instant deploy</strong></summary><br />
 
 The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you. 
 
@@ -115,7 +124,12 @@ The quickest method to deploy Metabase on Platform.sh is by clicking the button 
 
 If you do not already have a Platform.sh account, you will be asked to fill out some basic information, after which you will be given a 30-day free trial to experiment with our platform. 
 
-#### Manual method
+<hr></details>
+
+<hr></details>
+
+<details>
+<summary><strong>Deploy manually</strong></summary><br />
 
 If you would instead to deploy this template from your command line, you can do so through the following steps. 
 
@@ -175,6 +189,8 @@ If you would instead to deploy this template from your command line, you can do 
     ```bash
     git push platform master
     ```
+
+<hr></details>
 
 ### Post-install
 
@@ -373,7 +389,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Int
 <hr></details>
 
 <details>
-<summary><strong>Tethered:</strong> <em>Running locally, connected to Platform.sh services over SSH tunnel</em></summary><br />
+<summary><strong>Tethered:</strong> <em>Connect directly to your Platform.sh services over an SSH tunnel</em></summary><br />
 
 You are able to test out or build this template on your local machine by following the steps below:
 
