@@ -27,7 +27,6 @@ It is of utmost importance that every memeber of the community is treated rightl
 #### Issue Labels
 
 
-
 #### PR Labels
 
 Quisque enim augue, pretium in semper quis, ornare id nulla. Praesent sed diam sed massa ornare iaculis. Phasellus blandit ornare libero, in gravida ante cursus nec. Nulla posuere quam turpis, a porta enim placerat ut. Praesent porta turpis nec neque aliquam vestibulum. Donec rutrum ac tortor quis mattis. Nulla suscipit nibh justo, ut condimentum nisi semper nec. Mauris ut odio arcu. Sed sit amet purus convallis, pretium nulla mollis, ornare dui. Donec mattis efficitur sapien. Integer cursus imperdiet augue, et varius augue vulputate at. Phasellus nunc est, egestas vitae neque nec, cursus ornare mauris. Nam facilisis mi at fringilla sagittis. Ut sodales ligula ac ligula suscipit, at pretium nibh efficitur. Vivamus egestas eros eget ante pulvinar, id efficitur nibh rutrum.
@@ -81,6 +80,10 @@ We are very passionate about our community and we are actively seeking for more 
 
 To submit any type of content, you can reach out to the DevRel team via any of the channels in the [help](#where-can-i-go-for-help) section
 
+
+## Code of Conduct
+
+Integer eu felis suscipit, consectetur purus a, tristique nisl. Praesent nec turpis ut eros semper consequat. Praesent pulvinar quam ante, rhoncus tristique odio venenatis non. Quisque sollicitudin erat et lectus pulvinar faucibus. Quisque feugiat quam in sollicitudin convallis. Aenean pretium, neque eu facilisis dictum, lectus tortor semper lectus, nec facilisis metus ipsum a ante. Aenean tempus suscipit ultrices. Ut sed libero eget tortor tincidunt ullamcorper. Phasellus dignissim diam vel suscipit luctus.
 
 ## Where Can I Go For Help?
 
