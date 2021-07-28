@@ -1,4 +1,7 @@
 <br />
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 <p align="right">
     <a href="https://platform.sh">
         <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="120px">
@@ -307,3 +310,23 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 - [@rhubinak](https://github.com/rhubinak) for creating the original template.
 - [@hacktivist123](https://github.com/hacktivist123) for integrating into the Platform.sh template catalog.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://sheddy.xyz"><img src="https://avatars.githubusercontent.com/u/26572907?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shedrack akintayo</b></sub></a><br /><a href="https://github.com/chadwcarlson/metabase/commits?author=hacktivist123" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
