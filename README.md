@@ -109,9 +109,6 @@ This template contains all of the files needed to deploy on Platform.sh, but you
 
 ### Deploying
 
-<details>
-<summary><strong>Instant deploy</strong></summary><br />
-
 The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you. 
 
 <p align="center">
@@ -121,8 +118,6 @@ The quickest method to deploy Metabase on Platform.sh is by clicking the button 
 </p>
 
 If you do not already have a Platform.sh account, you will be asked to fill out some basic information, after which you will be given a 30-day free trial to experiment with our platform. 
-
-<hr></details>
 
 <details>
 <summary><strong>Deploy manually</strong></summary><br />
@@ -198,12 +193,8 @@ The installer will allow you to add databases. Configure the database you are tr
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. 
 
-<details>
-<summary><strong>Overview</strong><br />
-
-<p><em>Platform.sh is a second-generation Platform-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.</em></p>
-
-</summary><br />
+<hr><details>
+<summary><strong>Overview</strong></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
@@ -212,11 +203,7 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 </details><hr>
 
 <details>
-<summary><strong>Projects</strong><br />
-
-<p><em>Platform.sh is a second-generation Platform-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.</em></p>
-
-</summary><br />
+<summary><strong>Projects</strong></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
@@ -225,11 +212,7 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 </details><hr>
 
 <details>
-<summary><strong>Builds</strong><br />
-
-<p><em>Platform.sh is a second-generation Platform-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.</em></p>
-
-</summary><br />
+<summary><strong>Builds</strong></summary><br />
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
@@ -239,11 +222,7 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 </details><hr>
 
 <details>
-<summary><strong>Deploys</strong>
-
-<p><em>Platform.sh is a second-generation Platform-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.</em></p>
-
-</summary><br />
+<summary><strong>Deploys</strong></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
@@ -252,11 +231,7 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 </details><hr>
 
 <details>
-<summary><strong>Environments</strong>
-
-<p><em>Platform.sh is a second-generation Platform-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.</em></p>
-
-</summary><br />
+<summary><strong>Environments</strong></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
 
