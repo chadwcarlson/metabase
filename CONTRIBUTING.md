@@ -17,7 +17,7 @@ Thank you for choosing to contribute to the community. We do all the development
 
 If you're looking to help with contributions to any of the templates, our templates use the technology mentioned in the repository name, so you have to know a bit of the language to make code contributions.
 
-If you don't feel like making code contributions, that is fine, you can read through the [issues list ](/issues) to see if there's any documentation related issue you can fix 😉
+If you don't feel like making code contributions, that is fine, you can read through the [issues list ](#) to see if there's any documentation related issue you can fix 😉
 
 ### Code of Conduct
 
