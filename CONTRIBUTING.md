@@ -1,10 +1,9 @@
 # Table of Content
 
 - [Welcome](#welcome-)
-- [What do I need to know](#what-do-i-need-to-know-)
+- [What Do I Need to Know](#what-do-i-need-to-know-)
   - [Code of Conduct](#code-of-conduct)
-  - [Issue Labels](#issue-labels)
-  - [PR Labels](#pr-labels)
+  - [Issue Labels and Pull Request Labels](#issue-and-pull-request-labels)
 - [How do I Contribute?](#how-do-i-contribute-)
   - [Contributing to a Template](#contributing-to-a-template)
   - [Contributing Content](#contributing-content)
