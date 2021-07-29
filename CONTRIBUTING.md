@@ -42,44 +42,43 @@ We make use of issue labels to mark issues based on their type or severity, here
 Here's a quick rundown of how to contribute to any of our templates
 
 - If you have a feature idea you'd like to see in the template, create a [feature request](https://github.com/chadwcarlson/metabase/issues/new?assignees=&labels=feature+request&template=feature_request.md&title=)
-  <br>
+
 - Find an issue that you are interested in addressing from the [issues list](/issues) or a change that you would like to add.
-  <br>
+
 - Fork the repository you'd like to contribute to.
-  <br>
+
 - Clone the repository you forked to your local machine using `git clone`
-  <br>
+
 - Create a new branch for your fix using `git checkout -b <branch name>.`
-  <br>
+
 - Make the changes you need to make based on the issue you've selected to fix or the change you want to make.
-  <br>
+
 - Add and commit the changes you've made using `git add` and `git commit` respectively
-  <br>
+
 - During commit, use a very clear and descriptive commit message of your changes
-  <br>
+
 - Push the changes you've made to the repository you forked using `git push origin your-branch-name`
-  <br>
+
 - Go to your repo and create a Pull Request
-  <br>
+
 - While creating a pull request, please follow the pull request template provided and fill in information about your pull request where necessary.
-  <br>
+
 - Submit the pull request and wait for a member of the team to review
-  <br>
+
 - If the pull request reviewer requests for changes of any kind, go ahead and make those changes and push to the repo again.
-  <br>
 
 #### Contributing Content
 
 We are very passionate about our community and we are actively seeking for more ways we can amplify the voices of every member of our community. We welcome all contributions from the community and we are really excited about it. Contributions are not just code related, we encourage you to submit any form of content to the community. Here is a list of what content contribution can look like:
 
 - Platform.sh Templates for various language/frameworks
-  <br>
+
 - Your story on how PSH is impacting your project/company
-  <br>
+
 - Blog Posts and Case Studies
-  <br>
+
 - Talks and Tutorial videos
-  <br>
+
 - Workshop materials
 
 To submit any type of content, you can reach out to the DevRel team via any of the channels in the [help](#where-can-i-go-for-help) section
