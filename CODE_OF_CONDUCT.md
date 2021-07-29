@@ -1,5 +1,4 @@
-[![Contributor Covenant](https://img.shields.io/badge/Contributor
-<br>
+
 
 # Platform.sh Community Code of Conduct
 

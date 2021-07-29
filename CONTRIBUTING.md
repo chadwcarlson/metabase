@@ -1,3 +1,5 @@
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
+
 # Table of Content
 
 - [Welcome](#welcome-)
@@ -21,7 +23,7 @@ If you don't feel like making code contributions, that is fine, you can read thr
 
 ### Code of Conduct
 
-It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our code of conduct exists so that we all know how to treat each other in the community with kindness. Please see our [Code of Conduct]()
+It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our code of conduct exists so that we all know how to treat each other in the community with kindness. Please see our [Code of Conduct](/CODE_OF_CONDUCT.md)
 
 ### Issue and Pull Request Labels
 
