@@ -59,7 +59,7 @@
 - [Getting started](#getting-started)
   - [Deploying](#deploying)
   - [Post-install](#post-install)
-  - [Platform.sh basics]
+  - [Platform.sh basics]()
 - [Platform.sh customizations](#platformsh-customizations)
   - [Configuration](#configuration)
   - [Builds and deploys](#builds-and-deploys)
