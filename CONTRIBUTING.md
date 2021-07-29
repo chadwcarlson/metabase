@@ -20,16 +20,21 @@ If you're looking to help with contributions to any of the templates, our templa
 
 If you don't feel like making code contributions, that is fine, you can read through the [issues list ](/issues) to see if there's any documentation related issue you can fix 😉
 
-#### Code of Conduct
+### Code of Conduct
 
 It is of utmost importance that every memeber of the community is treated rightly and we are very respectful to one another. Our code of conduct exists so that we all know how to treat each other in the community with kindness. Please see our [Code of Conduct]()
 
-#### Issue Labels
+### Issue and Pull Request Labels
 
+We make use of issue labels to mark issues based on their type or severity, here are the available labels:
 
-#### PR Labels
+- `Bug` : Mark your issue or PR with this label if you're tying to fix a bug or report a bug
 
-Quisque enim augue, pretium in semper quis, ornare id nulla. Praesent sed diam sed massa ornare iaculis. Phasellus blandit ornare libero, in gravida ante cursus nec. Nulla posuere quam turpis, a porta enim placerat ut. Praesent porta turpis nec neque aliquam vestibulum. Donec rutrum ac tortor quis mattis. Nulla suscipit nibh justo, ut condimentum nisi semper nec. Mauris ut odio arcu. Sed sit amet purus convallis, pretium nulla mollis, ornare dui. Donec mattis efficitur sapien. Integer cursus imperdiet augue, et varius augue vulputate at. Phasellus nunc est, egestas vitae neque nec, cursus ornare mauris. Nam facilisis mi at fringilla sagittis. Ut sodales ligula ac ligula suscipit, at pretium nibh efficitur. Vivamus egestas eros eget ante pulvinar, id efficitur nibh rutrum.
+- `feature request` : Mark your issue with this label if you're submitting a feature request
+
+- `first contribution` : Your first pull request is marked with this label when it is merged or apporved.
+
+- `cla-signed`: To you submit a pull request, you'll be required to sign our contributor license agreement (CLA). When you've signed it, your pull request will be marked with this label.
 
 ## How do I Contribute? 📝
 
@@ -80,7 +85,6 @@ We are very passionate about our community and we are actively seeking for more 
 
 To submit any type of content, you can reach out to the DevRel team via any of the channels in the [help](#where-can-i-go-for-help) section
 
-
 ## Code of Conduct
 
 Integer eu felis suscipit, consectetur purus a, tristique nisl. Praesent nec turpis ut eros semper consequat. Praesent pulvinar quam ante, rhoncus tristique odio venenatis non. Quisque sollicitudin erat et lectus pulvinar faucibus. Quisque feugiat quam in sollicitudin convallis. Aenean pretium, neque eu facilisis dictum, lectus tortor semper lectus, nec facilisis metus ipsum a ante. Aenean tempus suscipit ultrices. Ut sed libero eget tortor tincidunt ullamcorper. Phasellus dignissim diam vel suscipit luctus.
@@ -91,4 +95,4 @@ Templates and content, in general, are maintained primarily by the Platform.sh D
 
 - **Community:** Share your question with the community, or see if it's already been asked on our [Community site](https://community.platform.sh).
 - **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions or content ideas you'd like to share or work on.
-  # <!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
+<!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
