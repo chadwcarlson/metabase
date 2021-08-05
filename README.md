@@ -51,7 +51,7 @@
     </a> -->
     <br /><br />
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="200px" />
+        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="175px" />
     </a>
 </p>
 </p>
@@ -86,7 +86,7 @@
 </details>
 
 <br />
-<h1><img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="50px">&nbsp About this project </h1>
+<h1 align="center"><img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="50px">&nbsp About this project </h1>
 
 <div>
     <p>This template builds Metabase for Platform.sh.</p>
