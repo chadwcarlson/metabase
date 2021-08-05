@@ -190,7 +190,6 @@ After the first deployment, give the JVM a minute to finish completing it's init
 
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
-
 <br />
 <h1 align="center"><img src="https://platform.sh/images/spots/tech/add-apps.svg" width="50px">&nbsp Customizations </h1>
 
@@ -343,7 +342,8 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 
 </details>
 
-## Usage
+<br />
+<h1 align="center"><img src="https://platform.sh/images/spots/concepts/git-branch.svg" width="50px">&nbsp Usage </h1>
 
 Once you have deployed this template, there are a number of next steps you can take to interact with and customize the project. 
 
@@ -482,7 +482,8 @@ With this definition, the `update` source operation will check to see if a new v
 
 <hr></details>
 
-### Migrating
+<br />
+<h1 align="center"><img src="https://platform.sh/images/spots/arrows/single-arrow.svg" width="50px">&nbsp Migrating </h1>
 
 #### Data
 
@@ -553,11 +554,13 @@ WIP
 
 WIP -->
 
-## License
+<br />
+<h1 align="center"><img src="https://platform.sh/images/spots/concepts/security.svg" width="50px">&nbsp License</h1>
 
 This template uses the [Open Source edition of Metabase](https://github.com/metabase/metabase), which is licensed under the [GNU Affero General Public License (AGPL)](https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt).
 
-## Contact
+<br />
+<h1 align="center"><img src="https://platform.sh/images/contact/support.svg" width="50px">&nbsp Contact</h1>
 
 This template is maintained primarily by the Platform.sh Developer Relations team, and they will be notified of all issues and pull requests you open here.
 
@@ -565,7 +568,8 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 - **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions.
 <!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
 
-## Resources
+<br />
+<h1 align="center"><img src="https://platform.sh/images/spots/concepts/cloud.svg" width="50px">&nbsp Resources</h1>
 
 <!-- ### General -->
 
@@ -583,7 +587,8 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 - Community questions -->
 
 
-<h2>Contributors&nbsp;&nbsp;<img src="https://platform.sh/images/spots/concepts/deploy.svg" alt="Deploy on Platform.sh" width="35px" /></h2>
+<br />
+<h1 align="center"><img src="https://platform.sh/images/spots/concepts/deploy.svg" width="50px">&nbsp Contributors</h1>
 
 Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
 
@@ -598,7 +603,7 @@ _**Thanks to all of our amazing contributors!**_
 <p>
 
 
-<p align="center">
+<!-- <p align="center">
 <img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="85px">
 <img src="https://platform.sh/images/spots/arrows/fast.svg" width="85px">
 <img src="https://platform.sh/images/spots/arrows/single-arrow.svg" width="85px">
@@ -613,7 +618,7 @@ _**Thanks to all of our amazing contributors!**_
 <img src="https://platform.sh/images/contact/contact.svg" width="85px">
 <img src="https://platform.sh/images/spots/thumb.svg" width="85px">
 
-</p>
+</p> -->
 
 <br /><br /><br />
 
