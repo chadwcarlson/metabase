@@ -64,7 +64,7 @@
 <details open="open">
   <summary><strong>Contents</strong></summary><br />
 
-- [About](#about)
+- [About this project](#about-this-project)
   - [Features](#features) 
 - [Getting started](#getting-started)
   - [Deploying](#deploying)
@@ -109,21 +109,14 @@
 <p align="center">
 <img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="85px">
 </p>
-<h2 align="center">About</h2>
-
-
-
-<h1><img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="50px">About</h1>
-
-
-## ⚡️ About
+<h1 align="center">About this project</h1>
 
 <div>
     <p>This template builds Metabase for Platform.sh.</p>
-    <p>Metabase is a simple and powerful analytics tool which lets anyone learn and make decisions from their company’s data.  The Metabase jar file is downloaded on the fly during the build hook based on the version provided in the application's configuration.</p>
+    <p>Metabase is a simple and powerful analytics tool which lets anyone learn and make decisions from their company’s data. The Metabase jar file is downloaded on the fly during the build hook based on the version provided in the application's configuration.</p>
 </div>
 
-### Features
+## Features
 
 - Java 11
 - PostgreSQL 13
@@ -131,13 +124,16 @@
 - Automatic Java heap size configuration
 - Automatic upstream updates via Source Operations
 
-## Getting started
+<p align="center">
+<img src="https://platform.sh/images/spots/tech/globe.svg" width="85px">
+</p>
+<h1 align="center">Getting started</h1>
 
 If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**. 
 
 This template contains all of the files needed to deploy on Platform.sh, but you have a few options for doing so. Whichever method you choose, be sure to make note of all of the information included in this README, as it will be a great deal of help once your project has been deployed. 
 
-### Deploying
+## Deploying
 
 The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you. 
 
@@ -213,13 +209,16 @@ If you would instead to deploy this template from your command line, you can do 
 
 </details>
 
-### Post-install
+## Post-install
 
 After the first deployment, give the JVM a minute to finish completing it's initialization tasks (until it does, you will see a 502 error page.) which take only a minute or so. Run through the Metabase installer as normal. You will not be asked for database credentials, as those are already provided via the [`.environment`](.environment) that is sourced during the deploy hook. With the installer you will be able to create admin credentials and choose your language.
 
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
-## Customizations
+<p align="center">
+<img src="https://platform.sh/images/spots/tech/add-apps.svg" width="85px">
+</p>
+<h1 align="center">Customizations</h1>
 
 **Some more general explanation of why these files are necessary additions to replicate**
 
