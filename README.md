@@ -359,12 +359,12 @@ to gain access. Everything in your repository plus any artifacts of your build w
 
 You can also view application logs directly using the Platform.sh CLI command `platform logs app`.
 
-<details>
+<!-- <details>
 <summary><strong>Log forwarding</strong></summary><br />
 
 <em>Coming soon!</em>
 
-</details>
+</details> -->
 
 ### Local development
 
@@ -598,15 +598,13 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 - Community questions -->
 
-
 <br />
-<h1><img src="https://platform.sh/images/spots/concepts/deploy.svg" width="50px">&nbsp Contributors</h1>
+<h1><img src="https://platform.sh/images/spots/concepts/deploy.svg" width="50px">&nbsp Contributing</h1>
 
-If you'd like to [contribute](https://github.com/chadwcarlson/metabase/blob/chore/readme-updates/CONTRIBUTING.md), feel free to [report a bug](), [request a new feature](), or bring up a topic on [our community site](https://community.platform.sh).
+If you'd like to [contribute](https://github.com/chadwcarlson/metabase/blob/chore/readme-updates/CONTRIBUTING.md), feel free to [report a bug](https://github.com/platformsh-templates/metabase/issues), [request a new feature](https://github.com/platformsh-templates/metabase/issues), or bring up a topic on [our community site](https://community.platform.sh).
 
 Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
 
-<br />
 <h3 align="center"><strong><em>Thanks to all of our amazing contributors!</em></strong></h3>
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=chadwcarlson/metabase)
