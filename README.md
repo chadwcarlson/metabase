@@ -62,7 +62,7 @@
 <hr>
 
 <details open="open">
-  <summary><h3 style="display: inline-block">Contents</h3></summary>
+  <summary><strong>Contents</strong></summary>
 
 - [About](#about)
   - [Features](#features) 
@@ -89,6 +89,11 @@
 </details>
 
 <br />
+<p align="center">
+<img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="100px">
+</p>
+<h2 align="center">About</h2>
+
 
 ## About
 
