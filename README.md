@@ -1,27 +1,40 @@
 <br />
 <p align="right">
     <a href="https://platform.sh">
-        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="120px">
+        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="150px">
     </a>
 </p>
-<br />
+<br /><br />
 <p align="center">
     <a href="https://github.com/metabase/metabase">
         <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="120" height="120">
     </a>
     <br /><br />
-    <h2 align="center">Metabase<br /></h2>
+    <h1 align="center">Metabase<br /></h1>
 </p>
 
 <p align="center">
+    <a href="https://community.platform.sh"><strong>Join our community</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://docs.platform.sh"><strong>Documentation</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://platform.sh/blog"><strong>Blog</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
+    <br /><br />
     <a href="https://github.com/platformsh-templates/metabase/network/members">
-        <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
+        <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Tests" />
     </a>
     <a href="https://github.com/platformsh-templates/metabase/issues">
-        <img src="https://img.shields.io/github/issues/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
+        <img src="https://img.shields.io/github/issues/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Open issues" />
     </a>
     <a href="https://github.com/platformsh-templates/pulls">
-        <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
+        <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Open PRs" />
+    </a>
+    <br />
+    <a href="https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt">
+        <img src="https://img.shields.io/static/v1?label=License&message=AGPL&style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="License" />
+    </a>
+    <a href="https://github.com/platformsh-templates/metabase/CODE_OF_CONDUCT.md">
+        <img src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Conduct" />
     </a>
     <!-- <br /> -->
     <!-- <a href="https://github.com/platformsh-templates/metabase/network/members">
@@ -37,57 +50,50 @@
         <img src="https://img.shields.io/github/stars/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
     </a> -->
     <br /><br />
-    <a href="https://docs.platform.sh">Platform.sh</a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues">Documentation</a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues">Blog</a> ◦
-    <a href="https://docs.platform.sh">API</a> ◦
-    <a href="https://docs.platform.sh">Status</a> ◦
-    <a href="https://docs.platform.sh">Join our community</a><br />
-    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
-    <br /><br />
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
+        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="175px" />
     </a>
 </p>
 </p>
 
 <hr>
+<br />
+<h2 align="center"><strong>Contents</strong></h2>
 
-- [About](#about)
-  - [Features](#features)
-  - [Platform.sh customizations](#platformsh-customizations)
-    - [Configuration](#configuration)
-    - [Builds and deploys](#builds-and-deploys)
-    - [Upstream modifications](#upstream-modifications)
-- [Getting started](#getting-started)
+
+- [About this project](#about-this-project)
+  - [Features](#features) 
+- [Getting started](#-getting-started-)
+  - [Deploying](#deploying)
   - [Post-install](#post-install)
-  - [Data](#data)
+- [Customizations](#customizations)
+  - [Configuration](#configuration)
+  - [Builds and deploys](#builds-and-deploys)
+  - [Upstream modifications](#upstream-modifications)
+- [About Platform.sh](#about-platformsh)
 - [Usage](#usage)
+  - [Logs](#logs)
   - [Local development](#local-development)
   - [Updating](#updating)
-  - [Migrating](#migrating)
-  - [Customization](#customization)
-  - [Performance](#performance)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
+  <!-- - [Customization](#customization)
+  - [Performance](#performance) -->
+- [Migrating](#migrating)
 - [License](#license)
 - [Contact](#contact)
 - [Resources](#resources)
-- [Acknowledegments](#acknowledgements)
+- [Contributors](#contributors)
 
 <hr>
 
 <br />
-
-## About
+<h1><img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="50px">&nbsp About this project </h1>
 
 <div>
     <p>This template builds Metabase for Platform.sh.</p>
-    <p>Metabase is a simple and powerful analytics tool which lets anyone learn and make decisions from their company’s data.  The Metabase jar file is downloaded on the fly during the build hook based on the version provided in the application's configuration.</p>
+    <p>Metabase is a simple and powerful analytics tool which lets anyone learn and make decisions from their company’s data. The Metabase jar file is downloaded on the fly during the build hook based on the version provided in the application's configuration.</p>
 </div>
 
-### Features
+## Features
 
 - Java 11
 - PostgreSQL 13
@@ -95,107 +101,358 @@
 - Automatic Java heap size configuration
 - Automatic upstream updates via Source Operations
 
-## Getting started
+<br />
+<h1><img src="https://platform.sh/images/spots/tech/globe.svg" width="50px">&nbsp Getting started </h1>
 
-To use this template for your metabase project, you need to go through the following steps:
+If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**.
 
-- Go through the README 😉
+This template contains all of the files needed to deploy on Platform.sh, but you have a few options for doing so. Whichever method you choose, be sure to make note of all of the information included in this README, as it will be a great deal of help once your project has been deployed.
 
-- Clone the repo
+## Deploying
 
-- Make the neccessary edits and customizations to suite your needs.
+The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you.
 
-- Create a new project with the [Platform.sh CLI](https://docs.platform.sh/development/cli.html)
+<p align="center">
+    <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
+    </a>
+</p>
 
-- Configure your project remote.
+If you do not already have a Platform.sh account, you will be asked to fill out some basic information, after which you will be given a 30-day free trial to experiment with our platform.
 
-- Git commit your changes
+<details>
+<summary><strong>Deploy manually</strong></summary><br />
 
-- Push to Platform.sh 🚀
+If you would instead to deploy this template from your command line, you can do so through the following steps.
 
-### Platform.sh customizations
+> **Note:**
+>
+> If you do not already have a Platform.sh account, you will need to [start a free trial](https://accounts.platform.sh/platform/trial/general/setup) before creating a new project.
 
-The following files have been added in order to download Metabase during the build hook and to deploy the application on Platform.sh. If using this template as a reference for your own project, replicate the changes below.
+1. Clone this repository:
 
-#### Configuration
+   ```bash
+   git clone https://github.com/platformsh-templates/metabase
+   ```
 
-Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment. Within an environment there are three types of containers, each of which are managed by three required files that have been included in this repository:
+2. Install the Platform.sh CLI:
 
-- [The **Router** container](https://docs.platform.sh/configuration/services.html):
+   ```bash
+   curl -sS https://platform.sh/cli/installer | php
+   ```
 
-  For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
+3. Create a new project:
 
-- [**Service** containers](https://docs.platform.sh/configuration/services.html):
+   ```bash
+   cd metabase && platform project:create
+   ```
 
-  Each virtual cluster can have zero or more Service containers, but the file which configures them [**`.platform/services.yaml`**](.platform/services.yaml) is still required in your repository. Each top level key in that file will correspond to a separate Service container, with the kind of service determined by its `type`.
+4. Set the project as a remote for the repository (prompt):
 
-- [**Application** containers](https://docs.platform.sh/configuration/app.html) | [**`.platform.app.yaml`**](.platform.app.yaml):
+   ```bash
+   Set the new project Metabase as the remote for this repository? [Y/n]   Y
+   ```
 
-#### Builds and deploys
+   Once you have verified the project creation steps, you will receive some additional information about the project.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+   ```text
+   The Platform.sh Bot is activating your project
 
-#### Upstream modifications
+       ▄     ▄
+       ▄█▄▄▄█▄
+     ▄██▄███▄██▄
+     █ █▀▀▀▀▀█ █
+        ▀▀ ▀▀
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+   The project is now ready!
+   <PROJECT ID>
 
-- Deploying on Platform.sh requires a set of configuration files to instruct the platform how to build and deploy your applications, as well as the topology of your infrastructure.
-  - The [`.platform.app.yaml`](.platform.app.yaml) file
-- The [`.platform.app.yaml`](.platform.app.yaml), [`.platform/services.yaml`](.platform/services.yaml), and [`.platform/routes.yaml`](.platform/routes.yaml) files have been added. These provide Platform.sh-specific configuration and are present in all projects on Platform.sh. You may customize them as you see fit.
-- A [`.environment`](.environment) file has been added to define database credentials and other environment variables for Metabase at runtime.
-- A [`build.sh`](scripts/build.sh) script is included, which used the `METABASE_VERSION` environment variable set in `.platform.app.yaml` to download a version of the Metabase jar file. This script grabs the `METABASE_VERSION` environment variable via the Platform.sh CLI locally.
-- A [`start.sh`](scripts/start.sh) script has been added. This file actually runs the Metabase jar run the site. Locally, the Platform.sh CLI opens a tunnel to the PostgreSQL database and mocks connection credentials before starting.
+   Region: <PROJECT REGION>.platform.sh
+   Project ID: <PROJECT ID>
+   Project title: Metabase
+   URL: https://console.platform.sh/<USERNAME>/<PROJECT ID>
+   Git URL: <PROJECT ID>@git.<PROJECT REGION>.platform.sh:<PROJECT ID>.git
 
-### Post-install
+   Setting the remote project for this repository to: Metabase (<PROJECT ID>)
+   ```
+
+5. Push to Platform.sh:
+
+   ```bash
+   git push platform master
+   ```
+
+</details>
+
+## Post-install
 
 After the first deployment, give the JVM a minute to finish completing it's initialization tasks (until it does, you will see a 502 error page.) which take only a minute or so. Run through the Metabase installer as normal. You will not be asked for database credentials, as those are already provided via the [`.environment`](.environment) that is sourced during the deploy hook. With the installer you will be able to create admin credentials and choose your language.
 
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
-## Usage
+<br />
+<h1><img src="https://platform.sh/images/spots/tech/add-apps.svg" width="50px">&nbsp Customizations </h1>
 
-There are a few ways to make use this of this template, the following ways are as follows:
+**Some more general explanation of why these files are necessary additions to replicate**
+
+The following files have been added in order to download Metabase during the build hook and to deploy the application on Platform.sh. If using this template as a reference for your own project, replicate the changes below.
+
+### Configuration
+
+Every application you deploy on Platform.sh is built as a **virtual cluster** containing a set of containers which defines a particular **environment**. The default branch (`master`, `main`, etc.) is always deployed as your production environment, whereas any other branch can be deployed as a development environment.
+Within an environment there are three types of containers, each of which are managed by three required files that have been included in this repository:
+
+<details>
+<summary><strong>The Router container (<code>.platform/routes.yaml</code>)</strong></summary><br />
+
+For each cluster/environment there will always be exactly one Router container, which is a single nginx process. It's configuration file [**`.platform/routes.yaml`**](.platform/routes.yaml) defines how incoming requests map the the appropriate Application container, while providing basic caching of responses if so configured. The Router Container has no persistent storage.
+
+**Metabase**
+
+For Metabase, two routes have been defined. One `upstream` route directs requests directly to the Metabase application container at the `www` subdomain, which defined by the `upstream` value `"app:http"`. Notice that the application container name `app` is matched in the `name` attribute in [`.platform.app.yaml`](.platform.app.yaml).
+
+```yaml
+'https://www.{default}/':
+  type: upstream
+  upstream: 'app:http'
+
+'https://{default}/':
+  type: redirect
+  to: 'https://www.{default}/'
+```
+
+There is also a `redirect` route configured, which automatically redirects all request to the `www` subdomain upstream route.
+
+<!-- **Some second application** -->
+
+A `{default}` placeholder is included on all defined routes. This placeholder will be replaced with the production domain name configured for your project's production branch, and will be substituted with a unique generated domain for each of your development environments based on the region, project ID, and branch name.
+
+</details>
+
+<details>
+<summary><strong>Service containers (<code>.platform/services.yaml</code>)</strong></summary><br />
+
+Each virtual cluster can have zero or more Service containers, but the file which configures them [**`.platform/services.yaml`**](.platform/services.yaml) is still required in your repository. Each top level key in that file will correspond to a separate Service container, with the kind of service determined by its `type`.
+
+For Metabase's primary database, a single PostgreSQL service container has been added, identifiable by the service name `db`. Notice that in order for the application container to be granted access to this service it's necessary that a [**relationship**](https://docs.platform.sh/configuration/app/relationships.html) is defined in [`.platform.app.yaml`](.platform.app.yaml).
+
+```yaml
+# .platform.app.yaml
+
+relationships:
+  database: 'db:postgresql'
+```
+
+With this relationship defined, the database will now be made accessible to the application on the internal network at `database.internal` with its credentials visible within the [`PLATFORM_RELATIONSHIPS`](https://docs.platform.sh/configuration/services/postgresql.html#relationship) environment variable, which is a base64-encoded JSON object. Along with a number of other Metabase-specific environment variables, service credentials are set within the [`.environment`](.environment) file, which is sourced in the application root when the environment starts as well as when logging into that environment over SSH. You will notice that this file leverages [jq](https://stedolan.github.io/jq/), a lightweight command-line JSON processor that comes pre-installed on all application containers.
+
+</details>
+
+<details>
+<summary><strong>Application containers (<code>.platform.app.yaml</code>)</strong></summary><br />
+
+There must always be one Application container in your cluster, but there [may be more](https://docs.platform.sh/configuration/app/multi-app.html). It is from this file that you are able to define the container's runtime language and version, it's relationships to other containers, and how it is [built and deployed](#builds-and-deploys).
+
+Every project you deploy on Platform.sh exists on a writable file system at build time, but it will become read-only once it enters the deploy phase (see [Builds and deploys](#builds-and-deploys)) for more information. Because of this, any directories that require write access to the file system at runtime must be declared as `mounts`, and must include the `disk` attribute that defines the available disk space for the data in these directories.
+
+**Metabase**
+
+For Metabase, the `temp` and `data` directories are required in order to load the example dataset that comes with Metabase. Since the upstream jar file is unpacked during the start command, which includes writing a number of plugins to the filesystem, `plugins` will also be a mounted directory.
+
+```yaml
+# The name of this application, which must be unique within a project.
+name: app
+
+# The type key specifies the language and version for your application.
+type: java:11
+```
+
+Metabase's `.platform.app.yaml` file has a `type` specified such that Java 11 will be the container's primary runtime language. This container is accessible to the rest of the cluster by the name `app`, which you will notice is also the name used in defining Metabase's `upstream` route in `.platform/routes.yaml`.
+
+<!-- **Some second application** -->
+
+The `.platform.app.yaml` file comes with many more features than are described here, so visit the [**Configure your application**](https://docs.platform.sh/configuration/app.html) section of the documentation for more details.
+
+</details>
+
+### Builds and deploys
+
+Every time you push to a live branch (a git branch with an active environment attached to it) or activate an [environment](https://docs.platform.sh/administration/web/environments.html) for a branch, there are two main processes that happen: Build and Deploy.
+
+1. The build process looks through the configuration files in your repository and assembles the necessary containers.
+2. The deploy process makes those containers live, replacing the previous versions, with virtually no interruption in service.
+
+<p align="center">
+    <a href="https://docs.platform.sh/overview/build-deploy.html">
+        <img src="https://docs.platform.sh/images/workflow/build-pipeline.svg" alt="Build & deploy">
+    </a>
+</p>
+
+### Upstream modifications
+
+At this time, Platform.sh's Metabase template does not include any of the upstream code in this repository. The Metabase `jar` file is installed during the build hook according to the version defined in a [`metabase.version`](metabase.version) file.
+
+<br />
+<h1><img src="https://platform.sh/logos/redesign/Platformsh_icon_black.svg" width="40px">&nbsp About Platform.sh </h1>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. 
+
+<details>
+<summary><strong>Overview</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Projects</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Builds</strong></summary><br />
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Deploys</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Environments</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<br />
+<h1><img src="https://platform.sh/images/spots/concepts/git-branch.svg" width="50px">&nbsp Usage </h1>
+
+Once you have deployed this template, there are a number of next steps you can take to interact with and customize the project.
+
+## Logs
+
+Once you have deployed to an active environment, you will be able to SSH into your application containers, which can be useful for many things including accessing logs. A temporary SSH token will be generated for you (once you have logged in through the browser) by running the command `platform login`. After that from your project's root, simply run the command
+
+```bash
+platform ssh
+```
+
+to gain access. Everything in your repository plus any artifacts of your build will exist here in `/app`. All logs are available in the subdirectory `/var/log`, and you can find more information about the available logs [in the Development documentation](https://docs.platform.sh/development/logs.html).
+
+You can also view application logs directly using the Platform.sh CLI command `platform logs app`.
+
+<details>
+<summary><strong>Log forwarding</strong></summary><br />
+
+<em>Coming soon!</em>
+
+</details>
 
 ### Local development
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum.
+
+<details>
+<summary><strong>Lando:</strong> <em>Use the Platform.sh recommended local development tool</em></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
+
+</details>
+
+<details>
+<summary><strong>Docksal:</strong> <em>Docker-based local development</em></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
+
+</details>
+
+<details>
+<summary><strong>DDEV:</strong> <em>PHP local development</em></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
+
+</details>
+
+<details>
+<summary><strong>Tethered:</strong> <em>Connect directly to your Platform.sh services over an SSH tunnel</em></summary><br />
 
 You are able to test out or build this template on your local machine by following the steps below:
 
 #### Requirements
 
 - [Platform.sh CLI](https://docs.platform.sh/development/cli.html)
+- These steps open a tunnel to a PostgreSQL container on Platform.sh, so it is assumed that you have pushed to Platform.sh or clicked the **Deploy on Platform.sh** button above, and have followed the [post-install instructions](#post-install).
 
 #### Steps
 
 You are able to run the `build.sh` and `start.sh` `scripts` just as they're defined in `.platform.app.yaml` to run Metabase locally.
 
-Download the project's current live committed version of Metabase (`variables.env.METABASE_VERSION` in `.platform.app.yaml`):
+Download the project's current live committed version of Metabase (defined in the [`metabase.version`](metabase.version) file):
 
-```
+```bash
 ./scripts/build.sh
 ```
 
 Then start the application for the downloaded jar file:
 
-```
+```bash
 ./scripts/start.sh
 ```
 
 The script will automatically open a tunnel to the PostgreSQL instance on the current environment, so be sure to create a new one before making any changes.
 
+</details>
+
+<details>
+<summary><strong>Untethered:</strong> <em>Using local services</em></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
+
+</details>
+
 ### Updating
 
-This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository. The `update.sh` script can be run at any time to see if there is a [new release](https://github.com/metabase/metabase/releases) of Metabase available, updating `metabase.version` with the new version.
+This template downloads the Metabase jar file during the build hook using the `build.sh` script. The version downloaded is dependendent on the version listed in the [`metabase.version`](metabase.version) file in the repository.
 
-#### Scheduled updates
+```bash
+./scripts/update.sh
+```
 
-It is possible to schedule the update described above using [source operations](https://docs.platform.sh/configuration/app/source-operations.html), which are a set of commands that can be triggered to make changes to your project's code base.
+An `update.sh` script has been included in this repository, which checks to see if a [new version of Metabase is available](<(https://github.com/metabase/metabase/releases)>), and if so updates the contents of `metabase.version` that will used on subsequent builds.
+
+<details>
+<summary><strong>Scheduling automatic updates:</strong> <em>automating upstream updates with source operations</em></summary><br />
+
+> **Note:**
+>
+> This section describes features only available to Elite and Enterprise customers. [Compare the Platform.sh tiers](https://platform.sh/pricing/#compare) on our pricing page, or [contact our sales team](https://platform.sh/pricing/#compare) for more information.
+
+It is possible to schedule the updates described above using [source operations](https://docs.platform.sh/configuration/app/source-operations.html), which are a set of commands that can be triggered to make changes to your project's code base.
 
 A source operation has been defined for this template that is scheduled to run regularly with a cron job:
 
 ```yaml
 source:
   operations:
-    updates:
+    update:
       command: !include
         type: string
         path: scripts/update.sh
@@ -229,39 +486,63 @@ crons:
 
 With this definition, the `update` source operation will check to see if a new version of Metabase is available every day at 1:00 am UTC, but _only_ on the `updates` environment. If that environment does not exist on your project it will never run.
 
-### Migrating
+<hr></details>
 
-**Dumping your Database**
+<br />
+<h1><img src="https://platform.sh/images/spots/arrows/fast.svg" width="50px">&nbsp Migrating </h1>
+
+#### Data
 
 Moving from using Metabase Cloud to a Self hosted version means you also would need to migrate your data yourself. For the migration to happen, you'll need to obtain your database dump from metabase, you can do that by refering to this [guide](https://www.metabase.com/docs/latest/operations-guide/migrating-from-h2.html) in the Metabase documentation.
 
-**_Note: It is advised you backup your database before proceeding with the dump_**
+> **Note:**
+>
+> It is advised you backup your database before proceeding with the dump.
 
-When you have successfully obtained a dump of your data(MySQL, MariaDB or PostgreSQL) from Metabase, you'll need to populate the postgresql database service that this template uses. You can change the default database type of this template by altering the `services.yaml` file in the `.platfrom` folder if needed.
+When you have successfully obtained a dump of your data (MySQL, MariaDB or PostgreSQL) from Metabase, you'll need to populate the postgresql database service that this template uses. You can change the default database type of this template by altering the `.platform/services.yaml` file in the `.platform` folder if needed.
 
-Next, you'll need to save your as database.sql. (Or any name, really, as long as it’s the same as you use below.)
+Next, you'll need to save your as `database.sql`. (Or any name, really, as long as it’s the same as you use below.)
 
 Next, import the database into your Platform.sh site. The easiest way to do so is with the Platform.sh CLI by running the following command:
 
 ```bash
-$ platform sql -e master < database.sql
+platform sql -e master < database.sql
 ```
 
-The above command will connect to the database service on the master environment, through an SSH tunnel, and run the SQL import.
+The above command will connect to the database service on the `master` environment, through an SSH tunnel, and run the SQL import.
 
-**Adding Previous Data Sources**
+#### Adding data sources
 
 If you need to add your previous data sources, all you need to do is to build and deploy your metabase site, visit the generated route to see the metabase site live.
 
 Next thing is to follow this [guide](https://www.metabase.com/docs/latest/administration-guide/01-managing-databases.html) in the Metabase official documentation to learn how to add various data sources.
 
-**_Note: If you have a CSV file containing your data you'll need to upload the csv files to a database, then connect metabase to the database._**
+> **Note:**
+>
+> If you have a CSV file containing your data you'll need to upload the csv files to a database, then connect Metabase to the database.
 
 ### Customizing Metabase
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ligula iaculis, rhoncus orci a, aliquet erat. Etiam semper faucibus diam id sodales. Vestibulum nisi tellus, laoreet ac ipsum vel, volutpat placerat ipsum. Etiam a auctor felis. Cras mauris eros, gravida ac augue vel, ornare ornare magna. Aliquam tempus erat quis venenatis eleifend. Vivamus eros magna, dignissim a elit quis, cursus imperdiet urna.
+<details>
+<summary>Adding a datasource</summary><br />
 
-Proin pretium et tellus sit amet sollicitudin. Aenean hendrerit risus risus. Vivamus quis nunc faucibus quam lacinia posuere et in massa. Morbi facilisis leo felis, scelerisque convallis libero hendrerit et. Nulla non sodales ante. Pellentesque cursus hendrerit dui id facilisis. Aenean faucibus tortor et nibh eleifend, a dictum orci facilisis. Pellentesque eget posuere elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus posuere eu leo sit amet ultrices. Donec nec feugiat est. Ut ut sem quis velit convallis pretium. Pellentesque sodales, quam quis blandit suscipit, nunc justo scelerisque enim, nec lobortis justo eros nec lacus. Curabitur quis mollis turpis, sed venenatis nibh.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
+
+</details>
+
+<details>
+<summary>Adding a domain</summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
+
+</details>
+
+<details>
+<summary>Authentication</summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
+
+</details>
 
 <!-- ## Roadmap
 
@@ -284,11 +565,14 @@ WIP
 
 WIP -->
 
-## License
+
+<br />
+<h1><img src="https://platform.sh/images/spots/concepts/security.svg" width="50px">&nbsp License</h1>
 
 This template uses the [Open Source edition of Metabase](https://github.com/metabase/metabase), which is licensed under the [GNU Affero General Public License (AGPL)](https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt).
 
-## Contact
+<br />
+<h1><img src="https://platform.sh/images/contact/support.svg" width="50px">&nbsp Contact</h1>
 
 This template is maintained primarily by the Platform.sh Developer Relations team, and they will be notified of all issues and pull requests you open here.
 
@@ -296,14 +580,33 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 - **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions.
 <!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
 
-## Resources
+<br />
+<h1><img src="https://platform.sh/images/spots/concepts/cloud.svg" width="50px">&nbsp Resources</h1>
+
+<!-- ### General -->
 
 - [Metabase.com](https://www.metabase.com/)
 - [Metabase Documentation](https://www.metabase.com/docs/latest/)
 - [Metabase Repository](https://github.com/metabase/metabase)
 - [Java on Platform.sh](https://docs.platform.sh/languages/java.html)
 
-## Thanks
+<!-- ### Blog posts
 
-- [@rhubinak](https://github.com/rhubinak) for creating the original template.
-- [@hacktivist123](https://github.com/hacktivist123) for integrating into the Platform.sh template catalog.
+- Any related blog posts
+
+### Community
+
+- Community questions -->
+
+
+<br />
+<h1><img src="https://platform.sh/images/spots/concepts/deploy.svg" width="50px">&nbsp Contributors</h1>
+
+If you'd like to [contribute](https://github.com/chadwcarlson/metabase/blob/chore/readme-updates/CONTRIBUTING.md), feel free to [report a bug](), [request a new feature](), or bring up a topic on [our community site](https://community.platform.sh).
+
+Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
+
+<br />
+<h3 align="center"><strong><em>Thanks to all of our amazing contributors!</em></strong></h3>
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=chadwcarlson/metabase)
