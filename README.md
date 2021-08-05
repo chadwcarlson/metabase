@@ -10,7 +10,7 @@
         <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="120" height="120">
     </a>
     <br /><br />
-    <h2 align="center">Metabase<br /></h2>
+    <h1 align="center">Metabase<br /></h1>
 </p>
 
 <p align="center">
@@ -127,7 +127,8 @@
 <p align="center">
 <img src="https://platform.sh/images/spots/tech/globe.svg" width="85px">
 </p>
-<h1 align="center">Getting started</h1>
+
+<h1><img src="https://platform.sh/images/spots/tech/globe.svg" width="50px">&nbsp&nbsp Getting started </h1>
 
 If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**. 
 
@@ -215,10 +216,11 @@ After the first deployment, give the JVM a minute to finish completing it's init
 
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
+
+<h2 align="center">Customizations</h2>
 <p align="center">
 <img src="https://platform.sh/images/spots/tech/add-apps.svg" width="85px">
 </p>
-<h1 align="center">Customizations</h1>
 
 **Some more general explanation of why these files are necessary additions to replicate**
 
