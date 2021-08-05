@@ -4,7 +4,7 @@
         <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="120px">
     </a>
 </p>
-<br />
+<br /><br /><br />
 <p align="center">
     <a href="https://github.com/metabase/metabase">
         <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="120" height="120">
@@ -15,20 +15,20 @@
 
 <p align="center">
     <a href="https://github.com/platformsh-templates/metabase/network/members">
-        <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Tests" />
+        <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Tests" />
     </a>
     <a href="https://github.com/platformsh-templates/metabase/issues">
-        <img src="https://img.shields.io/github/issues/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Open issues" />
+        <img src="https://img.shields.io/github/issues/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Open issues" />
     </a>
     <a href="https://github.com/platformsh-templates/pulls">
-        <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Open PRs" />
+        <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Open PRs" />
     </a>
     <br />
     <a href="https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt">
-        <img src="https://img.shields.io/static/v1?label=License&message=AGPL&style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="License" />
+        <img src="https://img.shields.io/static/v1?label=License&message=AGPL&style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="License" />
     </a>
     <a href="https://github.com/platformsh-templates/metabase/CODE_OF_CONDUCT.md">
-        <img src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Conduct" />
+        <img src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Conduct" />
     </a>
     <!-- <br /> -->
     <!-- <a href="https://github.com/platformsh-templates/metabase/network/members">
@@ -49,20 +49,20 @@
     <a href="https://platform.sh/blog">Blog</a> ◦
     <a href="https://api.platform.sh">API</a> ◦
     <a href="https://status.platform.sh">Status</a> ◦
-    <a href="https://community.platform.sh">Join our community</a><br />
+    <a href="https://community.platform.sh">Join our community</a><br /><br />
     <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a> ◦
     <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
     <br /><br />
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
+        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="200px" />
     </a>
 </p>
 </p>
 
-<hr>
+<!-- <hr> -->
 
 <details open="open">
-  <summary><strong>Contents</strong></summary>
+  <summary><strong>Contents</strong></summary><br />
 
 - [About](#about)
   - [Features](#features) 
@@ -88,14 +88,31 @@
 
 </details>
 
+<p align="center">
+<img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="85px">
+<img src="https://platform.sh/images/spots/arrows/fast.svg" width="85px">
+<img src="https://platform.sh/images/spots/arrows/single-arrow.svg" width="85px">
+<img src="https://platform.sh/images/spots/concepts/cloud.svg" width="85px">
+<img src="https://platform.sh/images/spots/concepts/deploy.svg" width="85px">
+<img src="https://platform.sh/images/spots/concepts/git-branch.svg" width="85px">
+<img src="https://platform.sh/images/spots/concepts/security.svg" width="85px">
+<img src="https://platform.sh/images/spots/tech/add-apps.svg" width="85px">
+<img src="https://platform.sh/images/spots/tech/globe.svg" width="85px">
+<img src="https://platform.sh/images/contact/support.svg" width="85px">
+<img src="https://platform.sh/images/environment/server-bunny-black.svg" width="85px">
+<img src="https://platform.sh/images/contact/contact.svg" width="85px">
+<img src="https://platform.sh/images/spots/thumb.svg" width="85px">
+
+</p>
+
 <br />
 <p align="center">
-<img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="100px">
+<img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="85px">
 </p>
-<h2 align="center">About</h2>
+<h1><img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="50px">About</h1>
 
 
-## About
+## ⚡️ About
 
 <div>
     <p>This template builds Metabase for Platform.sh.</p>
