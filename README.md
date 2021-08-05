@@ -102,7 +102,7 @@
 - Automatic upstream updates via Source Operations
 
 <br />
-<h1><img src="https://platform.sh/images/spots/tech/globe.svg" width="50px">&nbsp Getting started </h1>
+<h1 align="center"><img src="https://platform.sh/images/spots/tech/globe.svg" width="50px">&nbsp Getting started </h1>
 
 If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**. 
 
@@ -191,10 +191,8 @@ After the first deployment, give the JVM a minute to finish completing it's init
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
 
-<h2 align="center">Customizations</h2>
-<p align="center">
-<img src="https://platform.sh/images/spots/tech/add-apps.svg" width="85px">
-</p>
+<br />
+<h1 align="center"><img src="https://platform.sh/images/spots/tech/add-apps.svg" width="50px">&nbsp Customizations </h1>
 
 **Some more general explanation of why these files are necessary additions to replicate**
 
@@ -294,7 +292,8 @@ Every time you push to a live branch (a git branch with an active environment at
 
 At this time, Platform.sh's Metabase template does not include any of the upstream code in this repository. The Metabase `jar` file is installed during the build hook according to the version defined in a [`metabase.version`](metabase.version) file.
 
-## About Platform.sh
+<br />
+<h1 align="center"><img src="https://platform.sh/logos/redesign/Platformsh_icon_black.svg" width="40px">&nbsp About Platform.sh </h1>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. 
 
@@ -614,4 +613,10 @@ _**Thanks to all of our amazing contributors!**_
 <img src="https://platform.sh/images/contact/contact.svg" width="85px">
 <img src="https://platform.sh/images/spots/thumb.svg" width="85px">
 
+</p>
+
+<br /><br /><br />
+
+<p align="center">
+<img src="https://platform.sh/images/linked-block/people.svg" width="75%">
 </p>
