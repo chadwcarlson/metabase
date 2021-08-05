@@ -66,7 +66,7 @@
 
 - [About this project](#about-this-project)
   - [Features](#features) 
-- [Getting started](#getting-started)
+- [Getting started](#-getting-started-)
   - [Deploying](#deploying)
   - [Post-install](#post-install)
 - [Customizations](#customizations)
@@ -88,28 +88,9 @@
 
 </details>
 
-<p align="center">
-<img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="85px">
-<img src="https://platform.sh/images/spots/arrows/fast.svg" width="85px">
-<img src="https://platform.sh/images/spots/arrows/single-arrow.svg" width="85px">
-<img src="https://platform.sh/images/spots/concepts/cloud.svg" width="85px">
-<img src="https://platform.sh/images/spots/concepts/deploy.svg" width="85px">
-<img src="https://platform.sh/images/spots/concepts/git-branch.svg" width="85px">
-<img src="https://platform.sh/images/spots/concepts/security.svg" width="85px">
-<img src="https://platform.sh/images/spots/tech/add-apps.svg" width="85px">
-<img src="https://platform.sh/images/spots/tech/globe.svg" width="85px">
-<img src="https://platform.sh/images/contact/support.svg" width="85px">
-<img src="https://platform.sh/images/environment/server-bunny-black.svg" width="85px">
-<img src="https://platform.sh/images/contact/contact.svg" width="85px">
-<img src="https://platform.sh/images/spots/thumb.svg" width="85px">
-
-</p>
-
 <br />
-<p align="center">
-<img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="85px">
-</p>
-<h1 align="center">About this project</h1>
+
+<h1><img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="50px">&nbsp About this project </h1>
 
 <div>
     <p>This template builds Metabase for Platform.sh.</p>
@@ -123,10 +104,6 @@
 - Automatic TLS certificates
 - Automatic Java heap size configuration
 - Automatic upstream updates via Source Operations
-
-<p align="center">
-<img src="https://platform.sh/images/spots/tech/globe.svg" width="85px">
-</p>
 
 <h1><img src="https://platform.sh/images/spots/tech/globe.svg" width="50px">&nbsp Getting started </h1>
 
@@ -623,3 +600,21 @@ _**Thanks to all of our amazing contributors!**_
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=chadwcarlson/metabase)
 
 <p>
+
+
+<p align="center">
+<img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="85px">
+<img src="https://platform.sh/images/spots/arrows/fast.svg" width="85px">
+<img src="https://platform.sh/images/spots/arrows/single-arrow.svg" width="85px">
+<img src="https://platform.sh/images/spots/concepts/cloud.svg" width="85px">
+<img src="https://platform.sh/images/spots/concepts/deploy.svg" width="85px">
+<img src="https://platform.sh/images/spots/concepts/git-branch.svg" width="85px">
+<img src="https://platform.sh/images/spots/concepts/security.svg" width="85px">
+<img src="https://platform.sh/images/spots/tech/add-apps.svg" width="85px">
+<img src="https://platform.sh/images/spots/tech/globe.svg" width="85px">
+<img src="https://platform.sh/images/contact/support.svg" width="85px">
+<img src="https://platform.sh/images/environment/server-bunny-black.svg" width="85px">
+<img src="https://platform.sh/images/contact/contact.svg" width="85px">
+<img src="https://platform.sh/images/spots/thumb.svg" width="85px">
+
+</p>
