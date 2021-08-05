@@ -1,8 +1,8 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: Suggest an idea for this template
 title: ''
-labels: ".Needs Triage, Type:New Feature"
+labels: "feature request"
 assignees: ''
 
 ---
