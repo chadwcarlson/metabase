@@ -1,27 +1,40 @@
 <br />
 <p align="right">
     <a href="https://platform.sh">
-        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="120px">
+        <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="150px">
     </a>
 </p>
-<br />
+<br /><br />
 <p align="center">
     <a href="https://github.com/metabase/metabase">
         <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="120" height="120">
     </a>
     <br /><br />
-    <h2 align="center">Metabase<br /></h2>
+    <h1 align="center">Metabase<br /></h1>
 </p>
 
 <p align="center">
+    <a href="https://community.platform.sh"><strong>Join our community</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://docs.platform.sh"><strong>Documentation</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://platform.sh/blog"><strong>Blog</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
+    <br /><br />
     <a href="https://github.com/platformsh-templates/metabase/network/members">
-        <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
+        <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Tests" />
     </a>
     <a href="https://github.com/platformsh-templates/metabase/issues">
-        <img src="https://img.shields.io/github/issues/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
+        <img src="https://img.shields.io/github/issues/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Open issues" />
     </a>
     <a href="https://github.com/platformsh-templates/pulls">
-        <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
+        <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Open PRs" />
+    </a>
+    <br />
+    <a href="https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt">
+        <img src="https://img.shields.io/static/v1?label=License&message=AGPL&style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="License" />
+    </a>
+    <a href="https://github.com/platformsh-templates/metabase/CODE_OF_CONDUCT.md">
+        <img src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Conduct" />
     </a>
     <!-- <br /> -->
     <!-- <a href="https://github.com/platformsh-templates/metabase/network/members">
@@ -37,59 +50,50 @@
         <img src="https://img.shields.io/github/stars/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
     </a> -->
     <br /><br />
-    <a href="https://platform.sh">Platform.sh</a> ◦
-    <a href="https://docs.platform.sh">Documentation</a> ◦
-    <a href="https://platform.sh/blog">Blog</a> ◦
-    <a href="https://api.platform.sh">API</a> ◦
-    <a href="https://status.platform.sh">Status</a> ◦
-    <a href="https://community.platform.sh">Join our community</a><br />
-    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
-    <br /><br />
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
+        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="175px" />
     </a>
 </p>
 </p>
 
 <hr>
+<br />
+<h2 align="center"><strong>Contents</strong></h2>
 
-- [About](#about)
-  - [Features](#features)
-- [Getting started](#getting-started)
+
+- [About this project](#about-this-project)
+  - [Features](#features) 
+- [Getting started](#-getting-started-)
   - [Deploying](#deploying)
   - [Post-install](#post-install)
-  - [Platform.sh basics]()
-- [Platform.sh customizations](#platformsh-customizations)
+- [Customizations](#customizations)
   - [Configuration](#configuration)
   - [Builds and deploys](#builds-and-deploys)
   - [Upstream modifications](#upstream-modifications)
+- [About Platform.sh](#about-platformsh)
 - [Usage](#usage)
-  - [SSH and accessing logs](#ssh-and-accessing-logs)
+  - [Logs](#logs)
   - [Local development](#local-development)
   - [Updating](#updating)
-  - [Customization](#customization)
-  - [Performance](#performance)
+  <!-- - [Customization](#customization)
+  - [Performance](#performance) -->
 - [Migrating](#migrating)
-<!-- - [Roadmap](#roadmap)
-- [Contributing](#contributing) -->
 - [License](#license)
 - [Contact](#contact)
 - [Resources](#resources)
-- [Acknowledegments](#acknowledgements)
+- [Contributors](#contributors)
 
 <hr>
 
 <br />
-
-## About
+<h1><img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="50px">&nbsp About this project </h1>
 
 <div>
     <p>This template builds Metabase for Platform.sh.</p>
-    <p>Metabase is a simple and powerful analytics tool which lets anyone learn and make decisions from their company’s data.  The Metabase jar file is downloaded on the fly during the build hook based on the version provided in the application's configuration.</p>
+    <p>Metabase is a simple and powerful analytics tool which lets anyone learn and make decisions from their company’s data. The Metabase jar file is downloaded on the fly during the build hook based on the version provided in the application's configuration.</p>
 </div>
 
-### Features
+## Features
 
 - Java 11
 - PostgreSQL 13
@@ -97,13 +101,14 @@
 - Automatic Java heap size configuration
 - Automatic upstream updates via Source Operations
 
-## Getting started
+<br />
+<h1><img src="https://platform.sh/images/spots/tech/globe.svg" width="50px">&nbsp Getting started </h1>
 
 If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**.
 
 This template contains all of the files needed to deploy on Platform.sh, but you have a few options for doing so. Whichever method you choose, be sure to make note of all of the information included in this README, as it will be a great deal of help once your project has been deployed.
 
-### Deploying
+## Deploying
 
 The quickest method to deploy Metabase on Platform.sh is by clicking the button below. This will automatically create a new project and initialize the repository for you.
 
@@ -179,62 +184,14 @@ If you would instead to deploy this template from your command line, you can do 
 
 </details>
 
-### Post-install
+## Post-install
 
 After the first deployment, give the JVM a minute to finish completing it's initialization tasks (until it does, you will see a 502 error page.) which take only a minute or so. Run through the Metabase installer as normal. You will not be asked for database credentials, as those are already provided via the [`.environment`](.environment) that is sourced during the deploy hook. With the installer you will be able to create admin credentials and choose your language.
 
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
-### Platform.sh basics
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula.
-
-<details>
-<summary><strong>Overview</strong></summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
-
-Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
-
-</details>
-
-<details>
-<summary><strong>Projects</strong></summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
-
-Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
-
-</details>
-
-<details>
-<summary><strong>Builds</strong></summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
-
-Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
-
-</details>
-
-<details>
-<summary><strong>Deploys</strong></summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
-
-Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
-
-</details>
-
-<details>
-<summary><strong>Environments</strong></summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
-
-Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
-
-</details>
-
-## Platform.sh customizations
+<br />
+<h1><img src="https://platform.sh/images/spots/tech/add-apps.svg" width="50px">&nbsp Customizations </h1>
 
 **Some more general explanation of why these files are necessary additions to replicate**
 
@@ -334,11 +291,63 @@ Every time you push to a live branch (a git branch with an active environment at
 
 At this time, Platform.sh's Metabase template does not include any of the upstream code in this repository. The Metabase `jar` file is installed during the build hook according to the version defined in a [`metabase.version`](metabase.version) file.
 
-## Usage
+<br />
+<h1><img src="https://platform.sh/logos/redesign/Platformsh_icon_black.svg" width="40px">&nbsp About Platform.sh </h1>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. 
+
+<details>
+<summary><strong>Overview</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Projects</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Builds</strong></summary><br />
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Deploys</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Environments</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<br />
+<h1><img src="https://platform.sh/images/spots/concepts/git-branch.svg" width="50px">&nbsp Usage </h1>
 
 Once you have deployed this template, there are a number of next steps you can take to interact with and customize the project.
 
-### Accessing logs
+## Logs
 
 Once you have deployed to an active environment, you will be able to SSH into your application containers, which can be useful for many things including accessing logs. A temporary SSH token will be generated for you (once you have logged in through the browser) by running the command `platform login`. After that from your project's root, simply run the command
 
@@ -348,13 +357,20 @@ platform ssh
 
 to gain access. Everything in your repository plus any artifacts of your build will exist here in `/app`. All logs are available in the subdirectory `/var/log`, and you can find more information about the available logs [in the Development documentation](https://docs.platform.sh/development/logs.html).
 
-<!-- Wishlist: forwarding logs to Logz.io/Splunk -->
+You can also view application logs directly using the Platform.sh CLI command `platform logs app`.
+
+<details>
+<summary><strong>Log forwarding</strong></summary><br />
+
+<em>Coming soon!</em>
+
+</details>
 
 ### Local development
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum.
 
-<hr><details>
+<details>
 <summary><strong>Lando:</strong> <em>Use the Platform.sh recommended local development tool</em></summary><br />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel.
@@ -422,9 +438,8 @@ This template downloads the Metabase jar file during the build hook using the `b
 
 An `update.sh` script has been included in this repository, which checks to see if a [new version of Metabase is available](<(https://github.com/metabase/metabase/releases)>), and if so updates the contents of `metabase.version` that will used on subsequent builds.
 
-<br /><details>
-
-<summary><strong>Scheduled updates:</strong> <em>automating upstream updates with source operations</em></summary><br />
+<details>
+<summary><strong>Scheduling automatic updates:</strong> <em>automating upstream updates with source operations</em></summary><br />
 
 > **Note:**
 >
@@ -473,7 +488,8 @@ With this definition, the `update` source operation will check to see if a new v
 
 <hr></details>
 
-### Migrating
+<br />
+<h1><img src="https://platform.sh/images/spots/arrows/fast.svg" width="50px">&nbsp Migrating </h1>
 
 #### Data
 
@@ -549,13 +565,14 @@ WIP
 
 WIP -->
 
-<br>
 
-## License
+<br />
+<h1><img src="https://platform.sh/images/spots/concepts/security.svg" width="50px">&nbsp License</h1>
 
 This template uses the [Open Source edition of Metabase](https://github.com/metabase/metabase), which is licensed under the [GNU Affero General Public License (AGPL)](https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt).
 
-## Contact
+<br />
+<h1><img src="https://platform.sh/images/contact/support.svg" width="50px">&nbsp Contact</h1>
 
 This template is maintained primarily by the Platform.sh Developer Relations team, and they will be notified of all issues and pull requests you open here.
 
@@ -563,7 +580,8 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 - **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions.
 <!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
 
-## Resources
+<br />
+<h1><img src="https://platform.sh/images/spots/concepts/cloud.svg" width="50px">&nbsp Resources</h1>
 
 <!-- ### General -->
 
@@ -580,16 +598,15 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 
 - Community questions -->
 
-## Contributors ✨
 
-Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
+<br />
+<h1><img src="https://platform.sh/images/spots/concepts/deploy.svg" width="50px">&nbsp Contributors</h1>
 
 If you'd like to [contribute](https://github.com/chadwcarlson/metabase/blob/chore/readme-updates/CONTRIBUTING.md), feel free to [report a bug](), [request a new feature](), or bring up a topic on [our community site](https://community.platform.sh).
 
-<p align="center">
+Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
 
-_**Thanks to all of our wonderful contributors!**_
+<br />
+<h3 align="center"><strong><em>Thanks to all of our amazing contributors!</em></strong></h3>
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=chadwcarlson/metabase)
-
-<p>
