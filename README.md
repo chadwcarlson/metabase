@@ -56,10 +56,7 @@
 </p>
 </p>
 
-<!-- <hr> -->
-
-<details open="open">
-  <summary><strong>Contents</strong></summary><br />
+<hr>
 
 - [About this project](#about-this-project)
   - [Features](#features) 
@@ -83,10 +80,10 @@
 - [Resources](#resources)
 - [Contributors](#contributors)
 
-</details>
+<hr>
 
 <br />
-<h1 align="center"><img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="50px">&nbsp About this project </h1>
+<h1><img src="https://platform.sh/images/spots/arrows/fast-dev.svg" width="50px">&nbsp About this project </h1>
 
 <div>
     <p>This template builds Metabase for Platform.sh.</p>
@@ -347,7 +344,7 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 
 Once you have deployed this template, there are a number of next steps you can take to interact with and customize the project. 
 
-### Accessing logs
+## Logs
 
 Once you have deployed to an active environment, you will be able to SSH into your application containers, which can be useful for many things including accessing logs. A temporary SSH token will be generated for you (once you have logged in through the browser) by running the command `platform login`. After that from your project's root, simply run the command 
 
@@ -357,7 +354,11 @@ platform ssh
 
 to gain access. Everything in your repository plus any artifacts of your build will exist here in `/app`. All logs are available in the subdirectory `/var/log`, and you can find more information about the available logs [in the Development documentation](https://docs.platform.sh/development/logs.html).
 
-<!-- Wishlist: forwarding logs to Logz.io/Splunk -->
+You can also view application logs directly using the Platform.sh CLI command `platform logs app`.
+
+<details>
+<summary><strong>Log forwarding</strong></summary><br />
+</details>
 
 ### Local development
 
@@ -483,7 +484,7 @@ With this definition, the `update` source operation will check to see if a new v
 <hr></details>
 
 <br />
-<h1 align="center"><img src="https://platform.sh/images/spots/arrows/single-arrow.svg" width="50px">&nbsp Migrating </h1>
+<h1 align="center"><img src="https://platform.sh/images/spots/arrows/fast.svg" width="50px">&nbsp Migrating </h1>
 
 #### Data
 
@@ -620,8 +621,8 @@ _**Thanks to all of our amazing contributors!**_
 
 </p> -->
 
-<br /><br /><br />
+<!-- <br /><br /><br />
 
 <p align="center">
 <img src="https://platform.sh/images/linked-block/people.svg" width="75%">
-</p>
+</p> -->
