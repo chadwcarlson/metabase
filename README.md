@@ -128,7 +128,7 @@
 <img src="https://platform.sh/images/spots/tech/globe.svg" width="85px">
 </p>
 
-<h1><img src="https://platform.sh/images/spots/tech/globe.svg" width="50px">&nbsp&nbsp Getting started </h1>
+<h1><img src="https://platform.sh/images/spots/tech/globe.svg" width="50px">&nbsp Getting started </h1>
 
 If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**. 
 
