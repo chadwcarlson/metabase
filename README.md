@@ -47,12 +47,9 @@
     <a href="https://community.platform.sh">Join our community</a> ◦
     <a href="https://docs.platform.sh">Documentation</a> ◦
     <a href="https://platform.sh/blog">Blog</a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
-    <br />
-    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
-    <br />
+    <a href="https://github.com/platformsh-templates/metabase/issues">Report a bug</a> ◦
+    <a href="https://github.com/platformsh-templates/metabase/issues">Request a feature</a>
+    <br /><br />
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
         <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="200px" />
     </a>
