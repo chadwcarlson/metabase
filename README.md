@@ -61,31 +61,32 @@
 
 <hr>
 
+<details open="open">
+  <summary><h3 style="display: inline-block">Contents</h3></summary>
+
 - [About](#about)
   - [Features](#features) 
 - [Getting started](#getting-started)
   - [Deploying](#deploying)
   - [Post-install](#post-install)
-  - [Platform.sh basics]
-- [Platform.sh customizations](#platformsh-customizations)
+- [Customizations](#customizations)
   - [Configuration](#configuration)
   - [Builds and deploys](#builds-and-deploys)
   - [Upstream modifications](#upstream-modifications)
+- [About Platform.sh](#about-platformsh)
 - [Usage](#usage)
-  - [SSH and accessing logs](#ssh-and-accessing-logs)
+  - [Logs](#logs)
   - [Local development](#local-development)
   - [Updating](#updating)
-  - [Customization](#customization)
-  - [Performance](#performance)
+  <!-- - [Customization](#customization)
+  - [Performance](#performance) -->
 - [Migrating](#migrating)
-<!-- - [Roadmap](#roadmap)
-- [Contributing](#contributing) -->
 - [License](#license)
 - [Contact](#contact)
 - [Resources](#resources)
-- [Acknowledegments](#acknowledgements)
+- [Contributors](#contributors)
 
-<hr>
+</details>
 
 <br />
 
@@ -192,57 +193,7 @@ After the first deployment, give the JVM a minute to finish completing it's init
 
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
-### Platform.sh basics
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. 
-
-<details>
-<summary><strong>Overview</strong></summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
-
-Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
-
-</details>
-
-<details>
-<summary><strong>Projects</strong></summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
-
-Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
-
-</details>
-
-<details>
-<summary><strong>Builds</strong></summary><br />
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
-
-Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
-
-</details>
-
-<details>
-<summary><strong>Deploys</strong></summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
-
-Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
-
-</details>
-
-<details>
-<summary><strong>Environments</strong></summary><br />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
-
-Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
-
-</details>
-
-## Platform.sh customizations
+## Customizations
 
 **Some more general explanation of why these files are necessary additions to replicate**
 
@@ -341,6 +292,56 @@ Every time you push to a live branch (a git branch with an active environment at
 ### Upstream modifications
 
 At this time, Platform.sh's Metabase template does not include any of the upstream code in this repository. The Metabase `jar` file is installed during the build hook according to the version defined in a [`metabase.version`](metabase.version) file.
+
+## About Platform.sh
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. 
+
+<details>
+<summary><strong>Overview</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Projects</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Builds</strong></summary><br />
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Deploys</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
+
+<details>
+<summary><strong>Environments</strong></summary><br />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu est lacus. Integer magna est, pellentesque vitae lorem a, molestie pharetra felis. Quisque massa lorem, ullamcorper sed urna eu, gravida placerat ipsum. Quisque tempus ex at sapien finibus, consequat condimentum lorem vehicula. Quisque posuere justo velit, vel luctus ipsum rutrum vel. 
+
+Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus faucibus nunc magna sed est. Proin blandit porta ligula. Ut euismod lectus eu tincidunt blandit. Nulla nec urna sit amet felis facilisis volutpat. Vestibulum sed lectus vulputate, dapibus leo sit amet, porta mi. Maecenas ac convallis eros, id efficitur quam. Nunc ornare tristique eleifend. Donec consectetur, eros in hendrerit cursus, velit erat pretium sem, ac viverra ligula odio nec odio. Vestibulum sit amet tellus tempor tellus faucibus laoreet sit amet in tortor.
+
+</details>
 
 ## Usage
 
