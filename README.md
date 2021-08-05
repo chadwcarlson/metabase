@@ -15,13 +15,20 @@
 
 <p align="center">
     <a href="https://github.com/platformsh-templates/metabase/network/members">
-        <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
+        <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Tests" />
     </a>
     <a href="https://github.com/platformsh-templates/metabase/issues">
-        <img src="https://img.shields.io/github/issues/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
+        <img src="https://img.shields.io/github/issues/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Open issues" />
     </a>
     <a href="https://github.com/platformsh-templates/pulls">
-        <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
+        <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Open PRs" />
+    </a>
+    <br />
+    <a href="https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt">
+        <img src="https://img.shields.io/static/v1?label=License&message=AGPL&style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="License" />
+    </a>
+    <a href="https://github.com/platformsh-templates/metabase/CODE_OF_CONDUCT.md">
+        <img src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Conduct" />
     </a>
     <!-- <br /> -->
     <!-- <a href="https://github.com/platformsh-templates/metabase/network/members">
