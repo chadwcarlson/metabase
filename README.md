@@ -4,7 +4,7 @@
         <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="150px">
     </a>
 </p>
-<br /><br /><br />
+<br /><br />
 <p align="center">
     <a href="https://github.com/metabase/metabase">
         <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="120" height="120">
@@ -14,11 +14,11 @@
 </p>
 
 <p align="center">
-    <a href="https://community.platform.sh">Join our community</a> ◦
-    <a href="https://docs.platform.sh">Documentation</a> ◦
-    <a href="https://platform.sh/blog">Blog</a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues">Report a bug</a> ◦
-    <a href="https://github.com/platformsh-templates/metabase/issues">Request a feature</a>
+    <a href="https://community.platform.sh"><strong>Join our community</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://docs.platform.sh"><strong>Documentation</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://platform.sh/blog"><strong>Blog</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
+    <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
     <br /><br />
     <a href="https://github.com/platformsh-templates/metabase/network/members">
         <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Tests" />
