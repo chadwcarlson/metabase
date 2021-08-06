@@ -7,7 +7,7 @@
 <br /><br />
 <p align="center">
     <a href="https://github.com/metabase/metabase">
-        <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="120" height="120">
+        <img src="https://www.metabase.com/images/logo.svg" alt="Logo" width="120" height="120">
     </a>
 </p>
 <h1 align="center">Deploying Metabase on Platform.sh</h1>
