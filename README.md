@@ -9,12 +9,11 @@
     <a href="https://github.com/metabase/metabase">
         <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="120" height="120">
     </a>
-    <br /><br />
-    <h1 align="center">Deploying Metabase on Platform.sh<br /></h1>
 </p>
+<h1 align="center">Deploying Metabase on Platform.sh</h1>
 
 <p align="center">
-    <strong><em>Contribute to the Platform.sh knowledge base, or check out our resources</em></strong>
+    <strong>Contribute to the Platform.sh knowledge base, or check out our resources:</strong>
     <br />
     <a href="https://community.platform.sh"><strong>Join our community</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
     <a href="https://docs.platform.sh"><strong>Documentation</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
@@ -66,27 +65,40 @@
 <h2 align="center"><strong>Contents</strong></h2>
 
 
-- [About this project](#about-this-project)
-  - [Features](#features) 
-- [Getting started](#-getting-started-)
-  - [Deploying](#deploying)
-  - [Post-install](#post-install)
-- [Customizations](#customizations)
-  - [Configuration](#configuration)
-  - [Builds and deploys](#builds-and-deploys)
-  - [Upstream modifications](#upstream-modifications)
-- [About Platform.sh](#about-platformsh)
-- [Usage](#usage)
-  - [Logs](#logs)
-  - [Local development](#local-development)
-  - [Updating](#updating)
-  <!-- - [Customization](#customization)
-  - [Performance](#performance) -->
-- [Migrating](#migrating)
-- [License](#license)
-- [Contact](#contact)
-- [Resources](#resources)
-- [Contributors](#contributors)
+<ul style="list-style-type: none; padding-left: 0;">
+<li><a href="#about-this-project">About this project</a>
+<ul>
+<li><a href="#features">Features</a></li>
+</ul>
+</li>
+<li><a href="#-getting-started-">Getting started</a>
+<ul>
+<li><a href="#deploying">Deploying</a></li>
+<li><a href="#post-install">Post-install</a></li>
+</ul>
+</li>
+<li><a href="#customizations">Customizations</a>
+<ul>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#builds-and-deploys">Builds and deploys</a></li>
+<li><a href="#upstream-modifications">Upstream modifications</a></li>
+</ul>
+</li>
+<li><a href="#about-platformsh">About Platform.sh</a></li>
+<li><a href="#usage">Usage</a>
+<ul>
+<li><a href="#logs">Logs</a></li>
+<li><a href="#local-development">Local development</a></li>
+<li><a href="#updating">Updating</a></li>
+</ul>
+
+</li>
+<li><a href="#migrating">Migrating</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#contributors">Contributors</a></li>
+</ul>
 
 <hr>
 
