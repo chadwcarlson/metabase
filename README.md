@@ -26,19 +26,19 @@
 
 <p align="center">
     <a href="https://github.com/platformsh-templates/metabase/network/members">
-        <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=flat-square&labelColor=f4f2f3&color=FFBDBB&label=Build" alt="Tests" />
+        <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=flat-square&labelColor=f4f2f3&color=ffd9d9&label=Build" alt="Tests" />
     </a>&nbsp&nbsp
     <a href="https://github.com/platformsh-templates/metabase/issues">
-        <img src="https://img.shields.io/github/issues/platformsh-templates/metabase.svg?style=flat-square&labelColor=f4f2f3&color=FFBDBB&label=Issues" alt="Open issues" />
+        <img src="https://img.shields.io/github/issues/platformsh-templates/metabase.svg?style=flat-square&labelColor=f4f2f3&color=ffd9d9&label=Issues" alt="Open issues" />
     </a>&nbsp&nbsp
     <a href="https://github.com/platformsh-templates/pulls">
-        <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=flat-square&labelColor=f4f2f3&color=FFBDBB&label=Pull%20requests" alt="Open PRs" />
+        <img src="https://img.shields.io/github/issues-pr/platformsh-templates/metabase.svg?style=flat-square&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
     </a>&nbsp&nbsp
     <a href="https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt">
-        <img src="https://img.shields.io/static/v1?label=License&message=AGPL&style=flat-square&labelColor=f4f2f3&color=FFBDBB" alt="License" />
+        <img src="https://img.shields.io/static/v1?label=License&message=AGPL&style=flat-square&labelColor=f4f2f3&color=ffd9d9" alt="License" />
     </a>&nbsp&nbsp
     <a href="https://github.com/platformsh-templates/metabase/CODE_OF_CONDUCT.md">
-        <img src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg?style=flat-square&labelColor=f4f2f3&color=FFBDBB" alt="Conduct" />
+        <img src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg?style=flat-square&labelColor=f4f2f3&color=ffd9d9" alt="Conduct" />
     </a>
     <!-- <br /> -->
     <!-- <a href="https://github.com/platformsh-templates/metabase/network/members">
@@ -53,7 +53,7 @@
     <a href="https://github.com/platformsh-templates/metabase/stargazers">
         <img src="https://img.shields.io/github/stars/platformsh-templates/metabase.svg?style=for-the-badge&labelColor=145CC6&color=FFBDBB" alt="Deploy on Platform.sh" />
     </a> -->
-    <br /><br />
+    <br /><br /><br />
     <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/metabase/.platform.template.yaml&utm_content=metabase&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
         <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="175px" />
     </a>
