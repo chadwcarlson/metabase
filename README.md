@@ -184,7 +184,7 @@ If you would instead to deploy this template from your command line, you can do 
 5. Push to Platform.sh:
 
    ```bash
-   git push platform master
+   git push platform main
    ```
 
 </details>
