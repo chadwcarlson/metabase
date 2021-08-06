@@ -1,5 +1,5 @@
 <br />
-<p align="right">
+<p align="left">
     <a href="https://platform.sh">
         <img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="150px">
     </a>
@@ -10,16 +10,21 @@
         <img src="https://raw.githubusercontent.com/metabase/metabase/master/resources/frontend_client/app/assets/img/logo.svg" alt="Logo" width="120" height="120">
     </a>
     <br /><br />
-    <h1 align="center">Metabase<br /></h1>
+    <h1 align="center">Deploying Metabase on Platform.sh<br /></h1>
 </p>
 
 <p align="center">
+    <strong><em>Contribute to the Platform.sh knowledge base, or check out our resources</em></strong>
+    <br />
     <a href="https://community.platform.sh"><strong>Join our community</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
     <a href="https://docs.platform.sh"><strong>Documentation</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
     <a href="https://platform.sh/blog"><strong>Blog</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
     <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp◦&nbsp&nbsp&nbsp
     <a href="https://github.com/platformsh-templates/metabase/issues"><strong>Request a feature</strong></a>
     <br /><br />
+</p>
+
+<p align="center">
     <a href="https://github.com/platformsh-templates/metabase/network/members">
         <img src="https://img.shields.io/github/workflow/status/platformsh/config-reader-python/Quality%20Assurance/master.svg?style=for-the-badge&labelColor=145CC6&color=FF9F9F" alt="Tests" />
     </a>
@@ -601,10 +606,34 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 <br />
 <h1><img src="https://platform.sh/images/spots/concepts/deploy.svg" width="50px">&nbsp Contributing</h1>
 
-If you'd like to [contribute](https://github.com/chadwcarlson/metabase/blob/chore/readme-updates/CONTRIBUTING.md), feel free to [report a bug](https://github.com/platformsh-templates/metabase/issues), [request a new feature](https://github.com/platformsh-templates/metabase/issues), or bring up a topic on [our community site](https://community.platform.sh).
+<h2 align="center">Help us keep top-notch templates!</h2><br />
 
-Thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
+Every one of our templates is open source, and they're important resources for users trying to deploy to Platform.sh for the first time or better understand the platform. They act as getting started guides, but also contain a number of helpful tips and best practices when working with certain languages and frameworks. 
 
+See something that's wrong with this template that needs to be fixed? Something in the documentation unclear or missing? Let us know!
+
+<h3 align="center"><strong>How to contribute</strong></h3>
+<br />
+<p align="center">
+    <a href="#"><strong>Read the Contributing Guidelines</strong></a><br />
+    <a href="#"><strong>Report a bug</strong></a><br />
+    <a href="#"><strong>Submit a feature request</strong></a><br />
+    <a href="#"><strong>Open a pull request</strong></a><br />
+</p>
+<br />
+<h3 align="center"><strong>Need help?</strong></h3>
+<br />
+<p align="center">
+    <a href="#"><strong>Ask the Platform.sh Community</strong></a><br />
+    <a href="#"><strong>Join us on Slack</strong></a><br />
+</p>
+<br /><br />
 <h3 align="center"><strong><em>Thanks to all of our amazing contributors!</em></strong></h3>
 
+<br/>
+
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=chadwcarlson/metabase)
+
+<br />
+
+Additional thanks to [@rhubinak](https://github.com/rhubinak) for creating the original template.
