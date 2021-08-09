@@ -90,7 +90,7 @@
 <hr>
 
 <br />
-<h1><img src="https://platform.sh/images/icons/colorful/faster_dev.svg" width="50px">&nbsp About this project </h1>
+<h1><img src="https://platform.sh/images/icons/colorful-sq/faster_dev.svg" width="50px">&nbsp About this project </h1>
 
 <div>
     <p>This template builds Metabase for Platform.sh.</p>
@@ -106,7 +106,7 @@
 - Automatic upstream updates via Source Operations
 
 <br />
-<h1><img src="https://platform.sh/images/icons/colorful/globe.svg" width="50px">&nbsp Getting started </h1>
+<h1><img src="https://platform.sh/images/icons/colorful-sq/globe.svg" width="50px">&nbsp Getting started </h1>
 
 If you are unfamiliar with Metabase, with Platform.sh, or otherwise want to quickly deploy this template, **Start here**.
 
@@ -195,7 +195,7 @@ After the first deployment, give the JVM a minute to finish completing it's init
 The installer will allow you to add databases. Configure the database you are trying to connect, or skip that step and Metabase will load an H2 Sample Dataset to start off with.
 
 <br />
-<h1><img src="https://platform.sh/images/icons/colorful/add_apps.svg" width="50px">&nbsp Customizations </h1>
+<h1><img src="https://platform.sh/images/icons/colorful-sq/add_apps.svg" width="50px">&nbsp Customizations </h1>
 
 **Some more general explanation of why these files are necessary additions to replicate**
 
@@ -347,7 +347,7 @@ Nulla ornare, nisl et vehicula convallis, felis arcu sagittis nibh, luctus fauci
 </details>
 
 <br />
-<h1><img src="https://platform.sh/images/icons/colorful/branch.svg" width="50px">&nbsp Usage </h1>
+<h1><img src="https://platform.sh/images/icons/colorful-sq/branch.svg" width="50px">&nbsp Usage </h1>
 
 Once you have deployed this template, there are a number of next steps you can take to interact with and customize the project.
 
@@ -493,7 +493,7 @@ With this definition, the `update` source operation will check to see if a new v
 <hr></details>
 
 <br />
-<h1><img src="https://platform.sh/images/icons/colorful/fast.svg" width="50px">&nbsp Migrating </h1>
+<h1><img src="https://platform.sh/images/icons/colorful-sq/fast.svg" width="50px">&nbsp Migrating </h1>
 
 #### Data
 
@@ -571,12 +571,12 @@ WIP -->
 
 
 <br />
-<h1><img src="https://platform.sh/images/icons/colorful/security.svg" width="50px">&nbsp License</h1>
+<h1><img src="https://platform.sh/images/icons/colorful-sq/security.svg" width="50px">&nbsp License</h1>
 
 This template uses the [Open Source edition of Metabase](https://github.com/metabase/metabase), which is licensed under the [GNU Affero General Public License (AGPL)](https://github.com/metabase/metabase/blob/master/LICENSE-AGPL.txt).
 
 <br />
-<h1><img src="https://platform.sh/images/icons/colorful/hearts.svg" width="50px">&nbsp Contact</h1>
+<h1><img src="https://platform.sh/images/icons/colorful-sq/hearts.svg" width="50px">&nbsp Contact</h1>
 
 This template is maintained primarily by the Platform.sh Developer Relations team, and they will be notified of all issues and pull requests you open here.
 
@@ -585,7 +585,7 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 <!-- - **E-mail:** You can also reach the DevRel team directly at `devrel@platform.sh`. -->
 
 <br />
-<h1><img src="https://platform.sh/images/icons/colorful/cloud.svg" width="50px">&nbsp Resources</h1>
+<h1><img src="https://platform.sh/images/icons/colorful-sq/cloud.svg" width="50px">&nbsp Resources</h1>
 
 <!-- ### General -->
 
@@ -603,7 +603,7 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 - Community questions -->
 
 <br />
-<h1><img src="https://platform.sh/images/icons/colorful/deploy.svg" width="50px">&nbsp Contributing</h1>
+<h1><img src="https://platform.sh/images/icons/colorful-sq/deploy.svg" width="50px">&nbsp Contributing</h1>
 
 <h2 align="center">Help us keep top-notch templates!</h2><br />
 
