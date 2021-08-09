@@ -605,7 +605,7 @@ This template is maintained primarily by the Platform.sh Developer Relations tea
 <br />
 <h1>Contributing</h1>
 
-<h2 align="center">Help us keep top-notch templates!</h2><br />
+<h2 align="center">Help us keep top-notch templates!</h2>
 
 Every one of our templates is open source, and they're important resources for users trying to deploy to Platform.sh for the first time or better understand the platform. They act as getting started guides, but also contain a number of helpful tips and best practices when working with certain languages and frameworks. 
 
@@ -627,7 +627,7 @@ See something that's wrong with this template that needs to be fixed? Something 
     <a href="#"><strong>Join us on Slack</strong></a><br />
 </p>
 <br /><br />
-<h3 align="center"><strong><em>Thanks to all of our amazing contributors!</em></strong></h3>
+<h3 align="center"><strong>Thanks to all of our amazing contributors!</strong></h3>
 
 <br/>
 
